@@ -12,6 +12,32 @@
 		AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD78DD831A92B77A00541CC7 /* Images.xcassets */; };
 		AD78DD871A92B77A00541CC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD78DD851A92B77A00541CC7 /* LaunchScreen.xib */; };
 		AD78DD931A92B77A00541CC7 /* BasketballRankingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DD921A92B77A00541CC7 /* BasketballRankingTests.m */; };
+		AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD78DD9C1A92B78E00541CC7 /* Model.xcdatamodeld */; };
+		AD78DDB11A92BE8100541CC7 /* _VOSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDA21A92BE8100541CC7 /* _VOSAction.m */; };
+		AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDA41A92BE8100541CC7 /* _VOSCategory.m */; };
+		AD78DDB31A92BE8100541CC7 /* _VOSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDA61A92BE8100541CC7 /* _VOSGame.m */; };
+		AD78DDB41A92BE8100541CC7 /* _VOSGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDA81A92BE8100541CC7 /* _VOSGroup.m */; };
+		AD78DDB51A92BE8100541CC7 /* _VOSPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDAA1A92BE8100541CC7 /* _VOSPhotoContainer.m */; };
+		AD78DDB61A92BE8100541CC7 /* _VOSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDAC1A92BE8100541CC7 /* _VOSPlayer.m */; };
+		AD78DDB71A92BE8100541CC7 /* _VOSStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDAE1A92BE8100541CC7 /* _VOSStatistic.m */; };
+		AD78DDB81A92BE8100541CC7 /* _VOSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDB01A92BE8100541CC7 /* _VOSTeam.m */; };
+		AD78DDC91A92BE9C00541CC7 /* VOSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDBA1A92BE9C00541CC7 /* VOSAction.m */; };
+		AD78DDCA1A92BE9C00541CC7 /* VOSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDBC1A92BE9C00541CC7 /* VOSCategory.m */; };
+		AD78DDCB1A92BE9C00541CC7 /* VOSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDBE1A92BE9C00541CC7 /* VOSGame.m */; };
+		AD78DDCC1A92BE9C00541CC7 /* VOSGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDC01A92BE9C00541CC7 /* VOSGroup.m */; };
+		AD78DDCD1A92BE9C00541CC7 /* VOSPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDC21A92BE9C00541CC7 /* VOSPhotoContainer.m */; };
+		AD78DDCE1A92BE9C00541CC7 /* VOSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDC41A92BE9C00541CC7 /* VOSPlayer.m */; };
+		AD78DDCF1A92BE9C00541CC7 /* VOSStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDC61A92BE9C00541CC7 /* VOSStatistic.m */; };
+		AD78DDD01A92BE9C00541CC7 /* VOSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDC81A92BE9C00541CC7 /* VOSTeam.m */; };
+		AD78DDD61A92C10400541CC7 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDD51A92C10400541CC7 /* UIViewController+Navigation.m */; };
+		AD78DDD91A92C1AA00541CC7 /* VOSCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDD81A92C1AA00541CC7 /* VOSCoreDataStack.m */; };
+		AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDDC1A92C1F900541CC7 /* VOSCoreDataTableViewController.m */; };
+		AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDDF1A92C24F00541CC7 /* VOSCategoriesViewController.m */; };
+		AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */; };
+		AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */; };
+		AD78DDE91A92C57800541CC7 /* VOSActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */; };
+		AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */; };
+		AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +61,57 @@
 		AD78DD8C1A92B77A00541CC7 /* BasketballRankingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasketballRankingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD78DD911A92B77A00541CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD78DD921A92B77A00541CC7 /* BasketballRankingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasketballRankingTests.m; sourceTree = "<group>"; };
+		AD78DD9D1A92B78E00541CC7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		AD78DDA11A92BE8100541CC7 /* _VOSAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSAction.h; sourceTree = "<group>"; };
+		AD78DDA21A92BE8100541CC7 /* _VOSAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSAction.m; sourceTree = "<group>"; };
+		AD78DDA31A92BE8100541CC7 /* _VOSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSCategory.h; sourceTree = "<group>"; };
+		AD78DDA41A92BE8100541CC7 /* _VOSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSCategory.m; sourceTree = "<group>"; };
+		AD78DDA51A92BE8100541CC7 /* _VOSGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSGame.h; sourceTree = "<group>"; };
+		AD78DDA61A92BE8100541CC7 /* _VOSGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSGame.m; sourceTree = "<group>"; };
+		AD78DDA71A92BE8100541CC7 /* _VOSGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSGroup.h; sourceTree = "<group>"; };
+		AD78DDA81A92BE8100541CC7 /* _VOSGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSGroup.m; sourceTree = "<group>"; };
+		AD78DDA91A92BE8100541CC7 /* _VOSPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSPhotoContainer.h; sourceTree = "<group>"; };
+		AD78DDAA1A92BE8100541CC7 /* _VOSPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSPhotoContainer.m; sourceTree = "<group>"; };
+		AD78DDAB1A92BE8100541CC7 /* _VOSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSPlayer.h; sourceTree = "<group>"; };
+		AD78DDAC1A92BE8100541CC7 /* _VOSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSPlayer.m; sourceTree = "<group>"; };
+		AD78DDAD1A92BE8100541CC7 /* _VOSStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSStatistic.h; sourceTree = "<group>"; };
+		AD78DDAE1A92BE8100541CC7 /* _VOSStatistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSStatistic.m; sourceTree = "<group>"; };
+		AD78DDAF1A92BE8100541CC7 /* _VOSTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSTeam.h; sourceTree = "<group>"; };
+		AD78DDB01A92BE8100541CC7 /* _VOSTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSTeam.m; sourceTree = "<group>"; };
+		AD78DDB91A92BE9C00541CC7 /* VOSAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSAction.h; sourceTree = "<group>"; };
+		AD78DDBA1A92BE9C00541CC7 /* VOSAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSAction.m; sourceTree = "<group>"; };
+		AD78DDBB1A92BE9C00541CC7 /* VOSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCategory.h; sourceTree = "<group>"; };
+		AD78DDBC1A92BE9C00541CC7 /* VOSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCategory.m; sourceTree = "<group>"; };
+		AD78DDBD1A92BE9C00541CC7 /* VOSGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSGame.h; sourceTree = "<group>"; };
+		AD78DDBE1A92BE9C00541CC7 /* VOSGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSGame.m; sourceTree = "<group>"; };
+		AD78DDBF1A92BE9C00541CC7 /* VOSGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSGroup.h; sourceTree = "<group>"; };
+		AD78DDC01A92BE9C00541CC7 /* VOSGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSGroup.m; sourceTree = "<group>"; };
+		AD78DDC11A92BE9C00541CC7 /* VOSPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPhotoContainer.h; sourceTree = "<group>"; };
+		AD78DDC21A92BE9C00541CC7 /* VOSPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPhotoContainer.m; sourceTree = "<group>"; };
+		AD78DDC31A92BE9C00541CC7 /* VOSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayer.h; sourceTree = "<group>"; };
+		AD78DDC41A92BE9C00541CC7 /* VOSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayer.m; sourceTree = "<group>"; };
+		AD78DDC51A92BE9C00541CC7 /* VOSStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSStatistic.h; sourceTree = "<group>"; };
+		AD78DDC61A92BE9C00541CC7 /* VOSStatistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSStatistic.m; sourceTree = "<group>"; };
+		AD78DDC71A92BE9C00541CC7 /* VOSTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSTeam.h; sourceTree = "<group>"; };
+		AD78DDC81A92BE9C00541CC7 /* VOSTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSTeam.m; sourceTree = "<group>"; };
+		AD78DDD11A92BF6000541CC7 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		AD78DDD21A92BFD400541CC7 /* BasketballRanking-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BasketballRanking-Prefix.pch"; sourceTree = "<group>"; };
+		AD78DDD41A92C10400541CC7 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		AD78DDD51A92C10400541CC7 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		AD78DDD71A92C1AA00541CC7 /* VOSCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCoreDataStack.h; sourceTree = "<group>"; };
+		AD78DDD81A92C1AA00541CC7 /* VOSCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCoreDataStack.m; sourceTree = "<group>"; };
+		AD78DDDB1A92C1F900541CC7 /* VOSCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCoreDataTableViewController.h; sourceTree = "<group>"; };
+		AD78DDDC1A92C1F900541CC7 /* VOSCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCoreDataTableViewController.m; sourceTree = "<group>"; };
+		AD78DDDE1A92C24F00541CC7 /* VOSCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCategoriesViewController.h; sourceTree = "<group>"; };
+		AD78DDDF1A92C24F00541CC7 /* VOSCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCategoriesViewController.m; sourceTree = "<group>"; };
+		AD78DDE21A92C28B00541CC7 /* VOSCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCategoryTableViewCell.h; sourceTree = "<group>"; };
+		AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCategoryTableViewCell.m; sourceTree = "<group>"; };
+		AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		AD78DDE71A92C57800541CC7 /* VOSActionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSActionTableViewController.h; sourceTree = "<group>"; };
+		AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSActionTableViewController.m; sourceTree = "<group>"; };
+		AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSActionTableViewCell.h; sourceTree = "<group>"; };
+		AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSActionTableViewCell.m; sourceTree = "<group>"; };
+		AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSActionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				AD78DD7B1A92B77A00541CC7 /* BasketballRanking */,
+				AD78DDE11A92C26700541CC7 /* Views */,
 				AD78DD8F1A92B77A00541CC7 /* BasketballRankingTests */,
 				AD78DD7A1A92B77A00541CC7 /* Products */,
 			);
@@ -81,6 +159,9 @@
 				AD78DD831A92B77A00541CC7 /* Images.xcassets */,
 				AD78DD851A92B77A00541CC7 /* LaunchScreen.xib */,
 				AD78DD7C1A92B77A00541CC7 /* Supporting Files */,
+				AD78DDD31A92C09600541CC7 /* Categories */,
+				AD78DDDA1A92C1BB00541CC7 /* Controllers */,
+				AD78DD9F1A92B79500541CC7 /* Models */,
 			);
 			path = BasketballRanking;
 			sourceTree = "<group>";
@@ -90,6 +171,8 @@
 			children = (
 				AD78DD7D1A92B77A00541CC7 /* Info.plist */,
 				AD78DD7E1A92B77A00541CC7 /* main.m */,
+				AD78DDD11A92BF6000541CC7 /* Settings.h */,
+				AD78DDD21A92BFD400541CC7 /* BasketballRanking-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +192,92 @@
 				AD78DD911A92B77A00541CC7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD78DD9F1A92B79500541CC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD78DD9C1A92B78E00541CC7 /* Model.xcdatamodeld */,
+				AD78DDD71A92C1AA00541CC7 /* VOSCoreDataStack.h */,
+				AD78DDD81A92C1AA00541CC7 /* VOSCoreDataStack.m */,
+				AD78DDB91A92BE9C00541CC7 /* VOSAction.h */,
+				AD78DDBA1A92BE9C00541CC7 /* VOSAction.m */,
+				AD78DDBB1A92BE9C00541CC7 /* VOSCategory.h */,
+				AD78DDBC1A92BE9C00541CC7 /* VOSCategory.m */,
+				AD78DDBD1A92BE9C00541CC7 /* VOSGame.h */,
+				AD78DDBE1A92BE9C00541CC7 /* VOSGame.m */,
+				AD78DDBF1A92BE9C00541CC7 /* VOSGroup.h */,
+				AD78DDC01A92BE9C00541CC7 /* VOSGroup.m */,
+				AD78DDC11A92BE9C00541CC7 /* VOSPhotoContainer.h */,
+				AD78DDC21A92BE9C00541CC7 /* VOSPhotoContainer.m */,
+				AD78DDC31A92BE9C00541CC7 /* VOSPlayer.h */,
+				AD78DDC41A92BE9C00541CC7 /* VOSPlayer.m */,
+				AD78DDC51A92BE9C00541CC7 /* VOSStatistic.h */,
+				AD78DDC61A92BE9C00541CC7 /* VOSStatistic.m */,
+				AD78DDC71A92BE9C00541CC7 /* VOSTeam.h */,
+				AD78DDC81A92BE9C00541CC7 /* VOSTeam.m */,
+				AD78DDA01A92BD9C00541CC7 /* Machine */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AD78DDA01A92BD9C00541CC7 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				AD78DDA11A92BE8100541CC7 /* _VOSAction.h */,
+				AD78DDA21A92BE8100541CC7 /* _VOSAction.m */,
+				AD78DDA31A92BE8100541CC7 /* _VOSCategory.h */,
+				AD78DDA41A92BE8100541CC7 /* _VOSCategory.m */,
+				AD78DDA51A92BE8100541CC7 /* _VOSGame.h */,
+				AD78DDA61A92BE8100541CC7 /* _VOSGame.m */,
+				AD78DDA71A92BE8100541CC7 /* _VOSGroup.h */,
+				AD78DDA81A92BE8100541CC7 /* _VOSGroup.m */,
+				AD78DDA91A92BE8100541CC7 /* _VOSPhotoContainer.h */,
+				AD78DDAA1A92BE8100541CC7 /* _VOSPhotoContainer.m */,
+				AD78DDAB1A92BE8100541CC7 /* _VOSPlayer.h */,
+				AD78DDAC1A92BE8100541CC7 /* _VOSPlayer.m */,
+				AD78DDAD1A92BE8100541CC7 /* _VOSStatistic.h */,
+				AD78DDAE1A92BE8100541CC7 /* _VOSStatistic.m */,
+				AD78DDAF1A92BE8100541CC7 /* _VOSTeam.h */,
+				AD78DDB01A92BE8100541CC7 /* _VOSTeam.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		AD78DDD31A92C09600541CC7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AD78DDD41A92C10400541CC7 /* UIViewController+Navigation.h */,
+				AD78DDD51A92C10400541CC7 /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		AD78DDDA1A92C1BB00541CC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD78DDDE1A92C24F00541CC7 /* VOSCategoriesViewController.h */,
+				AD78DDDF1A92C24F00541CC7 /* VOSCategoriesViewController.m */,
+				AD78DDDB1A92C1F900541CC7 /* VOSCoreDataTableViewController.h */,
+				AD78DDDC1A92C1F900541CC7 /* VOSCoreDataTableViewController.m */,
+				AD78DDE71A92C57800541CC7 /* VOSActionTableViewController.h */,
+				AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AD78DDE11A92C26700541CC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD78DDE21A92C28B00541CC7 /* VOSCategoryTableViewCell.h */,
+				AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */,
+				AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */,
+				AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */,
+				AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */,
+				AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */,
+			);
+			name = Views;
+			path = BasketballRanking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
 				AD78DD871A92B77A00541CC7 /* LaunchScreen.xib in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
+				AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +381,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD78DDCA1A92BE9C00541CC7 /* VOSCategory.m in Sources */,
+				AD78DDC91A92BE9C00541CC7 /* VOSAction.m in Sources */,
+				AD78DDB31A92BE8100541CC7 /* _VOSGame.m in Sources */,
+				AD78DDE91A92C57800541CC7 /* VOSActionTableViewController.m in Sources */,
+				AD78DDD01A92BE9C00541CC7 /* VOSTeam.m in Sources */,
+				AD78DDCD1A92BE9C00541CC7 /* VOSPhotoContainer.m in Sources */,
+				AD78DDD91A92C1AA00541CC7 /* VOSCoreDataStack.m in Sources */,
+				AD78DDCE1A92BE9C00541CC7 /* VOSPlayer.m in Sources */,
+				AD78DDB11A92BE8100541CC7 /* _VOSAction.m in Sources */,
+				AD78DDB41A92BE8100541CC7 /* _VOSGroup.m in Sources */,
+				AD78DDB51A92BE8100541CC7 /* _VOSPhotoContainer.m in Sources */,
+				AD78DDCB1A92BE9C00541CC7 /* VOSGame.m in Sources */,
 				AD78DD821A92B77A00541CC7 /* AppDelegate.m in Sources */,
+				AD78DDB61A92BE8100541CC7 /* _VOSPlayer.m in Sources */,
 				AD78DD7F1A92B77A00541CC7 /* main.m in Sources */,
+				AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */,
+				AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */,
+				AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */,
+				AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */,
+				AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */,
+				AD78DDB81A92BE8100541CC7 /* _VOSTeam.m in Sources */,
+				AD78DDD61A92C10400541CC7 /* UIViewController+Navigation.m in Sources */,
+				AD78DDCF1A92BE9C00541CC7 /* VOSStatistic.m in Sources */,
+				AD78DDCC1A92BE9C00541CC7 /* VOSGroup.m in Sources */,
+				AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */,
+				AD78DDB71A92BE8100541CC7 /* _VOSStatistic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BasketballRanking-Prefix.pch";
 				INFOPLIST_FILE = BasketballRanking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BasketballRanking-Prefix.pch";
 				INFOPLIST_FILE = BasketballRanking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +603,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD78DD9C1A92B78E00541CC7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD78DD9D1A92B78E00541CC7 /* Model.xcdatamodel */,
+			);
+			currentVersion = AD78DD9D1A92B78E00541CC7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD78DD711A92B77A00541CC7 /* Project object */;
 }
