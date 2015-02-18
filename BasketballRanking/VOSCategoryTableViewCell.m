@@ -12,21 +12,21 @@
 @implementation VOSCategoryTableViewCell
 
 #pragma mark - Properties
+/*
 // creamos un setter personalizado
 -(void) setCategory:(VOSCategory *)category{
     // guardamos la nota
     _category = category;
     
-    // sincronizamos la vista con la nota
+    // sincronizamos la vista con la categoría
     self.categoryName.text = category.name;
     
     [self setEditing:YES];
-    NSLog(@"pasa por aquí");
-    
+    NSLog(@"pasa por setter personalizado");
 }
+*/
 
-
-
+  
 #pragma mark - Class methods
 +(CGFloat)height{
     return 60.0f;
@@ -38,23 +38,55 @@
 }
 
 #pragma mark - UITextFieldDelegate
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     // validamos el texto si tenemos que hacer alguna validación.
-    NSLog(@"texto que tenemos que validar: %@", textField.text);
+    if ( [textField.text isEqualToString:@""] ){
+        
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle: @"Warning !!!"
+                                                          message: @"Este campo no se puede dejar vacío"
+                                                         delegate: nil
+                                                cancelButtonTitle: @"I Know"
+                                                otherButtonTitles: nil];
+        [message show];
+        
+//        [textField becomeFirstResponder];
+        
+        return NO;
+    }
     
     // Si está bien quitamos el foco para que desaparezca el teclado ( o podemos mandarlo al siguiente campo si nos interesase.
     // Si queremos controlar en que campo estamos en el caso de que haya más de un campo TextField, podríamos hacerlo preguntando
     
-    if ( textField == _categoryName ) {
-        NSLog( @"efectivamente estamos en el campo : %@", textField);
-    }
-    [textField resignFirstResponder];
+    
+//    [textField resignFirstResponder];
+    
     return YES;
 }
 
+
 -(void)textFieldDidEndEditing:(UITextField *)textField{
-    self.category.name = textField.text;
-    NSLog(@"Pasa por aquí y ha escrito : %@", textField.text);
+    // Si está bien quitamos el foco para que desaparezca el teclado ( o podemos mandarlo al siguiente campo si nos interesase.
+    // Si queremos controlar en que campo estamos en el caso de que haya más de un campo TextField, podríamos hacerlo preguntando
+    // por
+    
+    if ( [textField.text isEqualToString:@""] ){
+        
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle: @"Warning !!!"
+                                                          message: @"Este campo no se puede dejar vacío"
+                                                         delegate: nil
+                                                cancelButtonTitle: @"I Know"
+                                                otherButtonTitles: nil];
+        [message show];
+        [textField becomeFirstResponder];
+        [textField setHighlighted:YES];
+        
+    }else{
+        if ( ![textField.text isEqual: self.category.name] ) {
+            self.category.name = textField.text;
+        }
+        [textField resignFirstResponder];
+    }
 }
 
 

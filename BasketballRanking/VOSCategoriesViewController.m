@@ -10,6 +10,7 @@
 #import "VOSCategory.h"
 #import "VOSCategoryTableViewCell.h"
 #import "VOSGroup.h"
+#import "VOSGroupsViewController.h"
 
 @interface VOSCategoriesViewController ()
 
@@ -48,7 +49,7 @@
 -(UITableViewCell *) tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    // Averiguamos de qué libreta me hablan
+    // Averiguamos de qué categoría me hablan
     VOSCategory * cat = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     // creo una celda
@@ -58,6 +59,10 @@
     // La configuro ( sincronizo modelo y vista )
     cell.categoryName.text = cat.name;
 //    cell.notesView.text = [NSString stringWithFormat:@"%lu", (unsigned long)nb.notes.count];
+
+    // asignamos la propia celda como su propio delegado para controlar cuando comienza la edición, cuando finaliza, etc...
+    cell.categoryName.delegate = cell;
+    cell.category = cat;
     
     // la devuelvo
     return cell;
@@ -90,7 +95,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
 #pragma mark - Delegate
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    // Averiguar cual fue la libreta seleccionada
+    NSLog(@"Entra en la selección de una celda");
+    
+    // Averiguar cual fue la categoría seleccionada
     VOSCategory * cat = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     // Creo la selección de datos
@@ -109,18 +116,18 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
                                                                           managedObjectContext:self.fetchedResultsController.managedObjectContext
                                                                             sectionNameKeyPath:nil
                                                                                       cacheName:nil];
-/*
+
     // Creamos una instancia de controlador de Notas
-    VOSNotesViewController * navVC = [[VOSNotesViewController alloc] initWithFetchedResultsController:frc
-                                                                                              style:UITableViewStylePlain];
+    VOSGroupsViewController * grVC = [[VOSGroupsViewController alloc] initWithFetchedResultsController:frc
+                                                                                                 style:UITableViewStylePlain];
     
     // Le asignamos su libreta para que lo sepa
-    navVC.notebook = nb;
+    grVC.categ = cat;
     
     // Lo pusheo
-    [self.navigationController pushViewController:navVC
+    [self.navigationController pushViewController:grVC
                                          animated:YES];
-*/
+
     NSLog(@"Categoría seleccionada : %@", cat.name);
 }
 
@@ -128,9 +135,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
 
 #pragma mark - Actions
 -(void) addCategory:(id) sender{
-    [VOSCategory categoryWithName: @"Nueva categoría"
+    [VOSCategory categoryWithName: @"Input New Category Name"
                           context:self.fetchedResultsController.managedObjectContext];
-    
+   
 }
 
 @end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD77F6971A93718E0029F418 /* VOSGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */; };
+		AD77F69B1A9378FF0029F418 /* VOSGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */; };
+		AD77F69C1A9378FF0029F418 /* VOSGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */; };
 		AD78DD7F1A92B77A00541CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DD7E1A92B77A00541CC7 /* main.m */; };
 		AD78DD821A92B77A00541CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DD811A92B77A00541CC7 /* AppDelegate.m */; };
 		AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD78DD831A92B77A00541CC7 /* Images.xcassets */; };
@@ -51,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD77F6951A93718E0029F418 /* VOSGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSGroupsViewController.h; sourceTree = "<group>"; };
+		AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSGroupsViewController.m; sourceTree = "<group>"; };
+		AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSGroupTableViewCell.h; sourceTree = "<group>"; };
+		AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSGroupTableViewCell.m; sourceTree = "<group>"; };
+		AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSGroupTableViewCell.xib; sourceTree = "<group>"; };
 		AD78DD791A92B77A00541CC7 /* BasketballRanking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballRanking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD78DD7D1A92B77A00541CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD78DD7E1A92B77A00541CC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				AD78DD7B1A92B77A00541CC7 /* BasketballRanking */,
-				AD78DDE11A92C26700541CC7 /* Views */,
 				AD78DD8F1A92B77A00541CC7 /* BasketballRankingTests */,
 				AD78DD7A1A92B77A00541CC7 /* Products */,
 			);
@@ -158,10 +165,12 @@
 				AD78DD811A92B77A00541CC7 /* AppDelegate.m */,
 				AD78DD831A92B77A00541CC7 /* Images.xcassets */,
 				AD78DD851A92B77A00541CC7 /* LaunchScreen.xib */,
-				AD78DD7C1A92B77A00541CC7 /* Supporting Files */,
 				AD78DDD31A92C09600541CC7 /* Categories */,
 				AD78DDDA1A92C1BB00541CC7 /* Controllers */,
 				AD78DD9F1A92B79500541CC7 /* Models */,
+				ADAB43061A9341CB00D0D32D /* Resource */,
+				AD78DD7C1A92B77A00541CC7 /* Supporting Files */,
+				AD78DDE11A92C26700541CC7 /* Views */,
 			);
 			path = BasketballRanking;
 			sourceTree = "<group>";
@@ -262,6 +271,8 @@
 				AD78DDDC1A92C1F900541CC7 /* VOSCoreDataTableViewController.m */,
 				AD78DDE71A92C57800541CC7 /* VOSActionTableViewController.h */,
 				AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */,
+				AD77F6951A93718E0029F418 /* VOSGroupsViewController.h */,
+				AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -275,9 +286,18 @@
 				AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */,
 				AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */,
 				AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */,
+				AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */,
+				AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */,
+				AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */,
 			);
 			name = Views;
-			path = BasketballRanking;
+			sourceTree = "<group>";
+		};
+		ADAB43061A9341CB00D0D32D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +382,7 @@
 			files = (
 				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
 				AD78DD871A92B77A00541CC7 /* LaunchScreen.xib in Resources */,
+				AD77F69C1A9378FF0029F418 /* VOSGroupTableViewCell.xib in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
 				AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */,
 			);
@@ -399,8 +420,10 @@
 				AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */,
 				AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */,
 				AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */,
+				AD77F69B1A9378FF0029F418 /* VOSGroupTableViewCell.m in Sources */,
 				AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */,
 				AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */,
+				AD77F6971A93718E0029F418 /* VOSGroupsViewController.m in Sources */,
 				AD78DDB81A92BE8100541CC7 /* _VOSTeam.m in Sources */,
 				AD78DDD61A92C10400541CC7 /* UIViewController+Navigation.m in Sources */,
 				AD78DDCF1A92BE9C00541CC7 /* VOSStatistic.m in Sources */,
@@ -593,6 +616,7 @@
 				AD78DD981A92B77A00541CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD78DD991A92B77A00541CC7 /* Build configuration list for PBXNativeTarget "BasketballRankingTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +625,7 @@
 				AD78DD9B1A92B77A00541CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
