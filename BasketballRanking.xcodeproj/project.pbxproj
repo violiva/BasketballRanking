@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4D87121A96156000E08F03 /* VOSEditClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */; };
+		AD7134CC1A95EAD500F272CE /* VOSClubsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */; };
+		AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */; };
+		AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7134CF1A95FBFF00F272CE /* VOSClubNameTableViewCell.xib */; };
+		AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AD7134D21A95FF4400F272CE /* Dosis Book.TTF */; };
+		AD7134D81A96040A00F272CE /* VOSClubDirectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134D61A96040A00F272CE /* VOSClubDirectionTableViewCell.m */; };
+		AD7134D91A96040A00F272CE /* VOSClubDirectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7134D71A96040A00F272CE /* VOSClubDirectionTableViewCell.xib */; };
+		AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD7134DA1A96056900F272CE /* Photo_not_available.jpg */; };
+		AD7134E01A9605C600F272CE /* VOSClubLogoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134DE1A9605C600F272CE /* VOSClubLogoTableViewCell.m */; };
+		AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7134DF1A9605C600F272CE /* VOSClubLogoTableViewCell.xib */; };
 		AD77F6971A93718E0029F418 /* VOSGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */; };
 		AD77F69B1A9378FF0029F418 /* VOSGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */; };
 		AD77F69C1A9378FF0029F418 /* VOSGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */; };
@@ -41,6 +51,18 @@
 		AD78DDE91A92C57800541CC7 /* VOSActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */; };
 		AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */; };
 		AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */; };
+		AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD9B7D731A968E3700060D70 /* AmaticSC-Bold.ttf */; };
+		ADAB4BC71A964D48000B3054 /* VOSLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */; };
+		ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */; };
+		ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCA1A964FE0000B3054 /* UIImage+Alpha.m */; };
+		ADAB4BD01A964FE0000B3054 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */; };
+		ADAB4BD11A964FE0000B3054 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */; };
+		ADC6DC801A94FFC70022BAC9 /* _VOSClasification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7B1A94FFC70022BAC9 /* _VOSClasification.m */; };
+		ADC6DC811A94FFC70022BAC9 /* _VOSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7D1A94FFC70022BAC9 /* _VOSClub.m */; };
+		ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7F1A94FFC70022BAC9 /* _VOSLogo.m */; };
+		ADC6DC891A9500010022BAC9 /* VOSClasification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC841A9500010022BAC9 /* VOSClasification.m */; };
+		ADC6DC8A1A9500010022BAC9 /* VOSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC861A9500010022BAC9 /* VOSClub.m */; };
+		ADC6DC8B1A9500010022BAC9 /* VOSLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC881A9500010022BAC9 /* VOSLogo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +76,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD4D87101A96156000E08F03 /* VOSEditClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditClubViewController.h; sourceTree = "<group>"; };
+		AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditClubViewController.m; sourceTree = "<group>"; };
+		AD7134CA1A95EAD500F272CE /* VOSClubsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubsViewController.h; sourceTree = "<group>"; };
+		AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClubsViewController.m; sourceTree = "<group>"; };
+		AD7134CD1A95FBFF00F272CE /* VOSClubNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubNameTableViewCell.h; sourceTree = "<group>"; };
+		AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClubNameTableViewCell.m; sourceTree = "<group>"; };
+		AD7134CF1A95FBFF00F272CE /* VOSClubNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSClubNameTableViewCell.xib; sourceTree = "<group>"; };
+		AD7134D21A95FF4400F272CE /* Dosis Book.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis Book.TTF"; sourceTree = "<group>"; };
+		AD7134D51A96040A00F272CE /* VOSClubDirectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubDirectionTableViewCell.h; sourceTree = "<group>"; };
+		AD7134D61A96040A00F272CE /* VOSClubDirectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClubDirectionTableViewCell.m; sourceTree = "<group>"; };
+		AD7134D71A96040A00F272CE /* VOSClubDirectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSClubDirectionTableViewCell.xib; sourceTree = "<group>"; };
+		AD7134DA1A96056900F272CE /* Photo_not_available.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Photo_not_available.jpg; sourceTree = "<group>"; };
+		AD7134DD1A9605C600F272CE /* VOSClubLogoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubLogoTableViewCell.h; sourceTree = "<group>"; };
+		AD7134DE1A9605C600F272CE /* VOSClubLogoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClubLogoTableViewCell.m; sourceTree = "<group>"; };
+		AD7134DF1A9605C600F272CE /* VOSClubLogoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSClubLogoTableViewCell.xib; sourceTree = "<group>"; };
 		AD77F6951A93718E0029F418 /* VOSGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSGroupsViewController.h; sourceTree = "<group>"; };
 		AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSGroupsViewController.m; sourceTree = "<group>"; };
 		AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSGroupTableViewCell.h; sourceTree = "<group>"; };
@@ -120,6 +157,28 @@
 		AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSActionTableViewCell.h; sourceTree = "<group>"; };
 		AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSActionTableViewCell.m; sourceTree = "<group>"; };
 		AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSActionTableViewCell.xib; sourceTree = "<group>"; };
+		AD9B7D731A968E3700060D70 /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
+		ADAB4BC41A964D48000B3054 /* VOSLogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSLogoViewController.h; sourceTree = "<group>"; };
+		ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSLogoViewController.m; sourceTree = "<group>"; };
+		ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSLogoViewController.xib; sourceTree = "<group>"; };
+		ADAB4BC91A964FE0000B3054 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		ADAB4BCA1A964FE0000B3054 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		ADAB4BCB1A964FE0000B3054 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		ADAB4BCD1A964FE0000B3054 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		ADC6DC7A1A94FFC70022BAC9 /* _VOSClasification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSClasification.h; sourceTree = "<group>"; };
+		ADC6DC7B1A94FFC70022BAC9 /* _VOSClasification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSClasification.m; sourceTree = "<group>"; };
+		ADC6DC7C1A94FFC70022BAC9 /* _VOSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSClub.h; sourceTree = "<group>"; };
+		ADC6DC7D1A94FFC70022BAC9 /* _VOSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSClub.m; sourceTree = "<group>"; };
+		ADC6DC7E1A94FFC70022BAC9 /* _VOSLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSLogo.h; sourceTree = "<group>"; };
+		ADC6DC7F1A94FFC70022BAC9 /* _VOSLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSLogo.m; sourceTree = "<group>"; };
+		ADC6DC831A9500010022BAC9 /* VOSClasification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClasification.h; sourceTree = "<group>"; };
+		ADC6DC841A9500010022BAC9 /* VOSClasification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClasification.m; sourceTree = "<group>"; };
+		ADC6DC851A9500010022BAC9 /* VOSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClub.h; sourceTree = "<group>"; };
+		ADC6DC861A9500010022BAC9 /* VOSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClub.m; sourceTree = "<group>"; };
+		ADC6DC871A9500010022BAC9 /* VOSLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSLogo.h; sourceTree = "<group>"; };
+		ADC6DC881A9500010022BAC9 /* VOSLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSLogo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +199,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD7134D41A95FFBB00F272CE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD7134D21A95FF4400F272CE /* Dosis Book.TTF */,
+				AD9B7D731A968E3700060D70 /* AmaticSC-Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		AD7134DC1A96057200F272CE /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				AD7134DA1A96056900F272CE /* Photo_not_available.jpg */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		AD78DD701A92B77A00541CC7 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +283,12 @@
 			isa = PBXGroup;
 			children = (
 				AD78DD9C1A92B78E00541CC7 /* Model.xcdatamodeld */,
+				ADC6DC831A9500010022BAC9 /* VOSClasification.h */,
+				ADC6DC841A9500010022BAC9 /* VOSClasification.m */,
+				ADC6DC851A9500010022BAC9 /* VOSClub.h */,
+				ADC6DC861A9500010022BAC9 /* VOSClub.m */,
+				ADC6DC871A9500010022BAC9 /* VOSLogo.h */,
+				ADC6DC881A9500010022BAC9 /* VOSLogo.m */,
 				AD78DDD71A92C1AA00541CC7 /* VOSCoreDataStack.h */,
 				AD78DDD81A92C1AA00541CC7 /* VOSCoreDataStack.m */,
 				AD78DDB91A92BE9C00541CC7 /* VOSAction.h */,
@@ -233,6 +315,12 @@
 		AD78DDA01A92BD9C00541CC7 /* Machine */ = {
 			isa = PBXGroup;
 			children = (
+				ADC6DC7A1A94FFC70022BAC9 /* _VOSClasification.h */,
+				ADC6DC7B1A94FFC70022BAC9 /* _VOSClasification.m */,
+				ADC6DC7C1A94FFC70022BAC9 /* _VOSClub.h */,
+				ADC6DC7D1A94FFC70022BAC9 /* _VOSClub.m */,
+				ADC6DC7E1A94FFC70022BAC9 /* _VOSLogo.h */,
+				ADC6DC7F1A94FFC70022BAC9 /* _VOSLogo.m */,
 				AD78DDA11A92BE8100541CC7 /* _VOSAction.h */,
 				AD78DDA21A92BE8100541CC7 /* _VOSAction.m */,
 				AD78DDA31A92BE8100541CC7 /* _VOSCategory.h */,
@@ -258,6 +346,12 @@
 			children = (
 				AD78DDD41A92C10400541CC7 /* UIViewController+Navigation.h */,
 				AD78DDD51A92C10400541CC7 /* UIViewController+Navigation.m */,
+				ADAB4BC91A964FE0000B3054 /* UIImage+Alpha.h */,
+				ADAB4BCA1A964FE0000B3054 /* UIImage+Alpha.m */,
+				ADAB4BCB1A964FE0000B3054 /* UIImage+Resize.h */,
+				ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */,
+				ADAB4BCD1A964FE0000B3054 /* UIImage+RoundedCorner.h */,
+				ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -267,12 +361,19 @@
 			children = (
 				AD78DDDE1A92C24F00541CC7 /* VOSCategoriesViewController.h */,
 				AD78DDDF1A92C24F00541CC7 /* VOSCategoriesViewController.m */,
+				AD7134CA1A95EAD500F272CE /* VOSClubsViewController.h */,
+				AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */,
 				AD78DDDB1A92C1F900541CC7 /* VOSCoreDataTableViewController.h */,
 				AD78DDDC1A92C1F900541CC7 /* VOSCoreDataTableViewController.m */,
 				AD78DDE71A92C57800541CC7 /* VOSActionTableViewController.h */,
 				AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */,
 				AD77F6951A93718E0029F418 /* VOSGroupsViewController.h */,
 				AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */,
+				AD4D87101A96156000E08F03 /* VOSEditClubViewController.h */,
+				AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */,
+				ADAB4BC41A964D48000B3054 /* VOSLogoViewController.h */,
+				ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */,
+				ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +390,15 @@
 				AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */,
 				AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */,
 				AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */,
+				AD7134CD1A95FBFF00F272CE /* VOSClubNameTableViewCell.h */,
+				AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */,
+				AD7134CF1A95FBFF00F272CE /* VOSClubNameTableViewCell.xib */,
+				AD7134D51A96040A00F272CE /* VOSClubDirectionTableViewCell.h */,
+				AD7134D61A96040A00F272CE /* VOSClubDirectionTableViewCell.m */,
+				AD7134D71A96040A00F272CE /* VOSClubDirectionTableViewCell.xib */,
+				AD7134DD1A9605C600F272CE /* VOSClubLogoTableViewCell.h */,
+				AD7134DE1A9605C600F272CE /* VOSClubLogoTableViewCell.m */,
+				AD7134DF1A9605C600F272CE /* VOSClubLogoTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -296,6 +406,8 @@
 		ADAB43061A9341CB00D0D32D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AD7134DC1A96057200F272CE /* Image */,
+				AD7134D41A95FFBB00F272CE /* Fonts */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -380,11 +492,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */,
 				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
+				AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */,
+				AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */,
+				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
 				AD78DD871A92B77A00541CC7 /* LaunchScreen.xib in Resources */,
 				AD77F69C1A9378FF0029F418 /* VOSGroupTableViewCell.xib in Resources */,
+				AD7134D91A96040A00F272CE /* VOSClubDirectionTableViewCell.xib in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
+				AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */,
 				AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */,
+				AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,9 +522,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD78DDCA1A92BE9C00541CC7 /* VOSCategory.m in Sources */,
+				ADC6DC8B1A9500010022BAC9 /* VOSLogo.m in Sources */,
 				AD78DDC91A92BE9C00541CC7 /* VOSAction.m in Sources */,
+				AD7134CC1A95EAD500F272CE /* VOSClubsViewController.m in Sources */,
+				AD7134D81A96040A00F272CE /* VOSClubDirectionTableViewCell.m in Sources */,
+				ADC6DC811A94FFC70022BAC9 /* _VOSClub.m in Sources */,
+				AD4D87121A96156000E08F03 /* VOSEditClubViewController.m in Sources */,
 				AD78DDB31A92BE8100541CC7 /* _VOSGame.m in Sources */,
 				AD78DDE91A92C57800541CC7 /* VOSActionTableViewController.m in Sources */,
+				AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */,
 				AD78DDD01A92BE9C00541CC7 /* VOSTeam.m in Sources */,
 				AD78DDCD1A92BE9C00541CC7 /* VOSPhotoContainer.m in Sources */,
 				AD78DDD91A92C1AA00541CC7 /* VOSCoreDataStack.m in Sources */,
@@ -413,23 +538,32 @@
 				AD78DDB11A92BE8100541CC7 /* _VOSAction.m in Sources */,
 				AD78DDB41A92BE8100541CC7 /* _VOSGroup.m in Sources */,
 				AD78DDB51A92BE8100541CC7 /* _VOSPhotoContainer.m in Sources */,
+				ADC6DC8A1A9500010022BAC9 /* VOSClub.m in Sources */,
+				ADAB4BC71A964D48000B3054 /* VOSLogoViewController.m in Sources */,
 				AD78DDCB1A92BE9C00541CC7 /* VOSGame.m in Sources */,
+				ADC6DC801A94FFC70022BAC9 /* _VOSClasification.m in Sources */,
+				AD7134E01A9605C600F272CE /* VOSClubLogoTableViewCell.m in Sources */,
 				AD78DD821A92B77A00541CC7 /* AppDelegate.m in Sources */,
 				AD78DDB61A92BE8100541CC7 /* _VOSPlayer.m in Sources */,
 				AD78DD7F1A92B77A00541CC7 /* main.m in Sources */,
 				AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */,
+				ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */,
 				AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */,
 				AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */,
+				ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */,
 				AD77F69B1A9378FF0029F418 /* VOSGroupTableViewCell.m in Sources */,
 				AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */,
 				AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */,
+				ADAB4BD11A964FE0000B3054 /* UIImage+RoundedCorner.m in Sources */,
 				AD77F6971A93718E0029F418 /* VOSGroupsViewController.m in Sources */,
 				AD78DDB81A92BE8100541CC7 /* _VOSTeam.m in Sources */,
 				AD78DDD61A92C10400541CC7 /* UIViewController+Navigation.m in Sources */,
 				AD78DDCF1A92BE9C00541CC7 /* VOSStatistic.m in Sources */,
 				AD78DDCC1A92BE9C00541CC7 /* VOSGroup.m in Sources */,
 				AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */,
+				ADC6DC891A9500010022BAC9 /* VOSClasification.m in Sources */,
 				AD78DDB71A92BE8100541CC7 /* _VOSStatistic.m in Sources */,
+				ADAB4BD01A964FE0000B3054 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

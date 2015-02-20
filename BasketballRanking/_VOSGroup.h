@@ -5,15 +5,18 @@
 
 extern const struct VOSGroupAttributes {
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *year;
 } VOSGroupAttributes;
 
 extern const struct VOSGroupRelationships {
 	__unsafe_unretained NSString *category;
-	__unsafe_unretained NSString *team;
+	__unsafe_unretained NSString *clasification;
+	__unsafe_unretained NSString *game;
 } VOSGroupRelationships;
 
 @class VOSCategory;
-@class VOSTeam;
+@class VOSClasification;
+@class VOSGame;
 
 @interface VOSGroupID : NSManagedObjectID {}
 @end
@@ -28,21 +31,41 @@ extern const struct VOSGroupRelationships {
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber* year;
+
+@property (atomic) int16_t yearValue;
+- (int16_t)yearValue;
+- (void)setYearValue:(int16_t)value_;
+
+//- (BOOL)validateYear:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) VOSCategory *category;
 
 //- (BOOL)validateCategory:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) NSSet *team;
+@property (nonatomic, strong) NSSet *clasification;
 
-- (NSMutableSet*)teamSet;
+- (NSMutableSet*)clasificationSet;
+
+@property (nonatomic, strong) NSSet *game;
+
+- (NSMutableSet*)gameSet;
 
 @end
 
-@interface _VOSGroup (TeamCoreDataGeneratedAccessors)
-- (void)addTeam:(NSSet*)value_;
-- (void)removeTeam:(NSSet*)value_;
-- (void)addTeamObject:(VOSTeam*)value_;
-- (void)removeTeamObject:(VOSTeam*)value_;
+@interface _VOSGroup (ClasificationCoreDataGeneratedAccessors)
+- (void)addClasification:(NSSet*)value_;
+- (void)removeClasification:(NSSet*)value_;
+- (void)addClasificationObject:(VOSClasification*)value_;
+- (void)removeClasificationObject:(VOSClasification*)value_;
+
+@end
+
+@interface _VOSGroup (GameCoreDataGeneratedAccessors)
+- (void)addGame:(NSSet*)value_;
+- (void)removeGame:(NSSet*)value_;
+- (void)addGameObject:(VOSGame*)value_;
+- (void)removeGameObject:(VOSGame*)value_;
 
 @end
 
@@ -51,10 +74,19 @@ extern const struct VOSGroupRelationships {
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
 
+- (NSNumber*)primitiveYear;
+- (void)setPrimitiveYear:(NSNumber*)value;
+
+- (int16_t)primitiveYearValue;
+- (void)setPrimitiveYearValue:(int16_t)value_;
+
 - (VOSCategory*)primitiveCategory;
 - (void)setPrimitiveCategory:(VOSCategory*)value;
 
-- (NSMutableSet*)primitiveTeam;
-- (void)setPrimitiveTeam:(NSMutableSet*)value;
+- (NSMutableSet*)primitiveClasification;
+- (void)setPrimitiveClasification:(NSMutableSet*)value;
+
+- (NSMutableSet*)primitiveGame;
+- (void)setPrimitiveGame:(NSMutableSet*)value;
 
 @end

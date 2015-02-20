@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOSLogoViewController">
+            <connections>
+                <outlet property="logoView" destination="yN6-tC-pkl" id="b6e-j0-5wO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yN6-tC-pkl">
+                    <rect key="frame" x="8" y="73" width="584" height="475"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBM-1E-Ctg">
+                    <rect key="frame" x="8" y="548" width="584" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="uWB-il-A9V"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="camera" id="LzH-Lq-d08">
+                            <connections>
+                                <action selector="takePhoto:" destination="-1" id="3cd-7j-5cw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="jd5-MH-xWZ"/>
+                        <barButtonItem systemItem="trash" id="nJS-Cg-BJ3">
+                            <connections>
+                                <action selector="deletePhoto:" destination="-1" id="83T-q4-dL7"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yN6-tC-pkl" secondAttribute="trailing" constant="8" id="9h6-46-o1w"/>
+                <constraint firstItem="xBM-1E-Ctg" firstAttribute="top" secondItem="yN6-tC-pkl" secondAttribute="bottom" id="EXt-hi-mA0"/>
+                <constraint firstItem="xBM-1E-Ctg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Lfg-rw-3gQ"/>
+                <constraint firstAttribute="trailing" secondItem="xBM-1E-Ctg" secondAttribute="trailing" constant="8" id="SXl-Xy-SbB"/>
+                <constraint firstItem="yN6-tC-pkl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="UBd-fl-zfI"/>
+                <constraint firstAttribute="bottom" secondItem="xBM-1E-Ctg" secondAttribute="bottom" constant="8" id="cbw-kt-QJG"/>
+                <constraint firstItem="yN6-tC-pkl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="khv-lc-d4B"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

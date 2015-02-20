@@ -6,10 +6,13 @@
 const struct VOSGameAttributes VOSGameAttributes = {
 	.date = @"date",
 	.localization = @"localization",
+	.pointHome = @"pointHome",
+	.pointVisit = @"pointVisit",
 };
 
 const struct VOSGameRelationships VOSGameRelationships = {
 	.awayTeam = @"awayTeam",
+	.group = @"group",
 	.homeTeam = @"homeTeam",
 	.statistic = @"statistic",
 };
@@ -40,6 +43,17 @@ const struct VOSGameRelationships VOSGameRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"pointHomeValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"pointHome"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+	if ([key isEqualToString:@"pointVisitValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"pointVisit"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+
 	return keyPaths;
 }
 
@@ -47,7 +61,49 @@ const struct VOSGameRelationships VOSGameRelationships = {
 
 @dynamic localization;
 
+@dynamic pointHome;
+
+- (int16_t)pointHomeValue {
+	NSNumber *result = [self pointHome];
+	return [result shortValue];
+}
+
+- (void)setPointHomeValue:(int16_t)value_ {
+	[self setPointHome:@(value_)];
+}
+
+- (int16_t)primitivePointHomeValue {
+	NSNumber *result = [self primitivePointHome];
+	return [result shortValue];
+}
+
+- (void)setPrimitivePointHomeValue:(int16_t)value_ {
+	[self setPrimitivePointHome:@(value_)];
+}
+
+@dynamic pointVisit;
+
+- (int16_t)pointVisitValue {
+	NSNumber *result = [self pointVisit];
+	return [result shortValue];
+}
+
+- (void)setPointVisitValue:(int16_t)value_ {
+	[self setPointVisit:@(value_)];
+}
+
+- (int16_t)primitivePointVisitValue {
+	NSNumber *result = [self primitivePointVisit];
+	return [result shortValue];
+}
+
+- (void)setPrimitivePointVisitValue:(int16_t)value_ {
+	[self setPrimitivePointVisit:@(value_)];
+}
+
 @dynamic awayTeam;
+
+@dynamic group;
 
 @dynamic homeTeam;
 

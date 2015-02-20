@@ -13,6 +13,8 @@
 #import "UIViewController+Navigation.h"
 #import "VOSAction.h"
 #import "VOSActionTableViewController.h"
+#import "VOSClub.h"
+#import "VOSClubsViewController.h"
 
 #define ACTION_TABLE_CREATED @"SAVED"
 
@@ -36,7 +38,8 @@
     // Es una tabla fija y se debe de crear sólo la primera vez que entra en la aplicación.
     [self createActionTable:self.stack.context];
     
-    // Creamos el conjunto de datos
+/*
+    // Creamos el conjunto de datos de Categorías
     NSFetchRequest * r = [NSFetchRequest fetchRequestWithEntityName:[VOSCategory entityName]];
     r.fetchBatchSize = 30;
     r.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSCategoryAttributes.name
@@ -51,12 +54,38 @@
     
     VOSCategoriesViewController * catVC = [[VOSCategoriesViewController alloc] initWithFetchedResultsController:frc
                                                                                                           style:UITableViewStylePlain];
-  
-    self.window.rootViewController = [catVC vosWrappedInNavigation];
+*/
+    
+    // Creamos el conjunto de datos de Clubes
+    NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSClub entityName]];
+    req.fetchBatchSize = 30;
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSClubAttributes.name
+                                                         ascending:YES
+                                                          selector:@selector(caseInsensitiveCompare:)] ];
+    
+    
+    NSFetchedResultsController * frcClub = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                           managedObjectContext:self.stack.context
+                                                                             sectionNameKeyPath:nil
+                                                                                      cacheName:nil ];
+    
+    VOSClubsViewController * clubVC = [[VOSClubsViewController alloc] initWithFetchedResultsController:frcClub
+                                                                                                 style:UITableViewStylePlain];
+/*
+    // despues creamos el combinador
+    UITabBarController * tabVC =  [[UITabBarController alloc] init];
+    
+    // Cargamos el array con los controladores que se tienen que mostrar en el combinador
+    tabVC.viewControllers = @[catVC, clubVC];
+*/
+    // lo asignamos como controlador raiz
+    self.window.rootViewController = [clubVC vosWrappedInNavigation];
+    
+
+    
     
     // Arrancamos el autoguardado
     [self autosave];
-    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

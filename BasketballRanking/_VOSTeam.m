@@ -6,12 +6,14 @@
 const struct VOSTeamAttributes VOSTeamAttributes = {
 	.colour = @"colour",
 	.name = @"name",
+	.year = @"year",
 };
 
 const struct VOSTeamRelationships VOSTeamRelationships = {
+	.clasification = @"clasification",
+	.club = @"club",
 	.gamesPlayHome = @"gamesPlayHome",
 	.gamesPlayOut = @"gamesPlayOut",
-	.group = @"group",
 	.players = @"players",
 };
 
@@ -41,12 +43,51 @@ const struct VOSTeamRelationships VOSTeamRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"yearValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"year"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+
 	return keyPaths;
 }
 
 @dynamic colour;
 
 @dynamic name;
+
+@dynamic year;
+
+- (int16_t)yearValue {
+	NSNumber *result = [self year];
+	return [result shortValue];
+}
+
+- (void)setYearValue:(int16_t)value_ {
+	[self setYear:@(value_)];
+}
+
+- (int16_t)primitiveYearValue {
+	NSNumber *result = [self primitiveYear];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveYearValue:(int16_t)value_ {
+	[self setPrimitiveYear:@(value_)];
+}
+
+@dynamic clasification;
+
+- (NSMutableSet*)clasificationSet {
+	[self willAccessValueForKey:@"clasification"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"clasification"];
+
+	[self didAccessValueForKey:@"clasification"];
+	return result;
+}
+
+@dynamic club;
 
 @dynamic gamesPlayHome;
 
@@ -67,17 +108,6 @@ const struct VOSTeamRelationships VOSTeamRelationships = {
 	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"gamesPlayOut"];
 
 	[self didAccessValueForKey:@"gamesPlayOut"];
-	return result;
-}
-
-@dynamic group;
-
-- (NSMutableSet*)groupSet {
-	[self willAccessValueForKey:@"group"];
-
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"group"];
-
-	[self didAccessValueForKey:@"group"];
 	return result;
 }
 

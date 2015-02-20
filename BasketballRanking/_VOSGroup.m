@@ -5,11 +5,13 @@
 
 const struct VOSGroupAttributes VOSGroupAttributes = {
 	.name = @"name",
+	.year = @"year",
 };
 
 const struct VOSGroupRelationships VOSGroupRelationships = {
 	.category = @"category",
-	.team = @"team",
+	.clasification = @"clasification",
+	.game = @"game",
 };
 
 @implementation VOSGroupID
@@ -38,21 +40,58 @@ const struct VOSGroupRelationships VOSGroupRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"yearValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"year"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+
 	return keyPaths;
 }
 
 @dynamic name;
 
+@dynamic year;
+
+- (int16_t)yearValue {
+	NSNumber *result = [self year];
+	return [result shortValue];
+}
+
+- (void)setYearValue:(int16_t)value_ {
+	[self setYear:@(value_)];
+}
+
+- (int16_t)primitiveYearValue {
+	NSNumber *result = [self primitiveYear];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveYearValue:(int16_t)value_ {
+	[self setPrimitiveYear:@(value_)];
+}
+
 @dynamic category;
 
-@dynamic team;
+@dynamic clasification;
 
-- (NSMutableSet*)teamSet {
-	[self willAccessValueForKey:@"team"];
+- (NSMutableSet*)clasificationSet {
+	[self willAccessValueForKey:@"clasification"];
 
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"team"];
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"clasification"];
 
-	[self didAccessValueForKey:@"team"];
+	[self didAccessValueForKey:@"clasification"];
+	return result;
+}
+
+@dynamic game;
+
+- (NSMutableSet*)gameSet {
+	[self willAccessValueForKey:@"game"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"game"];
+
+	[self didAccessValueForKey:@"game"];
 	return result;
 }
 

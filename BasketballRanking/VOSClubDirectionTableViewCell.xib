@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis Book.TTF">
+            <string>Dosis-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="VOSClubDirectionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="785" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIG-4G-eWV">
+                        <rect key="frame" x="8" y="8" width="769" height="68"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HIG-4G-eWV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="9Jg-sy-af3"/>
+                    <constraint firstItem="HIG-4G-eWV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="g1O-GT-hap"/>
+                    <constraint firstItem="HIG-4G-eWV" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="p9M-r8-7gs"/>
+                    <constraint firstItem="HIG-4G-eWV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xLr-v7-aV0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressField" destination="HIG-4G-eWV" id="m2K-CZ-soB"/>
+            </connections>
+            <point key="canvasLocation" x="364.5" y="400.5"/>
+        </tableViewCell>
+    </objects>
+</document>
