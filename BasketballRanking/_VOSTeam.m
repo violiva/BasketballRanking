@@ -14,6 +14,7 @@ const struct VOSTeamRelationships VOSTeamRelationships = {
 	.club = @"club",
 	.gamesPlayHome = @"gamesPlayHome",
 	.gamesPlayOut = @"gamesPlayOut",
+	.group = @"group",
 	.players = @"players",
 };
 
@@ -108,6 +109,17 @@ const struct VOSTeamRelationships VOSTeamRelationships = {
 	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"gamesPlayOut"];
 
 	[self didAccessValueForKey:@"gamesPlayOut"];
+	return result;
+}
+
+@dynamic group;
+
+- (NSMutableSet*)groupSet {
+	[self willAccessValueForKey:@"group"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"group"];
+
+	[self didAccessValueForKey:@"group"];
 	return result;
 }
 

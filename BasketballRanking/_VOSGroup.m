@@ -10,8 +10,8 @@ const struct VOSGroupAttributes VOSGroupAttributes = {
 
 const struct VOSGroupRelationships VOSGroupRelationships = {
 	.category = @"category",
-	.clasification = @"clasification",
 	.game = @"game",
+	.teams = @"teams",
 };
 
 @implementation VOSGroupID
@@ -73,17 +73,6 @@ const struct VOSGroupRelationships VOSGroupRelationships = {
 
 @dynamic category;
 
-@dynamic clasification;
-
-- (NSMutableSet*)clasificationSet {
-	[self willAccessValueForKey:@"clasification"];
-
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"clasification"];
-
-	[self didAccessValueForKey:@"clasification"];
-	return result;
-}
-
 @dynamic game;
 
 - (NSMutableSet*)gameSet {
@@ -92,6 +81,17 @@ const struct VOSGroupRelationships VOSGroupRelationships = {
 	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"game"];
 
 	[self didAccessValueForKey:@"game"];
+	return result;
+}
+
+@dynamic teams;
+
+- (NSMutableSet*)teamsSet {
+	[self willAccessValueForKey:@"teams"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"teams"];
+
+	[self didAccessValueForKey:@"teams"];
 	return result;
 }
 

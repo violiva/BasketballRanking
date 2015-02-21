@@ -31,6 +31,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    
     // creamos el stack
     self.stack = [VOSCoreDataStack coreDataStackWithModelName:@"Model"];
     
@@ -38,7 +39,7 @@
     // Es una tabla fija y se debe de crear sólo la primera vez que entra en la aplicación.
     [self createActionTable:self.stack.context];
     
-/*
+ /*--------------------------------------------------------------
     // Creamos el conjunto de datos de Categorías
     NSFetchRequest * r = [NSFetchRequest fetchRequestWithEntityName:[VOSCategory entityName]];
     r.fetchBatchSize = 30;
@@ -54,7 +55,10 @@
     
     VOSCategoriesViewController * catVC = [[VOSCategoriesViewController alloc] initWithFetchedResultsController:frc
                                                                                                           style:UITableViewStylePlain];
-*/
+ ---------------------------------------------------------------*/
+    
+    
+//    /*--------------------------------------------------------------
     
     // Creamos el conjunto de datos de Clubes
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSClub entityName]];
@@ -71,19 +75,22 @@
     
     VOSClubsViewController * clubVC = [[VOSClubsViewController alloc] initWithFetchedResultsController:frcClub
                                                                                                  style:UITableViewStylePlain];
-/*
+    
+//    UINavigationController * clubNav = [[UINavigationController alloc] initWithRootViewController:clubVC];
+//    ---------------------------------------------------------------*/
+    
+
     // despues creamos el combinador
-    UITabBarController * tabVC =  [[UITabBarController alloc] init];
+//    UITabBarController * tabVC =  [[UITabBarController alloc] init];
     
     // Cargamos el array con los controladores que se tienen que mostrar en el combinador
-    tabVC.viewControllers = @[catVC, clubVC];
-*/
+//    tabVC.viewControllers = @[catVC, clubNav];
+
+    
     // lo asignamos como controlador raiz
     self.window.rootViewController = [clubVC vosWrappedInNavigation];
     
-
-    
-    
+  
     // Arrancamos el autoguardado
     [self autosave];
     
@@ -104,7 +111,7 @@
     
     if ( AUTO_SAVE ){
         
-        NSLog(@"Autoguardando...");
+        NSLog( @"Autosave ..." );
         [self save];
         [self performSelector:@selector(autosave)
                    withObject:nil

@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 @class VOSClub;
 
-@interface VOSClubLogoTableViewCell : UITableViewCell 
+@interface VOSClubLogoTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoClub;
 @property (strong, nonatomic) VOSClub * club;
+
+- (IBAction)btnAction:(id)sender;
 
 +(CGFloat)height;
 +(NSString *)cellId;

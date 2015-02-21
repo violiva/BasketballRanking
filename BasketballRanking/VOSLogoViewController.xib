@@ -16,10 +16,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yN6-tC-pkl">
-                    <rect key="frame" x="8" y="73" width="584" height="475"/>
+                    <rect key="frame" x="8" y="73" width="584" height="519"/>
                 </imageView>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBM-1E-Ctg">
-                    <rect key="frame" x="8" y="548" width="584" height="44"/>
+                    <rect key="frame" x="8" y="29" width="584" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="uWB-il-A9V"/>
                     </constraints>
@@ -40,13 +40,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="yN6-tC-pkl" secondAttribute="trailing" constant="8" id="9h6-46-o1w"/>
-                <constraint firstItem="xBM-1E-Ctg" firstAttribute="top" secondItem="yN6-tC-pkl" secondAttribute="bottom" id="EXt-hi-mA0"/>
-                <constraint firstItem="xBM-1E-Ctg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Lfg-rw-3gQ"/>
-                <constraint firstAttribute="trailing" secondItem="xBM-1E-Ctg" secondAttribute="trailing" constant="8" id="SXl-Xy-SbB"/>
-                <constraint firstItem="yN6-tC-pkl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="UBd-fl-zfI"/>
-                <constraint firstAttribute="bottom" secondItem="xBM-1E-Ctg" secondAttribute="bottom" constant="8" id="cbw-kt-QJG"/>
-                <constraint firstItem="yN6-tC-pkl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="khv-lc-d4B"/>
+                <constraint firstAttribute="trailing" secondItem="yN6-tC-pkl" secondAttribute="trailing" constant="8" id="Hhg-Ez-1qW"/>
+                <constraint firstItem="yN6-tC-pkl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="K4C-81-ajj"/>
+                <constraint firstAttribute="trailing" secondItem="xBM-1E-Ctg" secondAttribute="trailing" constant="8" id="N4E-gN-zf1"/>
+                <constraint firstItem="xBM-1E-Ctg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="UJ8-4G-LHe"/>
+                <constraint firstItem="yN6-tC-pkl" firstAttribute="top" secondItem="xBM-1E-Ctg" secondAttribute="bottom" id="VQo-9C-d9w"/>
+                <constraint firstAttribute="bottom" secondItem="yN6-tC-pkl" secondAttribute="bottom" constant="8" id="jXF-gq-Cbg"/>
+                <constraint firstItem="xBM-1E-Ctg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="uHA-hQ-a8D"/>
             </constraints>
         </view>
     </objects>

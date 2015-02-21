@@ -14,6 +14,7 @@ extern const struct VOSTeamRelationships {
 	__unsafe_unretained NSString *club;
 	__unsafe_unretained NSString *gamesPlayHome;
 	__unsafe_unretained NSString *gamesPlayOut;
+	__unsafe_unretained NSString *group;
 	__unsafe_unretained NSString *players;
 } VOSTeamRelationships;
 
@@ -21,6 +22,7 @@ extern const struct VOSTeamRelationships {
 @class VOSClub;
 @class VOSGame;
 @class VOSGame;
+@class VOSGroup;
 @class VOSPlayer;
 
 @interface VOSTeamID : NSManagedObjectID {}
@@ -64,6 +66,10 @@ extern const struct VOSTeamRelationships {
 
 - (NSMutableSet*)gamesPlayOutSet;
 
+@property (nonatomic, strong) NSSet *group;
+
+- (NSMutableSet*)groupSet;
+
 @property (nonatomic, strong) NSSet *players;
 
 - (NSMutableSet*)playersSet;
@@ -91,6 +97,14 @@ extern const struct VOSTeamRelationships {
 - (void)removeGamesPlayOut:(NSSet*)value_;
 - (void)addGamesPlayOutObject:(VOSGame*)value_;
 - (void)removeGamesPlayOutObject:(VOSGame*)value_;
+
+@end
+
+@interface _VOSTeam (GroupCoreDataGeneratedAccessors)
+- (void)addGroup:(NSSet*)value_;
+- (void)removeGroup:(NSSet*)value_;
+- (void)addGroupObject:(VOSGroup*)value_;
+- (void)removeGroupObject:(VOSGroup*)value_;
 
 @end
 
@@ -127,6 +141,9 @@ extern const struct VOSTeamRelationships {
 
 - (NSMutableSet*)primitiveGamesPlayOut;
 - (void)setPrimitiveGamesPlayOut:(NSMutableSet*)value;
+
+- (NSMutableSet*)primitiveGroup;
+- (void)setPrimitiveGroup:(NSMutableSet*)value;
 
 - (NSMutableSet*)primitivePlayers;
 - (void)setPrimitivePlayers:(NSMutableSet*)value;

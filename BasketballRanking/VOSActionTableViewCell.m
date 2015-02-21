@@ -21,8 +21,6 @@
     self.actionNameView.text = action.name;
     
     [self setEditing:YES];
-    NSLog(@"pasa por aquí");
-    
 }
 
 #pragma mark - Class methods

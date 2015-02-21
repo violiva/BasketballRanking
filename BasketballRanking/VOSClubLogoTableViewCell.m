@@ -25,6 +25,10 @@
 }
 
 #pragma mark - Class Methods
+- (IBAction)btnAction:(id)sender {
+    NSLog(@"Pulso el botón");
+}
+
 +(CGFloat)height{
     return 320.0f;
 }

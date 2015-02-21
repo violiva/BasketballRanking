@@ -19,19 +19,6 @@
     club.address = nil;
     club.logo.photoData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Photo_not_available"
                                                                      withExtension:@"jpg"]];
-
-    /*
-    NSURL * defaultLogoURL = [[NSBundle mainBundle] URLForResource:@"Photo_not_available"
-                                      withExtension:@"jpg"];
-    NSData * defaultLogo = [NSData dataWithContentsOfURL:defaultLogoURL];
-    club.logo = defaultLogo;
-
-    
-    
-    club.logo = [UIImage imageNamed:@"Photo_not_available.jpg"];
-    club.logo = [NSData dataWithContentsOfURL:defaultLogoURL];
-    */
-    
     return club;
 }
 

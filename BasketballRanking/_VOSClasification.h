@@ -15,11 +15,9 @@ extern const struct VOSClasificationAttributes {
 } VOSClasificationAttributes;
 
 extern const struct VOSClasificationRelationships {
-	__unsafe_unretained NSString *group;
 	__unsafe_unretained NSString *team;
 } VOSClasificationRelationships;
 
-@class VOSGroup;
 @class VOSTeam;
 
 @interface VOSClasificationID : NSManagedObjectID {}
@@ -95,10 +93,6 @@ extern const struct VOSClasificationRelationships {
 
 //- (BOOL)validateTotalPoints:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) VOSGroup *group;
-
-//- (BOOL)validateGroup:(id*)value_ error:(NSError**)error_;
-
 @property (nonatomic, strong) VOSTeam *team;
 
 //- (BOOL)validateTeam:(id*)value_ error:(NSError**)error_;
@@ -154,9 +148,6 @@ extern const struct VOSClasificationRelationships {
 
 - (int16_t)primitiveTotalPointsValue;
 - (void)setPrimitiveTotalPointsValue:(int16_t)value_;
-
-- (VOSGroup*)primitiveGroup;
-- (void)setPrimitiveGroup:(VOSGroup*)value;
 
 - (VOSTeam*)primitiveTeam;
 - (void)setPrimitiveTeam:(VOSTeam*)value;

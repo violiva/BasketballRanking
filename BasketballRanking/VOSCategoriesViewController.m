@@ -55,6 +55,10 @@
     // creo una celda
     VOSCategoryTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[VOSCategoryTableViewCell cellId]
                                                                       forIndexPath:indexPath];
+    if (cell == nil ){
+        cell = [[VOSCategoryTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[VOSCategoryTableViewCell cellId]];
+    }
+    
     
     // La configuro ( sincronizo modelo y vista )
     cell.categoryName.text = cat.name;

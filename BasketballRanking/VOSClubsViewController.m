@@ -27,11 +27,13 @@
     UIBarButtonItem * b = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                         target:self
                                                                         action:@selector( addClub: )];
-    
     self.navigationItem.rightBarButtonItem = b;
-    
+
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadData];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -53,6 +55,8 @@
     if (cell == nil ){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
+    
+    cell.accessoryType = UITableViewCellAccessoryDetailButton;
     
     // la configuramos
     cell.imageView.image = club.logo.image;
@@ -101,7 +105,14 @@
     
     // Hacerle push
     [self.navigationController pushViewController:editClubVC animated:YES];
-
 }
+
+
+-(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    VOSClub * club = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    NSLog(@"Club seleccionado: %@ ", club.name);
+}
+
+
 
 @end

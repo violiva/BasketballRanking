@@ -216,6 +216,42 @@
 			name = Image;
 			sourceTree = "<group>";
 		};
+		AD7643BD1A98FAE7005C31D3 /* ClubManagement */ = {
+			isa = PBXGroup;
+			children = (
+				AD7134CD1A95FBFF00F272CE /* VOSClubNameTableViewCell.h */,
+				AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */,
+				AD7134CF1A95FBFF00F272CE /* VOSClubNameTableViewCell.xib */,
+				AD7134D51A96040A00F272CE /* VOSClubDirectionTableViewCell.h */,
+				AD7134D61A96040A00F272CE /* VOSClubDirectionTableViewCell.m */,
+				AD7134D71A96040A00F272CE /* VOSClubDirectionTableViewCell.xib */,
+				AD7134DD1A9605C600F272CE /* VOSClubLogoTableViewCell.h */,
+				AD7134DE1A9605C600F272CE /* VOSClubLogoTableViewCell.m */,
+				AD7134DF1A9605C600F272CE /* VOSClubLogoTableViewCell.xib */,
+			);
+			name = ClubManagement;
+			sourceTree = "<group>";
+		};
+		AD7643BE1A98FB3B005C31D3 /* GroupManagement */ = {
+			isa = PBXGroup;
+			children = (
+				AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */,
+				AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */,
+				AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */,
+			);
+			name = GroupManagement;
+			sourceTree = "<group>";
+		};
+		AD7643BF1A98FB71005C31D3 /* CategoryManagement */ = {
+			isa = PBXGroup;
+			children = (
+				AD78DDE21A92C28B00541CC7 /* VOSCategoryTableViewCell.h */,
+				AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */,
+				AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */,
+			);
+			name = CategoryManagement;
+			sourceTree = "<group>";
+		};
 		AD78DD701A92B77A00541CC7 = {
 			isa = PBXGroup;
 			children = (
@@ -381,24 +417,12 @@
 		AD78DDE11A92C26700541CC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AD78DDE21A92C28B00541CC7 /* VOSCategoryTableViewCell.h */,
-				AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */,
-				AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */,
+				AD7643BF1A98FB71005C31D3 /* CategoryManagement */,
+				AD7643BE1A98FB3B005C31D3 /* GroupManagement */,
+				AD7643BD1A98FAE7005C31D3 /* ClubManagement */,
 				AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */,
 				AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */,
 				AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */,
-				AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */,
-				AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */,
-				AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */,
-				AD7134CD1A95FBFF00F272CE /* VOSClubNameTableViewCell.h */,
-				AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */,
-				AD7134CF1A95FBFF00F272CE /* VOSClubNameTableViewCell.xib */,
-				AD7134D51A96040A00F272CE /* VOSClubDirectionTableViewCell.h */,
-				AD7134D61A96040A00F272CE /* VOSClubDirectionTableViewCell.m */,
-				AD7134D71A96040A00F272CE /* VOSClubDirectionTableViewCell.xib */,
-				AD7134DD1A9605C600F272CE /* VOSClubLogoTableViewCell.h */,
-				AD7134DE1A9605C600F272CE /* VOSClubLogoTableViewCell.m */,
-				AD7134DF1A9605C600F272CE /* VOSClubLogoTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -461,9 +485,11 @@
 				TargetAttributes = {
 					AD78DD781A92B77A00541CC7 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7D7Z96NXV3;
 					};
 					AD78DD8B1A92B77A00541CC7 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7D7Z96NXV3;
 						TestTargetID = AD78DD781A92B77A00541CC7;
 					};
 				};
@@ -679,10 +705,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BasketballRanking-Prefix.pch";
 				INFOPLIST_FILE = BasketballRanking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -690,10 +720,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BasketballRanking-Prefix.pch";
 				INFOPLIST_FILE = BasketballRanking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -701,6 +735,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -712,6 +748,7 @@
 				INFOPLIST_FILE = BasketballRankingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasketballRanking.app/BasketballRanking";
 			};
 			name = Debug;
@@ -720,6 +757,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -727,6 +766,7 @@
 				INFOPLIST_FILE = BasketballRankingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasketballRanking.app/BasketballRanking";
 			};
 			name = Release;

@@ -18,7 +18,6 @@
         <attribute name="pointsAgainst" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="pointsForUs" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="totalPoints" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="group" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="clasification" inverseEntity="Group" syncable="YES"/>
         <relationship name="team" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="clasification" inverseEntity="Team" syncable="YES"/>
     </entity>
     <entity name="Club" representedClassName="VOSClub" syncable="YES">
@@ -41,8 +40,8 @@
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="year" attributeType="Integer 16" defaultValueString="2014" syncable="YES"/>
         <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="group" inverseEntity="Category" syncable="YES"/>
-        <relationship name="clasification" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Clasification" inverseName="group" inverseEntity="Clasification" syncable="YES"/>
         <relationship name="game" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Game" inverseName="group" inverseEntity="Game" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="group" inverseEntity="Team" syncable="YES"/>
     </entity>
     <entity name="Logo" representedClassName="VOSLogo" syncable="YES">
         <attribute name="photoData" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
@@ -74,19 +73,20 @@
         <relationship name="club" maxCount="1" deletionRule="Nullify" destinationEntity="Club" inverseName="teams" inverseEntity="Club" syncable="YES"/>
         <relationship name="gamesPlayHome" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="homeTeam" inverseEntity="Game" syncable="YES"/>
         <relationship name="gamesPlayOut" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="awayTeam" inverseEntity="Game" syncable="YES"/>
+        <relationship name="group" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="teams" inverseEntity="Group" syncable="YES"/>
         <relationship name="players" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Player" inverseName="team" inverseEntity="Player" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Action" positionX="-270" positionY="389" width="128" height="88"/>
-        <element name="Category" positionX="223" positionY="-117" width="128" height="73"/>
-        <element name="Clasification" positionX="349" positionY="257" width="128" height="193"/>
-        <element name="Club" positionX="-306" positionY="-85" width="128" height="103"/>
-        <element name="Game" positionX="178" positionY="81" width="128" height="163"/>
-        <element name="Group" positionX="421" positionY="-27" width="128" height="118"/>
-        <element name="Logo" positionX="-459" positionY="-117" width="128" height="73"/>
-        <element name="PhotoContainer" positionX="-578" positionY="333" width="128" height="73"/>
+        <element name="Action" positionX="-342" positionY="351" width="128" height="88"/>
+        <element name="Category" positionX="385" positionY="-144" width="128" height="73"/>
+        <element name="Clasification" positionX="-0" positionY="-135" width="128" height="178"/>
+        <element name="Club" positionX="-378" positionY="-126" width="128" height="103"/>
+        <element name="Game" positionX="394" positionY="90" width="128" height="163"/>
+        <element name="Group" positionX="216" positionY="-55" width="128" height="118"/>
+        <element name="Logo" positionX="-540" positionY="26" width="128" height="73"/>
+        <element name="PhotoContainer" positionX="-594" positionY="242" width="128" height="73"/>
         <element name="Player" positionX="-434" positionY="161" width="128" height="118"/>
-        <element name="Statistic" positionX="-90" positionY="233" width="128" height="118"/>
-        <element name="Team" positionX="-209" positionY="44" width="128" height="163"/>
+        <element name="Statistic" positionX="-56" positionY="242" width="128" height="118"/>
+        <element name="Team" positionX="-209" positionY="-0" width="128" height="178"/>
     </elements>
 </model>
