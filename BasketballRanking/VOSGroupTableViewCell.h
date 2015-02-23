@@ -11,7 +11,7 @@
 
 @interface VOSGroupTableViewCell : UITableViewCell <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *groupNameView;
+@property (weak, nonatomic) IBOutlet UITextField *groupNameView;
 @property (nonatomic, strong) VOSGroup *group;
 
 +(CGFloat)height;

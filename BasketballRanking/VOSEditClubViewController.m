@@ -20,7 +20,6 @@
 
 #import "VOSClubNameTableViewCell.h"
 #import "VOSClubDirectionTableViewCell.h"
-#import "VOSClubNameTableViewCell.h"
 #import "VOSClubLogoTableViewCell.h"
 #import "VOSLogoViewController.h"
 #import "VOSLogo.h"

@@ -11,10 +11,10 @@
 
 @interface VOSClubNameTableViewCell : UITableViewCell <UITextFieldDelegate>
 
-+(CGFloat) height;
-+(NSString *) cellId;
-
 @property (weak, nonatomic) IBOutlet UITextField * nameField;
 @property (nonatomic, strong) VOSClub * club;
+
++(CGFloat) height;
++(NSString *) cellId;
 
 @end

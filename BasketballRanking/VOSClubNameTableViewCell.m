@@ -14,10 +14,10 @@
 #pragma mark - Properties
 // creamos un setter personalizado
 -(void) setClub:(VOSClub *)club{
-    // guardamos la nota
+    // guardamos el nombre del Club
     _club = club;
     
-    // sincronizamos la vista con la nota
+    // sincronizamos la vista con el nombre del Club
     self.nameField.text = club.name;
 }
 

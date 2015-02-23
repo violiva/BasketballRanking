@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AD4D87121A96156000E08F03 /* VOSEditClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */; };
+		AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */; };
+		AD5DB72F1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB72D1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m */; };
+		AD5DB7301A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5DB72E1A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib */; };
+		AD5FB4C81A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5FB4C61A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m */; };
+		AD5FB4C91A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5FB4C71A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib */; };
 		AD7134CC1A95EAD500F272CE /* VOSClubsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */; };
 		AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */; };
 		AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7134CF1A95FBFF00F272CE /* VOSClubNameTableViewCell.xib */; };
@@ -78,6 +83,14 @@
 /* Begin PBXFileReference section */
 		AD4D87101A96156000E08F03 /* VOSEditClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditClubViewController.h; sourceTree = "<group>"; };
 		AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditClubViewController.m; sourceTree = "<group>"; };
+		AD5DB71F1A9B80A900F9DACE /* VOSEditGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditGroupViewController.h; sourceTree = "<group>"; };
+		AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditGroupViewController.m; sourceTree = "<group>"; };
+		AD5DB72C1A9BB8AB00F9DACE /* VOSYearSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSYearSelectionViewController.h; sourceTree = "<group>"; };
+		AD5DB72D1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSYearSelectionViewController.m; sourceTree = "<group>"; };
+		AD5DB72E1A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSYearSelectionViewController.xib; sourceTree = "<group>"; };
+		AD5FB4C51A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSYearOfGroupTableViewCell.h; sourceTree = "<group>"; };
+		AD5FB4C61A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSYearOfGroupTableViewCell.m; sourceTree = "<group>"; };
+		AD5FB4C71A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSYearOfGroupTableViewCell.xib; sourceTree = "<group>"; };
 		AD7134CA1A95EAD500F272CE /* VOSClubsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubsViewController.h; sourceTree = "<group>"; };
 		AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClubsViewController.m; sourceTree = "<group>"; };
 		AD7134CD1A95FBFF00F272CE /* VOSClubNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubNameTableViewCell.h; sourceTree = "<group>"; };
@@ -238,6 +251,12 @@
 				AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */,
 				AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */,
 				AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */,
+				AD5FB4C51A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.h */,
+				AD5FB4C61A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m */,
+				AD5FB4C71A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib */,
+				AD5DB72C1A9BB8AB00F9DACE /* VOSYearSelectionViewController.h */,
+				AD5DB72D1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m */,
+				AD5DB72E1A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib */,
 			);
 			name = GroupManagement;
 			sourceTree = "<group>";
@@ -410,6 +429,8 @@
 				ADAB4BC41A964D48000B3054 /* VOSLogoViewController.h */,
 				ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */,
 				ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */,
+				AD5DB71F1A9B80A900F9DACE /* VOSEditGroupViewController.h */,
+				AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -518,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5FB4C91A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib in Resources */,
 				ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */,
 				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
 				AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */,
@@ -528,6 +550,7 @@
 				AD7134D91A96040A00F272CE /* VOSClubDirectionTableViewCell.xib in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
 				AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */,
+				AD5DB7301A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib in Resources */,
 				AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */,
 				AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */,
 			);
@@ -573,6 +596,8 @@
 				AD78DDB61A92BE8100541CC7 /* _VOSPlayer.m in Sources */,
 				AD78DD7F1A92B77A00541CC7 /* main.m in Sources */,
 				AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */,
+				AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */,
+				AD5FB4C81A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m in Sources */,
 				ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */,
 				AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */,
 				AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */,
@@ -585,6 +610,7 @@
 				AD78DDB81A92BE8100541CC7 /* _VOSTeam.m in Sources */,
 				AD78DDD61A92C10400541CC7 /* UIViewController+Navigation.m in Sources */,
 				AD78DDCF1A92BE9C00541CC7 /* VOSStatistic.m in Sources */,
+				AD5DB72F1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m in Sources */,
 				AD78DDCC1A92BE9C00541CC7 /* VOSGroup.m in Sources */,
 				AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */,
 				ADC6DC891A9500010022BAC9 /* VOSClasification.m in Sources */,

@@ -5,7 +5,8 @@
 // Custom logic goes here.
 
 +(instancetype) groupWithName:(NSString *) name
-                     category:(VOSCategory *) categ
+                         year:(NSNumber *) year
+                     category:(VOSCategory *) category
                       context:(NSManagedObjectContext *) context;
 
 

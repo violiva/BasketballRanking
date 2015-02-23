@@ -8,6 +8,7 @@
 
 #import "VOSGroupsViewController.h"
 #import "VOSGroup.h"
+#import "VOSEditGroupViewController.h"
 
 @interface VOSGroupsViewController ()
 
@@ -53,7 +54,9 @@
     }
     
     // la configuramos
+    cell.accessoryType = UITableViewCellAccessoryDetailButton;
     cell.textLabel.text = gr.name;
+    cell.textLabel.font = [UIFont fontWithName:@"Dosis Book" size:20];
     
     // la devolvemos
     return cell;
@@ -84,7 +87,12 @@
 
 #pragma mark - Actions
 -(void) addGroup:(id) sender{
+    
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+    NSInteger year = [components year];
+    
     [VOSGroup groupWithName:@"Nuevo Grupo"
+                       year:@(year)
                  category:self.categ
                   context:self.categ.managedObjectContext];
 }
@@ -102,19 +110,19 @@
     // Averiguar el grupo
     VOSGroup * gr = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    
-    
-    
-    NSLog(@"Ahora pasaríamos a ver los equipos dentro del grupo: %@", gr.name);
+    NSLog(@"Ahora pasaríamos a editar el grupo: %@", gr.name);
 
-/*
-    // crear formulario de nota
-    VOSNoteViewController * nVC = [[VOSNoteViewController alloc] initWithModel:note];
-    
+    // crear formulario para el Club
+    VOSEditGroupViewController * editGroupVC = [[VOSEditGroupViewController alloc] initWithModel:gr];
+ 
     // Hacerle push
-    [self.navigationController pushViewController:nVC animated:YES];
-*/
-    
+    [self.navigationController pushViewController:editGroupVC animated:YES];
+}
+
+
+-(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    VOSGroup * gr = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    NSLog(@"Grupo Seleccionado: %@ ", gr.name);
 }
 
 @end

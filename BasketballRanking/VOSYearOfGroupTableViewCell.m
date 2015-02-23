@@ -1,15 +1,20 @@
 //
-//  VOSGroupTableViewCell.m
+//  VOSYearOfGroupTableViewCell.m
 //  BasketballRanking
 //
-//  Created by Vicente Oliva de la Serna on 17/2/15.
+//  Created by Vicente Oliva de la Serna on 23/2/15.
 //  Copyright (c) 2015 Vicente Oliva de la Serna. All rights reserved.
 //
 
-#import "VOSGroupTableViewCell.h"
+#import "VOSYearOfGroupTableViewCell.h"
 #import "VOSGroup.h"
+#import "VOSYearSelectionViewController.h"
 
-@implementation VOSGroupTableViewCell
+@interface VOSYearOfGroupTableViewCell ()
+
+@end
+
+@implementation VOSYearOfGroupTableViewCell
 
 #pragma mark - Properties
 // creamos un setter personalizado
@@ -17,41 +22,33 @@
     // guardamos el grupo
     _group = group;
     
-    // sincronizamos la vista con el grupo
-    self.groupNameView.text = group.name;
-    
+    // sincronizamos la vista con el año del Grupo
+    self.yearView.text = [NSString stringWithFormat:@"%@",group.year];
+
     [self setEditing:YES];
-    NSLog(@"pasa por aquí inicializacion setGroup Nombre del Grupo");
-    
-    //    [self.categoryName setDelegate:self];
-    
+    NSLog(@"pasa por aquí inicializacion setGroup Año del Grupo");
 }
 
+
 #pragma mark - Class methods
-+(CGFloat)height{
++(CGFloat) height{
     return 44.0f;
 }
 
-+(NSString *)cellId{
++(NSString *) cellId{
     return [self description];
 }
 
-/*
-#pragma mark - UITextFieldDelegate
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    // validamos el texto si tenemos que hacer alguna validación.
-    NSLog(@"texto que tenemos que validar: %@", textField.text);
-    
-    // Si está bien quitamos el foco para que desaparezca el teclado ( o podemos mandarlo al siguiente campo si nos interesase.
-    // Si queremos controlar en que campo estamos en el caso de que haya más de un campo TextField, podríamos hacerlo preguntando
-    
-    if ( textField == _groupNameView ) {
-        NSLog( @"efectivamente estamos en el campo : %@", textField);
-    }
-    [textField resignFirstResponder];
-    return YES;
+- (void)awakeFromNib {
+    // Initialization code
 }
-*/
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+    
+}
 
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
@@ -60,9 +57,9 @@
     // por
     
     NSLog(@"Comienza a editar el campo");
-
+    
     if ( [textField.text isEqualToString:@""] ){
- 
+        
         UIAlertView *message = [[UIAlertView alloc] initWithTitle: @"Warning !!!"
                                                           message: @"Este campo no se puede dejar vacío"
                                                          delegate: nil
@@ -70,10 +67,17 @@
                                                 otherButtonTitles: nil];
         [message show];
         [textField becomeFirstResponder];
- 
+        
     }else{
         if ( ![textField.text isEqual: self.group.name  ] ) {
-            self.group.name = textField.text;
+            NSNumberFormatter * myNumFormatter = [[NSNumberFormatter alloc] init];
+            [myNumFormatter setLocale:[NSLocale currentLocale]]; // happen by default?
+            [myNumFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+            // next line is very important!
+            [myNumFormatter setNumberStyle:NSNumberFormatterDecimalStyle]; // crucial
+            
+            NSNumber *tempNum = [myNumFormatter numberFromString:self.yearView.text];
+            self.group.year = tempNum;
         }
         [textField resignFirstResponder];
     }
@@ -91,19 +95,18 @@
     // cuando desaparezco me mandan este mensaje para que me resetee y me prepare para ser reutilizado
     //  Esto es algo así como el viewWillDissappear para celdas
     
-    // Sincroniza la vista con la nota por si hubo cambios
-    self.group.name = self.groupNameView.text;
-}
-
-
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+    // Sincroniza la vista con el grupo por si hubo cambios
     
-    // Configure the view for the selected state
+    
+    NSNumberFormatter * myNumFormatter = [[NSNumberFormatter alloc] init];
+    [myNumFormatter setLocale:[NSLocale currentLocale]]; // happen by default?
+    [myNumFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+    // next line is very important!
+    [myNumFormatter setNumberStyle:NSNumberFormatterDecimalStyle]; // crucial
+    
+    NSNumber *tempNum = [myNumFormatter numberFromString:self.yearView.text];
+    self.group.year = tempNum;
 }
+
 
 @end

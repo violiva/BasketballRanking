@@ -99,15 +99,6 @@
 #pragma mark - Misc
 -(void) prepareForReuse{
     [super prepareForReuse];
-    // es muy importante para celdas personalizadas.
-    // te manda la tabla cuando te saca del caché y te va a reutilizar
-    // es buen momento para resetear la lista antes de que te metan datos nuevos
-    // y darse de baja de las notificaciones de KVO
-    
-    // cuando desaparezco me mandan este mensaje para que me resetee y me prepare para ser reutilizado
-    //  Esto es algo así como el viewWillDissappear para celdas
-    
-    // Sincroniza la vista con la nota por si hubo cambios
 //    self.category.name = self.categoryName.text;
     
 }
