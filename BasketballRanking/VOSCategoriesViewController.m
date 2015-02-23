@@ -39,6 +39,10 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -62,16 +66,17 @@
     
     // La configuro ( sincronizo modelo y vista )
     cell.categoryName.text = cat.name;
-//    cell.notesView.text = [NSString stringWithFormat:@"%lu", (unsigned long)nb.notes.count];
 
     // asignamos la propia celda como su propio delegado para controlar cuando comienza la edición, cuando finaliza, etc...
     cell.categoryName.delegate = cell;
+    cell.categoryName.font = [UIFont fontWithName:@"Dosis Book" size:20];
     cell.category = cat;
     
     // la devuelvo
     return cell;
     
 }
+
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [VOSCategoryTableViewCell height];
@@ -88,8 +93,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
         VOSCategory * deceased = [self.fetchedResultsController objectAtIndexPath:indexPath];
         
         [ctx deleteObject:deceased];
+        [self.tableView reloadData];
+
     }
 }
+
 
 // Personalización del título del botón que aparece con el gesto de deslizar a la izquierda. Por defecto viene como Delete.
 -(NSString *) tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -98,8 +106,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
 
 #pragma mark - Delegate
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    NSLog(@"Entra en la selección de una celda");
     
     // Averiguar cual fue la categoría seleccionada
     VOSCategory * cat = [self.fetchedResultsController objectAtIndexPath:indexPath];
@@ -113,9 +119,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
                                                           selector:@selector(caseInsensitiveCompare:)] ];
     
     req.predicate = [NSPredicate predicateWithFormat:@"category == %@", cat];
-    
-    
-    
+
     NSFetchedResultsController * frc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
                                                                           managedObjectContext:self.fetchedResultsController.managedObjectContext
                                                                             sectionNameKeyPath:nil
@@ -125,17 +129,13 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
     VOSGroupsViewController * grVC = [[VOSGroupsViewController alloc] initWithFetchedResultsController:frc
                                                                                                  style:UITableViewStylePlain];
     
-    // Le asignamos su libreta para que lo sepa
+    // Le asignamos su categoría para que lo conozcan sus tablas hijas y puedan asociarlo
     grVC.categ = cat;
     
     // Lo pusheo
     [self.navigationController pushViewController:grVC
                                          animated:YES];
-
-    NSLog(@"Categoría seleccionada : %@", cat.name);
 }
-
-
 
 #pragma mark - Actions
 -(void) addCategory:(id) sender{

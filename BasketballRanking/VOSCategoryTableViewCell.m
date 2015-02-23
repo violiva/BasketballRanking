@@ -12,7 +12,8 @@
 @implementation VOSCategoryTableViewCell
 
 #pragma mark - Properties
-/*
+
+
 // creamos un setter personalizado
 -(void) setCategory:(VOSCategory *)category{
     // guardamos la nota
@@ -21,12 +22,12 @@
     // sincronizamos la vista con la categoría
     self.categoryName.text = category.name;
     
-    [self setEditing:YES];
+//    [self setEditing:YES];
     NSLog(@"pasa por setter personalizado");
 }
-*/
 
-  
+
+ 
 #pragma mark - Class methods
 +(CGFloat)height{
     return 60.0f;
@@ -88,6 +89,10 @@
         [textField resignFirstResponder];
         
     }
+    
+    
+    
+    
 }
 
 
@@ -103,13 +108,14 @@
     //  Esto es algo así como el viewWillDissappear para celdas
     
     // Sincroniza la vista con la nota por si hubo cambios
-    self.category.name = self.categoryName.text;
+//    self.category.name = self.categoryName.text;
     
 }
 
 
 - (void)awakeFromNib {
     // Initialization code
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
