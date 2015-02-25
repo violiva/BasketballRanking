@@ -26,7 +26,6 @@
     self.yearView.text = [NSString stringWithFormat:@"%@",group.year];
 
     [self setEditing:YES];
-    NSLog(@"pasa por aquí inicializacion setGroup Año del Grupo");
 }
 
 
@@ -49,7 +48,6 @@
     // Configure the view for the selected state
     
 }
-
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     // Si está bien quitamos el foco para que desaparezca el teclado ( o podemos mandarlo al siguiente campo si nos interesase.
@@ -87,16 +85,7 @@
 #pragma mark - Misc
 -(void) prepareForReuse{
     [super prepareForReuse];
-    // es muy importante para celdas personalizadas.
-    // te manda la tabla cuando te saca del caché y te va a reutilizar
-    // es buen momento para resetear la lista antes de que te metan datos nuevos
-    // y darse de baja de las notificaciones de KVO
-    
-    // cuando desaparezco me mandan este mensaje para que me resetee y me prepare para ser reutilizado
-    //  Esto es algo así como el viewWillDissappear para celdas
-    
     // Sincroniza la vista con el grupo por si hubo cambios
-    
     
     NSNumberFormatter * myNumFormatter = [[NSNumberFormatter alloc] init];
     [myNumFormatter setLocale:[NSLocale currentLocale]]; // happen by default?
@@ -107,6 +96,5 @@
     NSNumber *tempNum = [myNumFormatter numberFromString:self.yearView.text];
     self.group.year = tempNum;
 }
-
 
 @end

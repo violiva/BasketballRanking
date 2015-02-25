@@ -59,6 +59,8 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
     [self.tableView reloadData];
 }
 
@@ -114,7 +116,7 @@
         case DORSAL_SECTION:{
             VOSPlayerDorsalTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[VOSPlayerDorsalTableViewCell cellId] forIndexPath:indexPath];
             [cell setPlayer:self.player];
-//            cell.dorsalView.delegate = cell;
+            cell.dorsalView.delegate = cell;
             return cell;
             break;}
             

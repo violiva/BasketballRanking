@@ -80,7 +80,7 @@
         <element name="Action" positionX="-342" positionY="351" width="128" height="88"/>
         <element name="Category" positionX="385" positionY="-144" width="128" height="73"/>
         <element name="Clasification" positionX="-0" positionY="-135" width="128" height="178"/>
-        <element name="Club" positionX="-378" positionY="-126" width="128" height="103"/>
+        <element name="Club" positionX="-378" positionY="-126" width="128" height="105"/>
         <element name="Game" positionX="394" positionY="90" width="128" height="163"/>
         <element name="Group" positionX="216" positionY="-55" width="128" height="118"/>
         <element name="Logo" positionX="-540" positionY="26" width="128" height="73"/>

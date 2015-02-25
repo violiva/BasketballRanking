@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Dosis Book.TTF">
@@ -20,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dorsal" placeholder="Dorsal Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dIy-oi-0J6">
-                        <rect key="frame" x="336" y="7" width="97" height="30"/>
+                        <rect key="frame" x="325" y="9" width="118" height="26"/>
                         <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         <connections>
@@ -29,10 +28,8 @@
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="dIy-oi-0J6" secondAttribute="bottom" constant="-2" id="Efl-dJ-ygU"/>
-                    <constraint firstItem="dIy-oi-0J6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="328" id="HTm-Jy-pV7"/>
-                    <constraint firstItem="dIy-oi-0J6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="b8G-5A-n8y"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="dIy-oi-0J6" secondAttribute="trailing" constant="327" id="xgI-Of-cJw"/>
+                    <constraint firstAttribute="centerY" secondItem="dIy-oi-0J6" secondAttribute="centerY" id="hoK-oZ-oM2"/>
+                    <constraint firstAttribute="centerX" secondItem="dIy-oi-0J6" secondAttribute="centerX" id="n3v-A6-CA3"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

@@ -9,6 +9,7 @@
 #import "VOSGroupTableViewCell.h"
 #import "VOSGroup.h"
 
+
 @implementation VOSGroupTableViewCell
 
 #pragma mark - Properties
@@ -21,7 +22,6 @@
     self.groupNameView.text = group.name;
     
     [self setEditing:YES];
-    NSLog(@"pasa por aquí inicializacion setGroup Nombre del Grupo");
     
     //    [self.categoryName setDelegate:self];
     
@@ -35,6 +35,7 @@
 +(NSString *)cellId{
     return [self description];
 }
+
 
 /*
 #pragma mark - UITextFieldDelegate
