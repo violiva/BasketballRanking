@@ -6,4 +6,6 @@
 
 @property (nonatomic, strong) UIImage * image;
 
+-(instancetype)photoWithImage:(UIImage *) image context:(NSManagedObjectContext *) context;
+
 @end

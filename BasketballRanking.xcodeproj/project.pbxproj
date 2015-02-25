@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		AD4D87121A96156000E08F03 /* VOSEditClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */; };
 		AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */; };
-		AD5DB72F1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB72D1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m */; };
-		AD5DB7301A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5DB72E1A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib */; };
-		AD5FB4C81A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5FB4C61A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m */; };
-		AD5FB4C91A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5FB4C71A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib */; };
 		AD7134CC1A95EAD500F272CE /* VOSClubsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */; };
 		AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */; };
 		AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7134CF1A95FBFF00F272CE /* VOSClubNameTableViewCell.xib */; };
@@ -57,17 +53,33 @@
 		AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */; };
 		AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */; };
 		AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD9B7D731A968E3700060D70 /* AmaticSC-Bold.ttf */; };
+		ADA19F4A1A9C750C00687BA2 /* VOSTeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA19F491A9C750C00687BA2 /* VOSTeamsViewController.m */; };
+		ADA19F4E1A9C852B00687BA2 /* VOSEditTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA19F4C1A9C852B00687BA2 /* VOSEditTeamViewController.m */; };
+		ADA19F4F1A9C852B00687BA2 /* VOSEditTeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA19F4D1A9C852B00687BA2 /* VOSEditTeamViewController.xib */; };
 		ADAB4BC71A964D48000B3054 /* VOSLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */; };
 		ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */; };
 		ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCA1A964FE0000B3054 /* UIImage+Alpha.m */; };
 		ADAB4BD01A964FE0000B3054 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */; };
 		ADAB4BD11A964FE0000B3054 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */; };
+		ADB9D07C1A9CE84A002954CF /* VOSPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */; };
+		ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */; };
+		ADB9D0821A9D1F83002954CF /* VOSPlayerNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D0801A9D1F83002954CF /* VOSPlayerNameTableViewCell.m */; };
+		ADB9D0831A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D0811A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib */; };
+		ADB9D0871A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D0851A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m */; };
+		ADB9D0881A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D0861A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib */; };
 		ADC6DC801A94FFC70022BAC9 /* _VOSClasification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7B1A94FFC70022BAC9 /* _VOSClasification.m */; };
 		ADC6DC811A94FFC70022BAC9 /* _VOSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7D1A94FFC70022BAC9 /* _VOSClub.m */; };
 		ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7F1A94FFC70022BAC9 /* _VOSLogo.m */; };
 		ADC6DC891A9500010022BAC9 /* VOSClasification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC841A9500010022BAC9 /* VOSClasification.m */; };
 		ADC6DC8A1A9500010022BAC9 /* VOSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC861A9500010022BAC9 /* VOSClub.m */; };
 		ADC6DC8B1A9500010022BAC9 /* VOSLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC881A9500010022BAC9 /* VOSLogo.m */; };
+		ADD1755A1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD175581A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m */; };
+		ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD175591A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib */; };
+		ADD1755F1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD1755D1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m */; };
+		ADD175601A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD1755E1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib */; };
+		ADD175681A9D45520048D571 /* VOSEditPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD175671A9D45520048D571 /* VOSEditPlayerViewController.m */; };
+		ADD1756C1A9D47C70048D571 /* VOSPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD1756A1A9D47C70048D571 /* VOSPhotoViewController.m */; };
+		ADD1756D1A9D47C70048D571 /* VOSPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD1756B1A9D47C70048D571 /* VOSPhotoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,12 +97,6 @@
 		AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditClubViewController.m; sourceTree = "<group>"; };
 		AD5DB71F1A9B80A900F9DACE /* VOSEditGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditGroupViewController.h; sourceTree = "<group>"; };
 		AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditGroupViewController.m; sourceTree = "<group>"; };
-		AD5DB72C1A9BB8AB00F9DACE /* VOSYearSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSYearSelectionViewController.h; sourceTree = "<group>"; };
-		AD5DB72D1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSYearSelectionViewController.m; sourceTree = "<group>"; };
-		AD5DB72E1A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSYearSelectionViewController.xib; sourceTree = "<group>"; };
-		AD5FB4C51A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSYearOfGroupTableViewCell.h; sourceTree = "<group>"; };
-		AD5FB4C61A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSYearOfGroupTableViewCell.m; sourceTree = "<group>"; };
-		AD5FB4C71A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSYearOfGroupTableViewCell.xib; sourceTree = "<group>"; };
 		AD7134CA1A95EAD500F272CE /* VOSClubsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubsViewController.h; sourceTree = "<group>"; };
 		AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClubsViewController.m; sourceTree = "<group>"; };
 		AD7134CD1A95FBFF00F272CE /* VOSClubNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubNameTableViewCell.h; sourceTree = "<group>"; };
@@ -171,6 +177,11 @@
 		AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSActionTableViewCell.m; sourceTree = "<group>"; };
 		AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSActionTableViewCell.xib; sourceTree = "<group>"; };
 		AD9B7D731A968E3700060D70 /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
+		ADA19F481A9C750C00687BA2 /* VOSTeamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSTeamsViewController.h; sourceTree = "<group>"; };
+		ADA19F491A9C750C00687BA2 /* VOSTeamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSTeamsViewController.m; sourceTree = "<group>"; };
+		ADA19F4B1A9C852B00687BA2 /* VOSEditTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditTeamViewController.h; sourceTree = "<group>"; };
+		ADA19F4C1A9C852B00687BA2 /* VOSEditTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditTeamViewController.m; sourceTree = "<group>"; };
+		ADA19F4D1A9C852B00687BA2 /* VOSEditTeamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSEditTeamViewController.xib; sourceTree = "<group>"; };
 		ADAB4BC41A964D48000B3054 /* VOSLogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSLogoViewController.h; sourceTree = "<group>"; };
 		ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSLogoViewController.m; sourceTree = "<group>"; };
 		ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSLogoViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +191,15 @@
 		ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		ADAB4BCD1A964FE0000B3054 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		ADB9D07A1A9CE84A002954CF /* VOSPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayersViewController.h; sourceTree = "<group>"; };
+		ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayersViewController.m; sourceTree = "<group>"; };
+		ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Silueta_Jugador.jpg; sourceTree = "<group>"; };
+		ADB9D07F1A9D1F83002954CF /* VOSPlayerNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayerNameTableViewCell.h; sourceTree = "<group>"; };
+		ADB9D0801A9D1F83002954CF /* VOSPlayerNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayerNameTableViewCell.m; sourceTree = "<group>"; };
+		ADB9D0811A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPlayerNameTableViewCell.xib; sourceTree = "<group>"; };
+		ADB9D0841A9D2206002954CF /* VOSPlayerDorsalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayerDorsalTableViewCell.h; sourceTree = "<group>"; };
+		ADB9D0851A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayerDorsalTableViewCell.m; sourceTree = "<group>"; };
+		ADB9D0861A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPlayerDorsalTableViewCell.xib; sourceTree = "<group>"; };
 		ADC6DC7A1A94FFC70022BAC9 /* _VOSClasification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSClasification.h; sourceTree = "<group>"; };
 		ADC6DC7B1A94FFC70022BAC9 /* _VOSClasification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSClasification.m; sourceTree = "<group>"; };
 		ADC6DC7C1A94FFC70022BAC9 /* _VOSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSClub.h; sourceTree = "<group>"; };
@@ -192,6 +212,17 @@
 		ADC6DC861A9500010022BAC9 /* VOSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClub.m; sourceTree = "<group>"; };
 		ADC6DC871A9500010022BAC9 /* VOSLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSLogo.h; sourceTree = "<group>"; };
 		ADC6DC881A9500010022BAC9 /* VOSLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSLogo.m; sourceTree = "<group>"; };
+		ADD175571A9D25220048D571 /* VOSPlayerPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayerPhotoTableViewCell.h; sourceTree = "<group>"; };
+		ADD175581A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayerPhotoTableViewCell.m; sourceTree = "<group>"; };
+		ADD175591A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPlayerPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		ADD1755C1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSYearOfGroupTableViewCell.h; sourceTree = "<group>"; };
+		ADD1755D1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSYearOfGroupTableViewCell.m; sourceTree = "<group>"; };
+		ADD1755E1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSYearOfGroupTableViewCell.xib; sourceTree = "<group>"; };
+		ADD175661A9D45520048D571 /* VOSEditPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditPlayerViewController.h; sourceTree = "<group>"; };
+		ADD175671A9D45520048D571 /* VOSEditPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditPlayerViewController.m; sourceTree = "<group>"; };
+		ADD175691A9D47C70048D571 /* VOSPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPhotoViewController.h; sourceTree = "<group>"; };
+		ADD1756A1A9D47C70048D571 /* VOSPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPhotoViewController.m; sourceTree = "<group>"; };
+		ADD1756B1A9D47C70048D571 /* VOSPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPhotoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +255,7 @@
 		AD7134DC1A96057200F272CE /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */,
 				AD7134DA1A96056900F272CE /* Photo_not_available.jpg */,
 			);
 			name = Image;
@@ -251,12 +283,9 @@
 				AD77F6981A9378FF0029F418 /* VOSGroupTableViewCell.h */,
 				AD77F6991A9378FF0029F418 /* VOSGroupTableViewCell.m */,
 				AD77F69A1A9378FF0029F418 /* VOSGroupTableViewCell.xib */,
-				AD5FB4C51A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.h */,
-				AD5FB4C61A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m */,
-				AD5FB4C71A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib */,
-				AD5DB72C1A9BB8AB00F9DACE /* VOSYearSelectionViewController.h */,
-				AD5DB72D1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m */,
-				AD5DB72E1A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib */,
+				ADD1755C1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.h */,
+				ADD1755D1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m */,
+				ADD1755E1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib */,
 			);
 			name = GroupManagement;
 			sourceTree = "<group>";
@@ -431,6 +460,15 @@
 				ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */,
 				AD5DB71F1A9B80A900F9DACE /* VOSEditGroupViewController.h */,
 				AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */,
+				ADA19F481A9C750C00687BA2 /* VOSTeamsViewController.h */,
+				ADA19F491A9C750C00687BA2 /* VOSTeamsViewController.m */,
+				ADB9D07A1A9CE84A002954CF /* VOSPlayersViewController.h */,
+				ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */,
+				ADD175661A9D45520048D571 /* VOSEditPlayerViewController.h */,
+				ADD175671A9D45520048D571 /* VOSEditPlayerViewController.m */,
+				ADD175691A9D47C70048D571 /* VOSPhotoViewController.h */,
+				ADD1756A1A9D47C70048D571 /* VOSPhotoViewController.m */,
+				ADD1756B1A9D47C70048D571 /* VOSPhotoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -438,6 +476,8 @@
 		AD78DDE11A92C26700541CC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADB9D0741A9CE7C2002954CF /* PlayerManagement */,
+				ADA19F471A9C748300687BA2 /* TeamsManagement */,
 				AD7643BF1A98FB71005C31D3 /* CategoryManagement */,
 				AD7643BE1A98FB3B005C31D3 /* GroupManagement */,
 				AD7643BD1A98FAE7005C31D3 /* ClubManagement */,
@@ -448,6 +488,16 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		ADA19F471A9C748300687BA2 /* TeamsManagement */ = {
+			isa = PBXGroup;
+			children = (
+				ADA19F4B1A9C852B00687BA2 /* VOSEditTeamViewController.h */,
+				ADA19F4C1A9C852B00687BA2 /* VOSEditTeamViewController.m */,
+				ADA19F4D1A9C852B00687BA2 /* VOSEditTeamViewController.xib */,
+			);
+			name = TeamsManagement;
+			sourceTree = "<group>";
+		};
 		ADAB43061A9341CB00D0D32D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +505,22 @@
 				AD7134D41A95FFBB00F272CE /* Fonts */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		ADB9D0741A9CE7C2002954CF /* PlayerManagement */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9D07F1A9D1F83002954CF /* VOSPlayerNameTableViewCell.h */,
+				ADB9D0801A9D1F83002954CF /* VOSPlayerNameTableViewCell.m */,
+				ADB9D0811A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib */,
+				ADB9D0841A9D2206002954CF /* VOSPlayerDorsalTableViewCell.h */,
+				ADB9D0851A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m */,
+				ADB9D0861A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib */,
+				ADD175571A9D25220048D571 /* VOSPlayerPhotoTableViewCell.h */,
+				ADD175581A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m */,
+				ADD175591A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib */,
+			);
+			name = PlayerManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,18 +605,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD5FB4C91A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.xib in Resources */,
 				ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */,
+				ADB9D0881A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib in Resources */,
 				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
 				AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */,
 				AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */,
+				ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */,
 				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
+				ADD175601A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib in Resources */,
+				ADA19F4F1A9C852B00687BA2 /* VOSEditTeamViewController.xib in Resources */,
 				AD78DD871A92B77A00541CC7 /* LaunchScreen.xib in Resources */,
 				AD77F69C1A9378FF0029F418 /* VOSGroupTableViewCell.xib in Resources */,
 				AD7134D91A96040A00F272CE /* VOSClubDirectionTableViewCell.xib in Resources */,
+				ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */,
+				ADD1756D1A9D47C70048D571 /* VOSPhotoViewController.xib in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
 				AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */,
-				AD5DB7301A9BB8AB00F9DACE /* VOSYearSelectionViewController.xib in Resources */,
+				ADB9D0831A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib in Resources */,
 				AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */,
 				AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */,
 			);
@@ -575,12 +646,16 @@
 				AD78DDC91A92BE9C00541CC7 /* VOSAction.m in Sources */,
 				AD7134CC1A95EAD500F272CE /* VOSClubsViewController.m in Sources */,
 				AD7134D81A96040A00F272CE /* VOSClubDirectionTableViewCell.m in Sources */,
+				ADB9D0821A9D1F83002954CF /* VOSPlayerNameTableViewCell.m in Sources */,
 				ADC6DC811A94FFC70022BAC9 /* _VOSClub.m in Sources */,
 				AD4D87121A96156000E08F03 /* VOSEditClubViewController.m in Sources */,
 				AD78DDB31A92BE8100541CC7 /* _VOSGame.m in Sources */,
+				ADD1755A1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m in Sources */,
 				AD78DDE91A92C57800541CC7 /* VOSActionTableViewController.m in Sources */,
 				AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */,
 				AD78DDD01A92BE9C00541CC7 /* VOSTeam.m in Sources */,
+				ADB9D07C1A9CE84A002954CF /* VOSPlayersViewController.m in Sources */,
+				ADD175681A9D45520048D571 /* VOSEditPlayerViewController.m in Sources */,
 				AD78DDCD1A92BE9C00541CC7 /* VOSPhotoContainer.m in Sources */,
 				AD78DDD91A92C1AA00541CC7 /* VOSCoreDataStack.m in Sources */,
 				AD78DDCE1A92BE9C00541CC7 /* VOSPlayer.m in Sources */,
@@ -588,16 +663,18 @@
 				AD78DDB41A92BE8100541CC7 /* _VOSGroup.m in Sources */,
 				AD78DDB51A92BE8100541CC7 /* _VOSPhotoContainer.m in Sources */,
 				ADC6DC8A1A9500010022BAC9 /* VOSClub.m in Sources */,
+				ADD1756C1A9D47C70048D571 /* VOSPhotoViewController.m in Sources */,
 				ADAB4BC71A964D48000B3054 /* VOSLogoViewController.m in Sources */,
 				AD78DDCB1A92BE9C00541CC7 /* VOSGame.m in Sources */,
 				ADC6DC801A94FFC70022BAC9 /* _VOSClasification.m in Sources */,
 				AD7134E01A9605C600F272CE /* VOSClubLogoTableViewCell.m in Sources */,
+				ADD1755F1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m in Sources */,
 				AD78DD821A92B77A00541CC7 /* AppDelegate.m in Sources */,
 				AD78DDB61A92BE8100541CC7 /* _VOSPlayer.m in Sources */,
 				AD78DD7F1A92B77A00541CC7 /* main.m in Sources */,
 				AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */,
+				ADA19F4E1A9C852B00687BA2 /* VOSEditTeamViewController.m in Sources */,
 				AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */,
-				AD5FB4C81A9B46C200EF7605 /* VOSYearOfGroupTableViewCell.m in Sources */,
 				ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */,
 				AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */,
 				AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */,
@@ -607,11 +684,12 @@
 				AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */,
 				ADAB4BD11A964FE0000B3054 /* UIImage+RoundedCorner.m in Sources */,
 				AD77F6971A93718E0029F418 /* VOSGroupsViewController.m in Sources */,
+				ADA19F4A1A9C750C00687BA2 /* VOSTeamsViewController.m in Sources */,
 				AD78DDB81A92BE8100541CC7 /* _VOSTeam.m in Sources */,
 				AD78DDD61A92C10400541CC7 /* UIViewController+Navigation.m in Sources */,
 				AD78DDCF1A92BE9C00541CC7 /* VOSStatistic.m in Sources */,
-				AD5DB72F1A9BB8AB00F9DACE /* VOSYearSelectionViewController.m in Sources */,
 				AD78DDCC1A92BE9C00541CC7 /* VOSGroup.m in Sources */,
+				ADB9D0871A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m in Sources */,
 				AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */,
 				ADC6DC891A9500010022BAC9 /* VOSClasification.m in Sources */,
 				AD78DDB71A92BE8100541CC7 /* _VOSStatistic.m in Sources */,

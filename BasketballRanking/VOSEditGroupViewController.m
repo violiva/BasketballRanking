@@ -136,13 +136,14 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
 }
 
+/*
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.section == YEAR_SECTION) {
         
     }
 }
-
+*/
 
 
 @end
