@@ -24,6 +24,21 @@
     return player;
 }
 
++(instancetype) playerWithDorsal:(NSNumber *) dorsal
+                            Name:(NSString *) name
+                            team:(VOSTeam *) team
+                         context:(NSManagedObjectContext *) context{
+    
+    VOSPlayer * player = [self insertInManagedObjectContext:context];
+    player.name = name;
+    player.team = team;
+    player.dorsal = dorsal;
+    player.photo.photo = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Silueta_Jugador"
+                                                                               withExtension:@"jpg"]];
+    return player;
+}
+
+
 #pragma mark - Util
 -(NSArray *) observableKeys{
     return @[VOSPlayerAttributes.name,

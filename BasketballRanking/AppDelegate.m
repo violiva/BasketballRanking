@@ -88,7 +88,17 @@
     
     // Cargamos el array con los controladores que se tienen que mostrar en el combinador
     tabVC.viewControllers = @[catNav, clubNav];
-
+    
+    
+/*
+    UIImage* anImage1 = [UIImage imageNamed:@"crowd.png"];
+    //    UIImage* anImage2 = [UIImage imageNamed:@"mobilephone15.png"];
+    
+    [clubNav  setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Clubs"
+                                                      image: nil  // icono sin seleccionar
+                                              selectedImage:anImage1]];
+*/
+    
     
     // lo asignamos como controlador raiz
     self.window.rootViewController = tabVC;

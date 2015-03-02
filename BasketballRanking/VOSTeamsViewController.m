@@ -15,6 +15,8 @@
 #import "VOSPlayer.h"
 #import "VOSPlayersViewController.h"
 
+#import "VOSPlayerCollectionViewController.h"
+
 @interface VOSTeamsViewController ()
 
 @end
@@ -33,23 +35,22 @@
 
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.title = [NSString stringWithFormat:@"%@ Teams", self.clubEdit.name];
-
-    // agregamos el botón de añadir Equipos.
-    UIBarButtonItem * b = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                        target:self
-                                                                        action:@selector( addTeam: )];
-    self.navigationItem.rightBarButtonItem = b;
     
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+
+    self.title = [NSString stringWithFormat:@"%@ Teams", self.clubEdit.name];
+    
+    // agregamos el botón de añadir Equipos.
+    UIBarButtonItem * b = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                        target:self
+                                                                        action:@selector( addTeam: )];
+    self.navigationItem.rightBarButtonItem = b;
 
     [self.tableView reloadData];
 }
@@ -88,6 +89,7 @@
     
 }
 
+
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     
     // Averiguar si el usuario quiere definitivamente eliminar el registro
@@ -100,6 +102,11 @@
         // la elimino
         [ctx deleteObject:deceased];
     }
+    if ( editingStyle == UITableViewCellEditingStyleInsert){
+        NSLog( @"Insert method" );
+    }
+    
+
 }
 
 // Personalización del título del botón que aparece con el gesto de deslizar a la izquierda. Por defecto viene como Delete.
@@ -131,21 +138,27 @@
 
 
 -(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+
+ 
     VOSTeam * team = [self.fetchedResultsController objectAtIndexPath:indexPath];
     NSLog(@"Vamos a gestionar los jugadores del equipo %@ del Club %@ ", team.name, team.club.name);
     
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSPlayer entityName]];
     req.fetchBatchSize = 30;
-    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSPlayerAttributes.name
-                                                           ascending:YES
-                                                            selector:@selector(caseInsensitiveCompare:)] ];
-    
+
+    // Asignamos la ordenación por el número de Dorsal para que se vayam ordenando según se vaya modificando.
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSPlayerAttributes.dorsal ascending:YES]];
+
     req.predicate = [NSPredicate predicateWithFormat:@"team == %@", team];
     NSFetchedResultsController * frcTeam = [[NSFetchedResultsController alloc] initWithFetchRequest:req
                                                                                managedObjectContext:self.fetchedResultsController.managedObjectContext
                                                                                  sectionNameKeyPath:nil
                                                                                           cacheName:nil ];
     
+/*------------------------------------------------------------------------------------------------------------------------------------
+// Esta versión utilizaba el controlador en modo de tabla utilizando el controlador VOSPlayersViewController
+// Lo cambiamos para utilizar una CollectionView
+--------------------------------------------------------------------------------------------------------------------------------------
     // Creamos el nuevo controlador y le pasamos el nombre del Club que lo sepa
     VOSPlayersViewController * playerVC = [[VOSPlayersViewController alloc] initWithFetchedResultsController:frcTeam
                                                                                                   team:team
@@ -153,6 +166,27 @@
     // Lo pusheo
     [self.navigationController pushViewController:playerVC
                                          animated:YES];
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+    
+// /*------------------------------------------------------------------------------------------------------------------------------------
+    // Layout
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.itemSize = CGSizeMake(140, 160);
+    layout.minimumLineSpacing = 10;
+    layout.minimumInteritemSpacing = 10;
+    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    
+    VOSPlayerCollectionViewController *playerVC = [VOSPlayerCollectionViewController coreDataCollectionViewControllerWithFetchedResultsController:frcTeam
+                                                                                                                                           layout:layout];
+    
+    playerVC.team = team;
+    
+    [self.navigationController pushViewController:playerVC
+                                         animated:YES];
+// ------------------------------------------------------------------------------------------------------------------------------------*/
+    
 }
 
 @end

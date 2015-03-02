@@ -8,5 +8,9 @@
                         team:(VOSTeam *) team
                      context:(NSManagedObjectContext *) context;
 
++(instancetype) playerWithDorsal:(NSNumber *) dorsal
+                            Name:(NSString *) name
+                            team:(VOSTeam *) team
+                         context:(NSManagedObjectContext *) context;
 
 @end

@@ -30,7 +30,6 @@
                                                                         target:self
                                                                         action:@selector( addClub: )];
     self.navigationItem.rightBarButtonItem = b;
-
 }
 
 -(void)viewWillAppear:(BOOL)animated{

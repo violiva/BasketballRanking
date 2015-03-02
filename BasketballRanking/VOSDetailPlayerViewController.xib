@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis Book.TTF">
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOSDetailPlayerViewController">
+            <connections>
+                <outlet property="dorsalView" destination="xEu-4L-8wi" id="xa6-GF-4H4"/>
+                <outlet property="photoView" destination="eLp-bc-YLz" id="2CU-jr-rLo"/>
+                <outlet property="playerNameView" destination="Z5t-3r-KcK" id="HT7-Fw-LhJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glI-dL-uP1">
+                    <rect key="frame" x="8" y="80" width="584" height="35"/>
+                    <color key="backgroundColor" white="0.8148214775" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="kZ4-En-AEd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dorsal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-op-HiR">
+                    <rect key="frame" x="8" y="176" width="579" height="35"/>
+                    <color key="backgroundColor" white="0.8148214775" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="oWE-77-8Lg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afo-lv-XXr">
+                    <rect key="frame" x="8" y="273" width="579" height="35"/>
+                    <color key="backgroundColor" white="0.8148214775" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="tNk-UD-oJd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dorsal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEu-4L-8wi">
+                    <rect key="frame" x="266" y="219" width="69" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bqS-BN-MhQ"/>
+                    </constraints>
+                    <color key="textColor" white="0.4928299753" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLp-bc-YLz">
+                    <rect key="frame" x="240" y="332" width="120" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Kl9-X2-IFa"/>
+                        <constraint firstAttribute="width" constant="120" id="z2y-OV-SVy"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Z5t-3r-KcK">
+                    <rect key="frame" x="11" y="131" width="579" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="d4o-Ll-khQ"/>
+                    </constraints>
+                    <color key="textColor" white="0.49282997532894735" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="xEu-4L-8wi" secondAttribute="centerX" id="04h-OD-lBm"/>
+                <constraint firstAttribute="trailing" secondItem="afo-lv-XXr" secondAttribute="trailing" constant="13" id="0Ni-a6-Qik"/>
+                <constraint firstItem="Z5t-3r-KcK" firstAttribute="top" secondItem="glI-dL-uP1" secondAttribute="bottom" constant="16" id="9VA-gM-lQS"/>
+                <constraint firstItem="eLp-bc-YLz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="750" constant="240" id="A2u-Zx-PMx"/>
+                <constraint firstItem="eLp-bc-YLz" firstAttribute="top" secondItem="afo-lv-XXr" secondAttribute="bottom" constant="24" id="Jle-FI-6Fn"/>
+                <constraint firstAttribute="trailing" secondItem="glI-dL-uP1" secondAttribute="trailing" constant="8" id="M97-Jf-5Ml"/>
+                <constraint firstAttribute="trailing" secondItem="WfW-op-HiR" secondAttribute="trailing" constant="13" id="Ogd-xl-aBC"/>
+                <constraint firstItem="glI-dL-uP1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="S3q-dN-FyA"/>
+                <constraint firstItem="WfW-op-HiR" firstAttribute="top" secondItem="Z5t-3r-KcK" secondAttribute="bottom" constant="15" id="T0d-y2-Cug"/>
+                <constraint firstItem="afo-lv-XXr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="XfY-hc-LS1"/>
+                <constraint firstAttribute="trailing" secondItem="Z5t-3r-KcK" secondAttribute="trailing" constant="10" id="Y70-ol-Llj"/>
+                <constraint firstItem="xEu-4L-8wi" firstAttribute="top" secondItem="WfW-op-HiR" secondAttribute="bottom" constant="8" id="ZGv-nV-brf"/>
+                <constraint firstItem="afo-lv-XXr" firstAttribute="top" secondItem="xEu-4L-8wi" secondAttribute="bottom" constant="24" id="h5s-Il-X3T"/>
+                <constraint firstItem="Z5t-3r-KcK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="oap-N7-LeA"/>
+                <constraint firstItem="glI-dL-uP1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="tKq-EQ-5AR"/>
+                <constraint firstAttribute="centerX" secondItem="eLp-bc-YLz" secondAttribute="centerX" id="vSs-sL-iEW"/>
+                <constraint firstItem="WfW-op-HiR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="wwM-3b-zAk"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="vSs-sL-iEW"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="vSs-sL-iEW"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

@@ -7,7 +7,7 @@
 //
 
 #import "VOSCoreDataTableViewController.h"
-#import "VOSClub.h"
+@class VOSClub;
 
 @interface VOSTeamsViewController : VOSCoreDataTableViewController
 

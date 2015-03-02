@@ -87,6 +87,8 @@
 #pragma mark - Utils
 - (IBAction)hideKeyboard:(id)sender{
     [self.view endEditing:YES];
+    // esta llamada no pasa por el método shouldReturn directamente va al didEndEditing.
+    // validateValue:forKey:Error: son métodos de NSManagedObject y sería ahí donde habría que implementar los métodos de validación.
 }
 
 @end

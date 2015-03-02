@@ -12,11 +12,8 @@
 
 -(UINavigationController *) vosWrappedInNavigation{
     
-    UINavigationController * nav = [UINavigationController new];
-    
-    [nav pushViewController:self
-                   animated:NO];
-    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self];
+
     return nav;
 }
 
