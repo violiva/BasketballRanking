@@ -4,6 +4,7 @@
 @import CoreData;
 
 extern const struct VOSStatisticAttributes {
+	__unsafe_unretained NSString *period;
 	__unsafe_unretained NSString *points;
 	__unsafe_unretained NSString *time;
 } VOSStatisticAttributes;
@@ -26,6 +27,14 @@ extern const struct VOSStatisticRelationships {
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) VOSStatisticID* objectID;
+
+@property (nonatomic, strong) NSNumber* period;
+
+@property (atomic) int16_t periodValue;
+- (int16_t)periodValue;
+- (void)setPeriodValue:(int16_t)value_;
+
+//- (BOOL)validatePeriod:(id*)value_ error:(NSError**)error_;
 
 @property (nonatomic, strong) NSNumber* points;
 
@@ -54,6 +63,12 @@ extern const struct VOSStatisticRelationships {
 @end
 
 @interface _VOSStatistic (CoreDataGeneratedPrimitiveAccessors)
+
+- (NSNumber*)primitivePeriod;
+- (void)setPrimitivePeriod:(NSNumber*)value;
+
+- (int16_t)primitivePeriodValue;
+- (void)setPrimitivePeriodValue:(int16_t)value_;
 
 - (NSNumber*)primitivePoints;
 - (void)setPrimitivePoints:(NSNumber*)value;

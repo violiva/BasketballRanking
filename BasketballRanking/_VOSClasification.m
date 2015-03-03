@@ -15,6 +15,7 @@ const struct VOSClasificationAttributes VOSClasificationAttributes = {
 };
 
 const struct VOSClasificationRelationships VOSClasificationRelationships = {
+	.group = @"group",
 	.team = @"team",
 };
 
@@ -247,6 +248,8 @@ const struct VOSClasificationRelationships VOSClasificationRelationships = {
 - (void)setPrimitiveTotalPointsValue:(int16_t)value_ {
 	[self setPrimitiveTotalPoints:@(value_)];
 }
+
+@dynamic group;
 
 @dynamic team;
 

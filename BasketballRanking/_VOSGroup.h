@@ -10,11 +10,13 @@ extern const struct VOSGroupAttributes {
 
 extern const struct VOSGroupRelationships {
 	__unsafe_unretained NSString *category;
+	__unsafe_unretained NSString *clasification;
 	__unsafe_unretained NSString *game;
 	__unsafe_unretained NSString *teams;
 } VOSGroupRelationships;
 
 @class VOSCategory;
+@class VOSClasification;
 @class VOSGame;
 @class VOSTeam;
 
@@ -43,6 +45,10 @@ extern const struct VOSGroupRelationships {
 
 //- (BOOL)validateCategory:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSSet *clasification;
+
+- (NSMutableSet*)clasificationSet;
+
 @property (nonatomic, strong) NSSet *game;
 
 - (NSMutableSet*)gameSet;
@@ -50,6 +56,14 @@ extern const struct VOSGroupRelationships {
 @property (nonatomic, strong) NSSet *teams;
 
 - (NSMutableSet*)teamsSet;
+
+@end
+
+@interface _VOSGroup (ClasificationCoreDataGeneratedAccessors)
+- (void)addClasification:(NSSet*)value_;
+- (void)removeClasification:(NSSet*)value_;
+- (void)addClasificationObject:(VOSClasification*)value_;
+- (void)removeClasificationObject:(VOSClasification*)value_;
 
 @end
 
@@ -82,6 +96,9 @@ extern const struct VOSGroupRelationships {
 
 - (VOSCategory*)primitiveCategory;
 - (void)setPrimitiveCategory:(VOSCategory*)value;
+
+- (NSMutableSet*)primitiveClasification;
+- (void)setPrimitiveClasification:(NSMutableSet*)value;
 
 - (NSMutableSet*)primitiveGame;
 - (void)setPrimitiveGame:(NSMutableSet*)value;

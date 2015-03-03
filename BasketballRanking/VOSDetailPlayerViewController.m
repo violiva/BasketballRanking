@@ -255,7 +255,7 @@
 -(void) textFieldDidEndEditing:(UITextField *)textField{
     // guardamos
     // Primero tendremos que comprobar cual es el campo que tiene el foco para mover ese dato al modelo
-    NSLog( @"finaliza la introducción de datos para el campo: %@", textField.description );
+    NSLog( @"finaliza la introducción de datos para el campo: %@", textField );
 //    self.model.name = self.playerNameView.text;
 }
 

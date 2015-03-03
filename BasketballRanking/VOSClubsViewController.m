@@ -30,6 +30,14 @@
                                                                         target:self
                                                                         action:@selector( addClub: )];
     self.navigationItem.rightBarButtonItem = b;
+    
+    UIImage* anImage1 = [UIImage imageNamed:@"Icon_People_tabbar_Init.png"];
+    UIImage* anImage2 = [UIImage imageNamed:@"mobilephone15.png"];
+    
+    [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Clubs"
+                                                      image: anImage1  // icono sin seleccionar
+                                              selectedImage:anImage2]];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -139,7 +147,5 @@
                                          animated:YES];
 
 }
-
-
 
 @end

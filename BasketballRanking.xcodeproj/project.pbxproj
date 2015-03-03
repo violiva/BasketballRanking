@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD4D87121A96156000E08F03 /* VOSEditClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */; };
+		AD52E25A1AA531960009353C /* mobilephone15.png in Resources */ = {isa = PBXBuildFile; fileRef = AD52E2591AA531960009353C /* mobilephone15.png */; };
 		AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */; };
 		AD7134CC1A95EAD500F272CE /* VOSClubsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */; };
 		AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */; };
@@ -60,6 +61,8 @@
 		ADAA9F5A1AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA9F591AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m */; };
 		ADAA9F5C1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA9F5B1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib */; };
 		ADAA9F5F1AA0C674006A1017 /* VOSPlayerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA9F5E1AA0C674006A1017 /* VOSPlayerCollectionViewController.m */; };
+		ADAB28C21AA5F820003272FB /* VOSEditCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB28C01AA5F820003272FB /* VOSEditCategoryViewController.m */; };
+		ADAB28C31AA5F820003272FB /* VOSEditCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAB28C11AA5F820003272FB /* VOSEditCategoryViewController.xib */; };
 		ADAB4BC71A964D48000B3054 /* VOSLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */; };
 		ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */; };
 		ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCA1A964FE0000B3054 /* UIImage+Alpha.m */; };
@@ -108,6 +111,7 @@
 /* Begin PBXFileReference section */
 		AD4D87101A96156000E08F03 /* VOSEditClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditClubViewController.h; sourceTree = "<group>"; };
 		AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditClubViewController.m; sourceTree = "<group>"; };
+		AD52E2591AA531960009353C /* mobilephone15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobilephone15.png; sourceTree = "<group>"; };
 		AD5DB71F1A9B80A900F9DACE /* VOSEditGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditGroupViewController.h; sourceTree = "<group>"; };
 		AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditGroupViewController.m; sourceTree = "<group>"; };
 		AD7134CA1A95EAD500F272CE /* VOSClubsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubsViewController.h; sourceTree = "<group>"; };
@@ -201,6 +205,11 @@
 		ADAA9F5B1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPlayerCollectionViewCell.xib; sourceTree = "<group>"; };
 		ADAA9F5D1AA0C674006A1017 /* VOSPlayerCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayerCollectionViewController.h; sourceTree = "<group>"; };
 		ADAA9F5E1AA0C674006A1017 /* VOSPlayerCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayerCollectionViewController.m; sourceTree = "<group>"; };
+		ADAB28BD1AA5AF8F003272FB /* Model2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model2.xcdatamodel; sourceTree = "<group>"; };
+		ADAB28BE1AA5C371003272FB /* Model3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model3.xcdatamodel; sourceTree = "<group>"; };
+		ADAB28BF1AA5F820003272FB /* VOSEditCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditCategoryViewController.h; sourceTree = "<group>"; };
+		ADAB28C01AA5F820003272FB /* VOSEditCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditCategoryViewController.m; sourceTree = "<group>"; };
+		ADAB28C11AA5F820003272FB /* VOSEditCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSEditCategoryViewController.xib; sourceTree = "<group>"; };
 		ADAB4BC41A964D48000B3054 /* VOSLogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSLogoViewController.h; sourceTree = "<group>"; };
 		ADAB4BC51A964D48000B3054 /* VOSLogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSLogoViewController.m; sourceTree = "<group>"; };
 		ADAB4BC61A964D48000B3054 /* VOSLogoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSLogoViewController.xib; sourceTree = "<group>"; };
@@ -291,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				ADAD4C581A9E0B4400835E28 /* crowd.png */,
+				AD52E2591AA531960009353C /* mobilephone15.png */,
 				ADAD4C541A9E066C00835E28 /* cogs3.png */,
 				ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */,
 				ADAA9F561AA066BD006A1017 /* Player_Jumping.png */,
@@ -334,6 +344,9 @@
 				AD78DDE21A92C28B00541CC7 /* VOSCategoryTableViewCell.h */,
 				AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */,
 				AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */,
+				ADAB28BF1AA5F820003272FB /* VOSEditCategoryViewController.h */,
+				ADAB28C01AA5F820003272FB /* VOSEditCategoryViewController.m */,
+				ADAB28C11AA5F820003272FB /* VOSEditCategoryViewController.xib */,
 			);
 			name = CategoryManagement;
 			sourceTree = "<group>";
@@ -685,6 +698,7 @@
 				AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */,
 				ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */,
 				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
+				ADAB28C31AA5F820003272FB /* VOSEditCategoryViewController.xib in Resources */,
 				ADD175601A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib in Resources */,
 				ADAA9F571AA066BD006A1017 /* Player_Jumping.png in Resources */,
 				ADA19F4F1A9C852B00687BA2 /* VOSEditTeamViewController.xib in Resources */,
@@ -696,6 +710,7 @@
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
 				AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */,
 				ADB9D0831A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib in Resources */,
+				AD52E25A1AA531960009353C /* mobilephone15.png in Resources */,
 				AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */,
 				AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */,
 			);
@@ -756,6 +771,7 @@
 				ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */,
 				ADAA9F5A1AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m in Sources */,
 				ADAF7A731A9F3DE600D4A096 /* VOSCoreDataCollectionViewController.m in Sources */,
+				ADAB28C21AA5F820003272FB /* VOSEditCategoryViewController.m in Sources */,
 				AD77F69B1A9378FF0029F418 /* VOSGroupTableViewCell.m in Sources */,
 				AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */,
 				AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */,
@@ -989,9 +1005,11 @@
 		AD78DD9C1A92B78E00541CC7 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				ADAB28BE1AA5C371003272FB /* Model3.xcdatamodel */,
+				ADAB28BD1AA5AF8F003272FB /* Model2.xcdatamodel */,
 				AD78DD9D1A92B78E00541CC7 /* Model.xcdatamodel */,
 			);
-			currentVersion = AD78DD9D1A92B78E00541CC7 /* Model.xcdatamodel */;
+			currentVersion = ADAB28BE1AA5C371003272FB /* Model3.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

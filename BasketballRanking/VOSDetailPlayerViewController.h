@@ -8,7 +8,6 @@
 
 @class UIKit;
 #import "VOSDetailViewController.h"
-#import "VOSDetailViewController.h"
 
 @class VOSPlayer;
 @class VOSTeam;

@@ -5,6 +5,8 @@
 
 extern const struct VOSCategoryAttributes {
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *period;
+	__unsafe_unretained NSString *timePeriod;
 } VOSCategoryAttributes;
 
 extern const struct VOSCategoryRelationships {
@@ -26,6 +28,22 @@ extern const struct VOSCategoryRelationships {
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber* period;
+
+@property (atomic) int16_t periodValue;
+- (int16_t)periodValue;
+- (void)setPeriodValue:(int16_t)value_;
+
+//- (BOOL)validatePeriod:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, strong) NSNumber* timePeriod;
+
+@property (atomic) int16_t timePeriodValue;
+- (int16_t)timePeriodValue;
+- (void)setTimePeriodValue:(int16_t)value_;
+
+//- (BOOL)validateTimePeriod:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) NSSet *group;
 
 - (NSMutableSet*)groupSet;
@@ -44,6 +62,18 @@ extern const struct VOSCategoryRelationships {
 
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
+
+- (NSNumber*)primitivePeriod;
+- (void)setPrimitivePeriod:(NSNumber*)value;
+
+- (int16_t)primitivePeriodValue;
+- (void)setPrimitivePeriodValue:(int16_t)value_;
+
+- (NSNumber*)primitiveTimePeriod;
+- (void)setPrimitiveTimePeriod:(NSNumber*)value;
+
+- (int16_t)primitiveTimePeriodValue;
+- (void)setPrimitiveTimePeriodValue:(int16_t)value_;
 
 - (NSMutableSet*)primitiveGroup;
 - (void)setPrimitiveGroup:(NSMutableSet*)value;

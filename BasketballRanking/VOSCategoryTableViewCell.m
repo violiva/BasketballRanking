@@ -12,8 +12,6 @@
 @implementation VOSCategoryTableViewCell
 
 #pragma mark - Properties
-
-
 // creamos un setter personalizado
 -(void) setCategory:(VOSCategory *)category{
     // guardamos la nota

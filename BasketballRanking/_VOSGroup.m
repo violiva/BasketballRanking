@@ -10,6 +10,7 @@ const struct VOSGroupAttributes VOSGroupAttributes = {
 
 const struct VOSGroupRelationships VOSGroupRelationships = {
 	.category = @"category",
+	.clasification = @"clasification",
 	.game = @"game",
 	.teams = @"teams",
 };
@@ -72,6 +73,17 @@ const struct VOSGroupRelationships VOSGroupRelationships = {
 }
 
 @dynamic category;
+
+@dynamic clasification;
+
+- (NSMutableSet*)clasificationSet {
+	[self willAccessValueForKey:@"clasification"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"clasification"];
+
+	[self didAccessValueForKey:@"clasification"];
+	return result;
+}
 
 @dynamic game;
 

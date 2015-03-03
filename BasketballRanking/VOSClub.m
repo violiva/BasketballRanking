@@ -19,6 +19,7 @@
     club.address = nil;
     club.logo.photoData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Photo_not_available"
                                                                      withExtension:@"jpg"]];
+    
     return club;
 }
 
