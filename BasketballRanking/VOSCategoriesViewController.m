@@ -8,7 +8,6 @@
 
 #import "VOSCategoriesViewController.h"
 #import "VOSCategory.h"
-#import "VOSCategoryTableViewCell.h"
 #import "VOSGroup.h"
 #import "VOSGroupsViewController.h"
 #import "VOSEditCategoryViewController.h"
@@ -28,13 +27,6 @@
                                                                              target:self
                                                                              action:@selector( addCategory: )];
     self.navigationItem.rightBarButtonItem = addBtn;
-/*
-    // Registramos el nib de la celda
-    UINib * nib = [UINib nibWithNibName:@"VOSCategoryTableViewCell"
-                                 bundle:[NSBundle mainBundle]];
-    
-    [self.tableView registerNib:nib forCellReuseIdentifier:[VOSCategoryTableViewCell cellId]];
-*/
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -57,27 +49,6 @@
     // Averiguamos de qué categoría me hablan
     VOSCategory * cat = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
-/*
-    // creo una celda
-    VOSCategoryTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[VOSCategoryTableViewCell cellId]
-                                                                      forIndexPath:indexPath];
-    if (cell == nil ){
-        cell = [[VOSCategoryTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[VOSCategoryTableViewCell cellId]];
-    }
-    
-    
-    // La configuro ( sincronizo modelo y vista )
-    cell.categoryName.text = cat.name;
-
-    // asignamos la propia celda como su propio delegado para controlar cuando comienza la edición, cuando finaliza, etc...
-    cell.categoryName.delegate = cell;
-    cell.categoryName.font = [UIFont fontWithName:@"Dosis Book" size:20];
-    cell.category = cat;
-    
-    // la devuelvo
-    return cell;
-*/
-    
     // Creamos la celda
     static NSString * cellId = @"categoryCell";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellId];
@@ -95,12 +66,6 @@
     return cell;
     
 }
-
-/*
--(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [VOSCategoryTableViewCell height];
-}
-*/
 
 // Personalización del título del botón que aparece con el gesto de deslizar a la izquierda. Por defecto viene como Delete.
 -(NSString *) tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -132,13 +97,13 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
 #pragma mark - Delegate
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    // Averiguamos cual es el equipo a modificar
+    // Averiguamos cual es la categoría a modificar
     VOSCategory * cat = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    // crear formulario para modificar los datos del Equipo
+    // creamos el controlador para poder modificar los datos de la categoría
     VOSEditCategoryViewController * editCatVC = [[VOSEditCategoryViewController alloc] initWithModel:cat];
     
-    // Hacerle push
+    // Hacemos push del controlador
     [self.navigationController pushViewController:editCatVC animated:YES];
 
 }

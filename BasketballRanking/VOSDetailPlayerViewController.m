@@ -114,8 +114,6 @@
         self.model.dorsal = @([self.dorsalView.text intValue]);
         self.model.name = self.playerNameView.text;
         self.model.photo.image = self.photoView.image;
-        
-
     }
     [self stopObservingKeyboard];
 }

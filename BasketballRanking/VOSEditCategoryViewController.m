@@ -9,10 +9,14 @@
 #import "VOSEditCategoryViewController.h"
 #import "VOSCategory.h"
 
+#define uno 1
+#define dos 2
+
 @interface VOSEditCategoryViewController ()
 
-@property (strong, nonatomic) NSMutableArray *arrayPeriods;
-@property (strong, nonatomic) NSMutableArray *arrayTime;
+@property (strong, nonatomic) NSArray *arrayPicker;
+@property (strong, nonatomic) NSArray *arrayPeriods;
+@property (strong, nonatomic) NSArray *arrayTime;
 
 @end
 
@@ -24,7 +28,6 @@
     if ( self = [super initWithNibName:nil
                                 bundle:nil]){
         _cat = aModel;
-        self.title = aModel.name;
     }
     return self;
 }
@@ -33,22 +36,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.arrayPicker = [[NSArray alloc] initWithObjects:nil]; // Esta referenacia la utilizamos para apuntar al array Seleccionado
+    self.arrayPeriods = [[NSArray alloc] initWithObjects:@"2",@"4",@"6",nil];
+    self.arrayTime = [[NSArray alloc] initWithObjects:@"8",@"10",@"12",nil];
+
+    self.pickerSetting.delegate = self;
+    self.pickerSetting.hidden = YES;
+
     self.categoryNameView.text = self.cat.name;
-    self.periodsView.text = [NSString stringWithFormat:@"%@", self.cat.period];
-    self.minutesView.text = [NSString stringWithFormat:@"%@", self.cat.timePeriod];
+    self.periodLbl.text = [NSString stringWithFormat:@"%@", self.cat.period];
+    self.minutesLbl.text = [NSString stringWithFormat:@"%@", self.cat.timePeriod];
     
-    self.arrayPeriods = [[NSMutableArray alloc] initWithArray:@[ @"2", @"4", @"6" ]];
-    UIPickerView *pickerPeriod = [UIPickerView new];
-    pickerPeriod.delegate = self;
-    pickerPeriod.dataSource = self;
-    self.periodsView.inputView = pickerPeriod;
-
-    self.arrayTime = [[NSMutableArray alloc] initWithArray:@[ @"8", @"10", @"12" ]];
-    UIPickerView *pickerTime = [UIPickerView new];
-    pickerTime.delegate = self;
-    pickerTime.dataSource = self;
-    self.minutesView.inputView = pickerTime;
-
+    [self.periodsView setTitle:[NSString stringWithFormat:@"%@", self.cat.period] forState:UIControlStateNormal];
+    [self.minutesView setTitle:[NSString stringWithFormat:@"%@", self.cat.timePeriod] forState:UIControlStateNormal];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,51 +61,70 @@
     [super viewWillDisappear:animated];
     
     self.cat.name = self.categoryNameView.text;
-    self.cat.period = @([self.periodsView.text intValue]);
-    self.cat.timePeriod = @([self.minutesView.text intValue]);
+    self.cat.period = @([self.periodLbl.text intValue]);
+    self.cat.timePeriod = @([self.minutesLbl.text intValue]);
 }
 
 #pragma mark - PickerView DataSource
 // returns the number of 'columns' to display.
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 2;
+    return 1;
 }
 
 // returns the # of rows in each component..
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
  
-    if (component == 0) {
-        return [self.arrayPeriods count];
-    }
-    return [self.arrayTime count];
+    return [self.arrayPicker count];
 }
 
 
 #pragma mark - PickerViewDelegate
 -(NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
 
-    if (component == 0) {
-        return [self.arrayPeriods objectAtIndex:row];
-    }
-    return [self.arrayTime objectAtIndex:row];
+    return [self.arrayPicker objectAtIndex:row];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    
-    self.periodsView.text = [self.arrayPeriods objectAtIndex:row];
-    if (component == 0)
-    {
-        self.periodsView.text = [self.arrayPeriods objectAtIndex:row];
-    } else {
-        self.minutesView.text = [self.arrayTime objectAtIndex:row];
+    if (idPicker == uno){
+        self.periodLbl.text = [self.arrayPicker objectAtIndex:row];
+        [self.periodsView setTitle:[self.arrayPicker objectAtIndex:row] forState:UIControlStateNormal];
+    }else{
+        self.minutesLbl.text = [self.arrayPicker objectAtIndex:row];
+        [self.minutesView setTitle:[self.arrayPicker objectAtIndex:row] forState:UIControlStateNormal];
     }
 }
 
 #pragma mark - Utils
 - (IBAction)hideKeyboard:(id)sender{
     [self.view endEditing:YES];
+
+    self.pickerSetting.hidden = NO;
+
     // esta llamada no pasa por el método shouldReturn directamente va al didEndEditing.
     // validateValue:forKey:Error: son métodos de NSManagedObject y sería ahí donde habría que implementar los métodos de validación.
+}
+
+// Metodo para que desaparezca el pickerview cuando pulsas fuera de el
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)eve
+{
+    if ( !self.pickerSetting.hidden) {
+        self.pickerSetting.hidden = YES;
+    }
+    
+}
+
+- (IBAction)settingPeriods:(id)sender {
+    self.pickerSetting.hidden = NO;
+    idPicker = uno;
+    self.arrayPicker = self.arrayPeriods;
+    [self.pickerSetting reloadAllComponents];
+}
+
+- (IBAction)settingMinutes:(id)sender {
+    self.pickerSetting.hidden = NO;
+    idPicker = dos;
+    self.arrayPicker = self.arrayTime;
+    [self.pickerSetting reloadAllComponents];
 }
 
 @end

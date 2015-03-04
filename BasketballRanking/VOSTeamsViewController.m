@@ -127,8 +127,6 @@
     // Averiguamos cual es el equipo a modificar
     VOSTeam * team = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    NSLog(@"Vamos a modificar la información del equipo: %@ del Club %@ ", team.name, team.club.name);
-
     // crear formulario para modificar los datos del Equipo
     VOSEditTeamViewController * editTeamVC = [[VOSEditTeamViewController alloc] initWithModel:team];
     
@@ -138,10 +136,8 @@
 
 
 -(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
-
  
     VOSTeam * team = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    NSLog(@"Vamos a gestionar los jugadores del equipo %@ del Club %@ ", team.name, team.club.name);
     
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSPlayer entityName]];
     req.fetchBatchSize = 30;
@@ -180,7 +176,9 @@
     
     VOSPlayerCollectionViewController *playerVC = [VOSPlayerCollectionViewController coreDataCollectionViewControllerWithFetchedResultsController:frcTeam
                                                                                                                                            layout:layout];
-    
+//    VOSPlayerCollectionViewController *playerVC = [VOSPlayerCollectionViewController coreDataCollectionViewControllerWithFetchedResultsController:frcTeam
+//                                                                                                                                             team:team
+//                                                                                                                                           layout:layout];
     playerVC.team = team;
     
     [self.navigationController pushViewController:playerVC

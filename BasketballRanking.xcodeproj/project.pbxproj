@@ -48,8 +48,6 @@
 		AD78DDD91A92C1AA00541CC7 /* VOSCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDD81A92C1AA00541CC7 /* VOSCoreDataStack.m */; };
 		AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDDC1A92C1F900541CC7 /* VOSCoreDataTableViewController.m */; };
 		AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDDF1A92C24F00541CC7 /* VOSCategoriesViewController.m */; };
-		AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */; };
-		AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */; };
 		AD78DDE91A92C57800541CC7 /* VOSActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */; };
 		AD78DDED1A92C61700541CC7 /* VOSActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */; };
 		AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */; };
@@ -185,9 +183,6 @@
 		AD78DDDC1A92C1F900541CC7 /* VOSCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCoreDataTableViewController.m; sourceTree = "<group>"; };
 		AD78DDDE1A92C24F00541CC7 /* VOSCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCategoriesViewController.h; sourceTree = "<group>"; };
 		AD78DDDF1A92C24F00541CC7 /* VOSCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCategoriesViewController.m; sourceTree = "<group>"; };
-		AD78DDE21A92C28B00541CC7 /* VOSCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCategoryTableViewCell.h; sourceTree = "<group>"; };
-		AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCategoryTableViewCell.m; sourceTree = "<group>"; };
-		AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		AD78DDE71A92C57800541CC7 /* VOSActionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSActionTableViewController.h; sourceTree = "<group>"; };
 		AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSActionTableViewController.m; sourceTree = "<group>"; };
 		AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSActionTableViewCell.h; sourceTree = "<group>"; };
@@ -336,19 +331,6 @@
 				ADD1755E1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib */,
 			);
 			name = GroupManagement;
-			sourceTree = "<group>";
-		};
-		AD7643BF1A98FB71005C31D3 /* CategoryManagement */ = {
-			isa = PBXGroup;
-			children = (
-				AD78DDE21A92C28B00541CC7 /* VOSCategoryTableViewCell.h */,
-				AD78DDE31A92C28B00541CC7 /* VOSCategoryTableViewCell.m */,
-				AD78DDE41A92C28B00541CC7 /* VOSCategoryTableViewCell.xib */,
-				ADAB28BF1AA5F820003272FB /* VOSEditCategoryViewController.h */,
-				ADAB28C01AA5F820003272FB /* VOSEditCategoryViewController.m */,
-				ADAB28C11AA5F820003272FB /* VOSEditCategoryViewController.xib */,
-			);
-			name = CategoryManagement;
 			sourceTree = "<group>";
 		};
 		AD78DD701A92B77A00541CC7 = {
@@ -508,6 +490,9 @@
 				AD78DDE81A92C57800541CC7 /* VOSActionTableViewController.m */,
 				AD77F6951A93718E0029F418 /* VOSGroupsViewController.h */,
 				AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */,
+				ADAB28BF1AA5F820003272FB /* VOSEditCategoryViewController.h */,
+				ADAB28C01AA5F820003272FB /* VOSEditCategoryViewController.m */,
+				ADAB28C11AA5F820003272FB /* VOSEditCategoryViewController.xib */,
 				AD4D87101A96156000E08F03 /* VOSEditClubViewController.h */,
 				AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */,
 				ADAB4BC41A964D48000B3054 /* VOSLogoViewController.h */,
@@ -538,7 +523,6 @@
 			children = (
 				ADB9D0741A9CE7C2002954CF /* PlayerManagement */,
 				ADA19F471A9C748300687BA2 /* TeamsManagement */,
-				AD7643BF1A98FB71005C31D3 /* CategoryManagement */,
 				AD7643BE1A98FB3B005C31D3 /* GroupManagement */,
 				AD7643BD1A98FAE7005C31D3 /* ClubManagement */,
 				AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */,
@@ -711,7 +695,6 @@
 				AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */,
 				ADB9D0831A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib in Resources */,
 				AD52E25A1AA531960009353C /* mobilephone15.png in Resources */,
-				AD78DDE61A92C28B00541CC7 /* VOSCategoryTableViewCell.xib in Resources */,
 				AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,7 +745,6 @@
 				AD78DD821A92B77A00541CC7 /* AppDelegate.m in Sources */,
 				AD78DDB61A92BE8100541CC7 /* _VOSPlayer.m in Sources */,
 				AD78DD7F1A92B77A00541CC7 /* main.m in Sources */,
-				AD78DDE51A92C28B00541CC7 /* VOSCategoryTableViewCell.m in Sources */,
 				ADA19F4E1A9C852B00687BA2 /* VOSEditTeamViewController.m in Sources */,
 				AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */,
 				ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */,

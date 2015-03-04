@@ -15,12 +15,12 @@
 #import "VOSTeam.h"
 #import "VOSDetailPlayerViewController.h"
 
-#import "VOSEditPlayerViewController.h"
+// #import "VOSEditPlayerViewController.h"
 
 
 static NSString *cellID = @"PlayerCellID";
 
-@interface VOSPlayerCollectionViewController ()
+@interface VOSPlayerCollectionViewController () // <NSFetchedResultsControllerDelegate>
 
 @end
 
@@ -45,15 +45,16 @@ static NSString *cellID = @"PlayerCellID";
                                                                          target:self
                                                                          action:@selector(addPlayer:)];
 
-    UIBarButtonItem *delete = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+    UIBarButtonItem *addFull = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
                                                                          target:self
                                                                          action:@selector(addFullTeam:)];
 
-    self.navigationItem.rightBarButtonItem = add;
+//    self.navigationItem.rightBarButtonItem = add;
 
-    self.navigationItem.rightBarButtonItems = @[ add, delete ];
+    self.navigationItem.rightBarButtonItems = @[ add, addFull ];
 
 }
+
 
 #pragma mark - Xib registration
 -(void)registerNib{

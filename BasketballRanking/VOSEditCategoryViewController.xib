@@ -15,9 +15,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOSEditCategoryViewController">
             <connections>
-                <outlet property="MinutesView" destination="kkK-nu-3lA" id="lpy-7N-Jvi"/>
-                <outlet property="PeriodsView" destination="jrt-Ss-6cz" id="JcC-PB-tm7"/>
                 <outlet property="categoryNameView" destination="ljE-Vv-6hp" id="V7f-Nb-Sjt"/>
+                <outlet property="minutesLbl" destination="RaS-f9-DnV" id="PWy-Vy-Mkf"/>
+                <outlet property="minutesView" destination="dA4-R8-kwe" id="ssn-UZ-gpn"/>
+                <outlet property="periodLbl" destination="U7u-o1-Q40" id="2bC-eO-pPL"/>
+                <outlet property="periodsView" destination="Vp7-fN-6wN" id="Kiy-op-zhV"/>
                 <outlet property="pickerSetting" destination="CXs-FY-evA" id="fR6-CO-53f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -56,18 +58,8 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Periods" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrt-Ss-6cz">
-                    <rect key="frame" x="121" y="81" width="78" height="30"/>
-                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Minutes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkK-nu-3lA">
-                    <rect key="frame" x="380" y="81" width="81" height="30"/>
-                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXs-FY-evA">
-                    <rect key="frame" x="8" y="195" width="584" height="162"/>
+                    <rect key="frame" x="8" y="236" width="584" height="162"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="162" id="RnZ-Sp-gpZ"/>
                     </constraints>
@@ -76,25 +68,79 @@
                         <outlet property="delegate" destination="-1" id="ayt-UE-UdH"/>
                     </connections>
                 </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dA4-R8-kwe">
+                    <rect key="frame" x="330" y="195" width="62" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="pa1-mw-B2o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <state key="normal" title="minutes">
+                        <color key="titleColor" white="0.51061369239999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="settingMinutes:" destination="-1" eventType="touchUpInside" id="V15-Z9-7JG"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="periodLbl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7u-o1-Q40">
+                    <rect key="frame" x="264" y="195" width="73" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="B6P-d3-nuO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutesLbl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-f9-DnV">
+                    <rect key="frame" x="550" y="199" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="ngh-TW-9wZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp7-fN-6wN">
+                    <rect key="frame" x="192" y="195" width="57" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="pp1-kC-0zW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <state key="normal" title="periods">
+                        <color key="titleColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="settingPeriods:" destination="-1" eventType="touchUpInside" id="3Lm-bw-iWw"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="xbY-eE-e9V" secondAttribute="trailing" constant="8" id="3h7-s5-NJt"/>
                 <constraint firstAttribute="centerX" secondItem="CXs-FY-evA" secondAttribute="centerX" id="4H4-H6-h01"/>
+                <constraint firstItem="dA4-R8-kwe" firstAttribute="leading" secondItem="U7u-o1-Q40" secondAttribute="trailing" constant="-14" id="64M-KB-YLV"/>
                 <constraint firstItem="CXs-FY-evA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Ahi-Je-CMS"/>
+                <constraint firstItem="dA4-R8-kwe" firstAttribute="top" secondItem="o7T-Hp-QRa" secondAttribute="bottom" constant="8" id="CjI-MD-B0i"/>
+                <constraint firstItem="Vp7-fN-6wN" firstAttribute="top" secondItem="o7T-Hp-QRa" secondAttribute="bottom" constant="8" id="GiZ-ea-DiD"/>
                 <constraint firstItem="ljE-Vv-6hp" firstAttribute="top" secondItem="xbY-eE-e9V" secondAttribute="bottom" constant="8" id="HC5-s7-aNZ"/>
+                <constraint firstItem="U7u-o1-Q40" firstAttribute="leading" secondItem="Vp7-fN-6wN" secondAttribute="trailing" constant="15" id="HSp-1h-98b"/>
                 <constraint firstAttribute="centerX" secondItem="xbY-eE-e9V" secondAttribute="centerX" id="JSQ-H1-MTZ"/>
                 <constraint firstItem="ljE-Vv-6hp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="JhT-OT-kqS"/>
                 <constraint firstAttribute="trailing" secondItem="CXs-FY-evA" secondAttribute="trailing" constant="8" id="L98-Kr-TlL"/>
                 <constraint firstAttribute="centerX" secondItem="ljE-Vv-6hp" secondAttribute="centerX" id="P0X-ZK-NZc"/>
+                <constraint firstItem="CXs-FY-evA" firstAttribute="top" secondItem="U7u-o1-Q40" secondAttribute="bottom" constant="11" id="R5c-O0-QaN"/>
                 <constraint firstItem="xbY-eE-e9V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="VQy-7K-SdX"/>
                 <constraint firstItem="o7T-Hp-QRa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Xrz-y9-QWO"/>
                 <constraint firstAttribute="centerX" secondItem="o7T-Hp-QRa" secondAttribute="centerX" id="a4v-SC-FQO"/>
                 <constraint firstAttribute="trailing" secondItem="ljE-Vv-6hp" secondAttribute="trailing" constant="8" id="b5Z-fE-HP3"/>
+                <constraint firstAttribute="centerX" secondItem="U7u-o1-Q40" secondAttribute="centerX" id="caC-Y3-MP8"/>
+                <constraint firstItem="U7u-o1-Q40" firstAttribute="top" secondItem="o7T-Hp-QRa" secondAttribute="bottom" constant="8" id="jOf-Ux-e1N"/>
                 <constraint firstAttribute="trailing" secondItem="o7T-Hp-QRa" secondAttribute="trailing" constant="8" id="pNq-vr-JIC"/>
+                <constraint firstAttribute="trailing" secondItem="RaS-f9-DnV" secondAttribute="trailing" constant="8" id="pe4-e0-3K0"/>
                 <constraint firstItem="xbY-eE-e9V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="t4q-d0-MdM"/>
                 <constraint firstItem="o7T-Hp-QRa" firstAttribute="top" secondItem="ljE-Vv-6hp" secondAttribute="bottom" constant="8" id="tcB-My-QPQ"/>
-                <constraint firstItem="CXs-FY-evA" firstAttribute="top" secondItem="o7T-Hp-QRa" secondAttribute="bottom" constant="8" id="wF4-T1-WCV"/>
+                <constraint firstItem="RaS-f9-DnV" firstAttribute="top" secondItem="o7T-Hp-QRa" secondAttribute="bottom" constant="12" id="xPU-8F-ZXh"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <connections>

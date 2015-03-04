@@ -59,10 +59,21 @@
 }
 
 -(void)prepareForReuse{
-    
+    for (NSString *key in [VOSPlayerCollectionViewCell keys]) {
+        [self.player removeObserver:self forKeyPath:key];
+        
+    }
+
     self.player = nil;
     [self syncWithPlayer];
-    
+}
+
+-(void)removeObservePlayer{
+    for (NSString *key in [VOSPlayerCollectionViewCell keys]) {
+        [self.player removeObserver:self forKeyPath:key];
+    }
+    self.player = nil;
+    [self syncWithPlayer];
 }
 
 @end

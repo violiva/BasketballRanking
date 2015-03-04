@@ -13,9 +13,9 @@
 
 @property (strong, nonatomic) VOSClub *clubEdit;
 
+
 -(instancetype)initWithFetchedResultsController:(NSFetchedResultsController *) aFetchedResultsController
                                            club:(VOSClub *) aClub
                                           style:(UITableViewStyle) aStyle;
-
 
 @end
