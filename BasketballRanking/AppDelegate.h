@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class VOSCoreDataStack;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) NSString *miCadena;
+@property(nonatomic,strong) VOSCoreDataStack * stack;
 
 @end
 

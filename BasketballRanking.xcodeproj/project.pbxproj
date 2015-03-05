@@ -67,15 +67,17 @@
 		ADAB4BD01A964FE0000B3054 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */; };
 		ADAB4BD11A964FE0000B3054 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */; };
 		ADAD19511AA4718400DB8056 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAD19501AA4718400DB8056 /* MapKit.framework */; };
-		ADAD4C551A9E066C00835E28 /* cogs3.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAD4C541A9E066C00835E28 /* cogs3.png */; };
 		ADAD4C591A9E0B4400835E28 /* crowd.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAD4C581A9E0B4400835E28 /* crowd.png */; };
 		ADAF7A731A9F3DE600D4A096 /* VOSCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAF7A721A9F3DE500D4A096 /* VOSCoreDataCollectionViewController.m */; };
+		ADB0F8401AA744DF0025EEF6 /* VOSDetailClasificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */; };
+		ADB0F8411AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */; };
 		ADB9D07C1A9CE84A002954CF /* VOSPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */; };
 		ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */; };
 		ADB9D0821A9D1F83002954CF /* VOSPlayerNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D0801A9D1F83002954CF /* VOSPlayerNameTableViewCell.m */; };
 		ADB9D0831A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D0811A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib */; };
 		ADB9D0871A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D0851A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m */; };
 		ADB9D0881A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D0861A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib */; };
+		ADBF88861AA6FBE40090E898 /* VOSClasificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBF88851AA6FBE40090E898 /* VOSClasificationViewController.m */; };
 		ADC6DC801A94FFC70022BAC9 /* _VOSClasification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7B1A94FFC70022BAC9 /* _VOSClasification.m */; };
 		ADC6DC811A94FFC70022BAC9 /* _VOSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7D1A94FFC70022BAC9 /* _VOSClub.m */; };
 		ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC7F1A94FFC70022BAC9 /* _VOSLogo.m */; };
@@ -215,11 +217,13 @@
 		ADAB4BCD1A964FE0000B3054 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		ADAD19501AA4718400DB8056 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		ADAD4C541A9E066C00835E28 /* cogs3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cogs3.png; sourceTree = "<group>"; };
 		ADAD4C581A9E0B4400835E28 /* crowd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crowd.png; sourceTree = "<group>"; };
 		ADAF7A711A9F3DE500D4A096 /* VOSCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCoreDataCollectionViewController.h; sourceTree = "<group>"; };
 		ADAF7A721A9F3DE500D4A096 /* VOSCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCoreDataCollectionViewController.m; sourceTree = "<group>"; };
 		ADAF7A871A9F584900D4A096 /* VOSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSDetailViewController.h; sourceTree = "<group>"; };
+		ADB0F83D1AA744DF0025EEF6 /* VOSDetailClasificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSDetailClasificationViewController.h; sourceTree = "<group>"; };
+		ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSDetailClasificationViewController.m; sourceTree = "<group>"; };
+		ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSDetailClasificationViewController.xib; sourceTree = "<group>"; };
 		ADB9D07A1A9CE84A002954CF /* VOSPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayersViewController.h; sourceTree = "<group>"; };
 		ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayersViewController.m; sourceTree = "<group>"; };
 		ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Silueta_Jugador.jpg; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 		ADB9D0841A9D2206002954CF /* VOSPlayerDorsalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayerDorsalTableViewCell.h; sourceTree = "<group>"; };
 		ADB9D0851A9D2206002954CF /* VOSPlayerDorsalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayerDorsalTableViewCell.m; sourceTree = "<group>"; };
 		ADB9D0861A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPlayerDorsalTableViewCell.xib; sourceTree = "<group>"; };
+		ADBF88841AA6FBE40090E898 /* VOSClasificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClasificationViewController.h; sourceTree = "<group>"; };
+		ADBF88851AA6FBE40090E898 /* VOSClasificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClasificationViewController.m; sourceTree = "<group>"; };
 		ADC6DC7A1A94FFC70022BAC9 /* _VOSClasification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSClasification.h; sourceTree = "<group>"; };
 		ADC6DC7B1A94FFC70022BAC9 /* _VOSClasification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _VOSClasification.m; sourceTree = "<group>"; };
 		ADC6DC7C1A94FFC70022BAC9 /* _VOSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VOSClub.h; sourceTree = "<group>"; };
@@ -296,7 +302,6 @@
 			children = (
 				ADAD4C581A9E0B4400835E28 /* crowd.png */,
 				AD52E2591AA531960009353C /* mobilephone15.png */,
-				ADAD4C541A9E066C00835E28 /* cogs3.png */,
 				ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */,
 				ADAA9F561AA066BD006A1017 /* Player_Jumping.png */,
 				AD7134DA1A96056900F272CE /* Photo_not_available.jpg */,
@@ -514,6 +519,11 @@
 				ADF9FE1F1AA38743002BE1D4 /* VOSDetailPlayerViewController.h */,
 				ADF9FE201AA38743002BE1D4 /* VOSDetailPlayerViewController.m */,
 				ADF9FE211AA38743002BE1D4 /* VOSDetailPlayerViewController.xib */,
+				ADBF88841AA6FBE40090E898 /* VOSClasificationViewController.h */,
+				ADBF88851AA6FBE40090E898 /* VOSClasificationViewController.m */,
+				ADB0F83D1AA744DF0025EEF6 /* VOSDetailClasificationViewController.h */,
+				ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */,
+				ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -677,8 +687,8 @@
 				ADF9FE231AA38743002BE1D4 /* VOSDetailPlayerViewController.xib in Resources */,
 				ADB9D0881A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib in Resources */,
 				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
-				ADAD4C551A9E066C00835E28 /* cogs3.png in Resources */,
 				AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */,
+				ADB0F8411AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib in Resources */,
 				AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */,
 				ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */,
 				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
@@ -727,6 +737,7 @@
 				AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */,
 				AD78DDD01A92BE9C00541CC7 /* VOSTeam.m in Sources */,
 				ADB9D07C1A9CE84A002954CF /* VOSPlayersViewController.m in Sources */,
+				ADBF88861AA6FBE40090E898 /* VOSClasificationViewController.m in Sources */,
 				ADD175681A9D45520048D571 /* VOSEditPlayerViewController.m in Sources */,
 				AD78DDCD1A92BE9C00541CC7 /* VOSPhotoContainer.m in Sources */,
 				AD78DDD91A92C1AA00541CC7 /* VOSCoreDataStack.m in Sources */,
@@ -748,6 +759,7 @@
 				ADA19F4E1A9C852B00687BA2 /* VOSEditTeamViewController.m in Sources */,
 				AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */,
 				ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */,
+				ADB0F8401AA744DF0025EEF6 /* VOSDetailClasificationViewController.m in Sources */,
 				AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */,
 				AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */,
 				ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */,

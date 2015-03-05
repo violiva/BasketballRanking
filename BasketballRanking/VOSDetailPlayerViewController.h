@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *dorsalView;
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 
-// -(id) initWithModel:(id) model;
+-(id) initWithModel:(id) model;
 -(id) initForNewPlayerInTeam: (VOSTeam *) team;
 
 @end

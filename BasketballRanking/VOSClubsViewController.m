@@ -12,6 +12,7 @@
 #import "VOSEditClubViewController.h"
 #import "VOSTeam.h"
 #import "VOSTeamsViewController.h"
+#import "AppDelegate.h"
 
 @interface VOSClubsViewController ()
 
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     self.title = @"Clubs";
 
     // agregamos el botón de añadir notas.
@@ -31,8 +32,8 @@
                                                                         action:@selector( addClub: )];
     self.navigationItem.rightBarButtonItem = b;
     
-    UIImage* anImage1 = [UIImage imageNamed:@"Icon_People_tabbar_Init.png"];
-    UIImage* anImage2 = [UIImage imageNamed:@"mobilephone15.png"];
+    UIImage* anImage1 = [UIImage imageNamed:@"People.png"];
+    UIImage* anImage2 = [UIImage imageNamed:@"People_unSelect.png"];
     
     [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Clubs"
                                                       image: anImage1  // icono sin seleccionar
@@ -103,7 +104,8 @@
 #pragma mark - Actions
 -(void) addClub:(id) sender{
     [VOSClub clubWithName:@"Nuevo Club"
-                  context:self.fetchedResultsController.managedObjectContext];
+                                     context:self.fetchedResultsController.managedObjectContext];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Delegate
@@ -121,7 +123,6 @@
 
 -(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     VOSClub * club = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    NSLog(@"Club seleccionado: %@ ", club.name);
     
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSTeam entityName]];
     req.fetchBatchSize = 30;

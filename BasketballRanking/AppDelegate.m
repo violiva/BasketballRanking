@@ -20,7 +20,7 @@
 
 @interface AppDelegate ()
 
-@property(nonatomic,strong) VOSCoreDataStack * stack;
+// @property(nonatomic,strong) VOSCoreDataStack * stack;
 
 @end
 

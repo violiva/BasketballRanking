@@ -58,6 +58,12 @@
     
     // sincronizamos vista -> modelo
     self.model.logo.image = self.logoView.image;
+
+    if (self.model.logo.image == nil){
+        self.model.logo.photoData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Photo_not_available"
+                                                                                    withExtension:@"jpg"]];
+    }
+
 }
 
 - (void)viewDidLoad {
@@ -69,6 +75,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 - (IBAction)takePhoto:(id)sender {

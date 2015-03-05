@@ -13,7 +13,7 @@
 #import "VOSPhotoViewController.h"
 
 
-@interface VOSDetailPlayerViewController () <UITextFieldDelegate>
+@interface VOSDetailPlayerViewController ()
 
 @property (nonatomic, strong) VOSPlayer *model;
 @property (nonatomic) BOOL new;

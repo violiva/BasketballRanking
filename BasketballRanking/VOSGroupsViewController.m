@@ -9,6 +9,8 @@
 #import "VOSGroupsViewController.h"
 #import "VOSGroup.h"
 #import "VOSEditGroupViewController.h"
+#import "VOSClasification.h"
+#import "VOSClasificationViewController.h"
 
 @interface VOSGroupsViewController ()
 
@@ -110,9 +112,7 @@
     // Averiguar el grupo
     VOSGroup * gr = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    NSLog(@"Ahora pasaríamos a editar el grupo: %@", gr.name);
-
-    // crear formulario para el Club
+    // crear formulario para editar el grupo
     VOSEditGroupViewController * editGroupVC = [[VOSEditGroupViewController alloc] initWithModel:gr];
  
     // Hacerle push
@@ -121,8 +121,38 @@
 
 
 -(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    
+    // Averiguar cual fue la categoría seleccionada
     VOSGroup * gr = [self.fetchedResultsController objectAtIndexPath:indexPath];
     NSLog(@"Grupo Seleccionado: %@ ", gr.name);
+    
+    // Creo la selección de datos
+    NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSClasification entityName]];
+    
+    req.fetchBatchSize = 30;
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"team.name"
+                                                           ascending:YES
+                                                            selector:@selector(caseInsensitiveCompare:)] ];
+    
+    req.predicate = [NSPredicate predicateWithFormat:@"group == %@", gr];
+    
+    NSFetchedResultsController * frc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                           managedObjectContext:self.fetchedResultsController.managedObjectContext
+                                                                             sectionNameKeyPath:nil
+                                                                                      cacheName:nil];
+    
+    // Creamos una instancia de controlador de Clasificaciones para este grupo
+    VOSClasificationViewController * clasifVC = [[VOSClasificationViewController alloc] initWithFetchedResultsController:frc
+                                                                                                 style:UITableViewStylePlain];
+    
+    // Le asignamos su categoría para que lo conozcan sus tablas hijas y puedan asociarlo
+    clasifVC.group = gr;
+    
+    // Lo pusheo
+    [self.navigationController pushViewController:clasifVC
+                                         animated:YES];
+    
+
 }
 
 @end

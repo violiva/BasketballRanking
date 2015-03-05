@@ -27,6 +27,14 @@
                                                                              target:self
                                                                              action:@selector( addCategory: )];
     self.navigationItem.rightBarButtonItem = addBtn;
+    
+    UIImage* anImage1 = [UIImage imageNamed:@"Settings_Select.png"];
+    UIImage* anImage2 = [UIImage imageNamed:@"Settings_unSelect.png"];
+    
+    [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Settings"
+                                                      image: anImage1
+                                              selectedImage:anImage2]];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{

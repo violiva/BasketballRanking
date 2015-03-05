@@ -21,7 +21,7 @@
         <attribute name="pointsForUs" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="totalPoints" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="clasification" inverseEntity="Group" syncable="YES"/>
-        <relationship name="team" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="clasification" inverseEntity="Team" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="clasification" inverseEntity="Team" syncable="YES"/>
     </entity>
     <entity name="Club" representedClassName="VOSClub" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>

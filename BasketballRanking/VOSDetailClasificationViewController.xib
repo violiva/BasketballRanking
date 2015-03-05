@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis Book.TTF">
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOSDetailClasificationViewController">
+            <connections>
+                <outlet property="btnTeam" destination="MJs-Gn-7q3" id="rax-p6-d29"/>
+                <outlet property="gLost" destination="u7Y-T6-q46" id="3Vl-Bc-bNy"/>
+                <outlet property="gPlayed" destination="lLW-cC-zRA" id="4qG-Zs-eot"/>
+                <outlet property="gTied" destination="Roh-F8-Gqn" id="Dvp-aO-aeV"/>
+                <outlet property="gWon" destination="MPM-PQ-U0n" id="su1-BD-N4L"/>
+                <outlet property="groupLbl" destination="xkm-SN-Nl6" id="xxp-Bo-RJB"/>
+                <outlet property="pAgainst" destination="tK4-CJ-coI" id="oCu-5N-b50"/>
+                <outlet property="pDif" destination="BgR-PJ-ZDL" id="EKX-du-OTB"/>
+                <outlet property="pForUs" destination="zpz-lL-lkO" id="TAF-Xu-TDz"/>
+                <outlet property="pTotal" destination="5vb-T1-jU3" id="kk1-w4-acW"/>
+                <outlet property="pickerTeam" destination="u0b-E0-QYs" id="s1F-80-psK"/>
+                <outlet property="teamText" destination="Qb0-w2-HbG" id="E7y-kL-bHn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Games Played" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6c-Zw-0vi">
+                    <rect key="frame" x="66" y="107" width="107" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fMG-1e-Xcu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Games Wins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yk3-km-k4x">
+                    <rect key="frame" x="66" y="147" width="94" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="MVS-Ms-b7w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Games Losses" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyB-hZ-smR">
+                    <rect key="frame" x="66" y="188" width="111" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2y2-n9-4I8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Games Tied" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQm-xZ-Ugb">
+                    <rect key="frame" x="66" y="228" width="111" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="qeR-br-qpf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Points for us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StX-dH-6on">
+                    <rect key="frame" x="293" y="107" width="111" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="O0b-WV-xvC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Points against" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8P-co-gs5">
+                    <rect key="frame" x="293" y="147" width="113" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="aGk-O3-3Wb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Points Dif." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lli-wX-eGG">
+                    <rect key="frame" x="293" y="188" width="113" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZmB-JQ-eJD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaU-fj-Brt">
+                    <rect key="frame" x="293" y="228" width="113" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="AKS-D3-l10"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" red="0.21259482135868715" green="0.30944223895375411" blue="0.97034801136363635" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="gPlayed" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLW-cC-zRA">
+                    <rect key="frame" x="193" y="107" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Lq5-KH-5KQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="gWon" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPM-PQ-U0n">
+                    <rect key="frame" x="193" y="147" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ViP-s2-Bbo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="gTied" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-F8-Gqn">
+                    <rect key="frame" x="193" y="188" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="AE8-BS-I9F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="gLost" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7Y-T6-q46">
+                    <rect key="frame" x="193" y="228" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="K2d-gL-0Y8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pForUs" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zpz-lL-lkO">
+                    <rect key="frame" x="422" y="107" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="oAO-Wl-gX4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pAgainst" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tK4-CJ-coI">
+                    <rect key="frame" x="422" y="147" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EGB-I3-Otm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pTotal" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vb-T1-jU3">
+                    <rect key="frame" x="422" y="228" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bo3-qV-Qyq"/>
+                        <constraint firstAttribute="width" constant="72" id="vr2-t8-isg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="teamText" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb0-w2-HbG">
+                    <rect key="frame" x="279" y="111" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ei1-YX-3oA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="secondLine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q75-eH-9Ql">
+                    <rect key="frame" x="279" y="154" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="3aY-Dg-Wzl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="thirdLine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfx-TG-pSY">
+                    <rect key="frame" x="279" y="195" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gde-2J-kav"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="fourthLine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7Q-27-8UG">
+                    <rect key="frame" x="279" y="232" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KGO-uT-Ppe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u0b-E0-QYs">
+                    <rect key="frame" x="0.0" y="438" width="600" height="162"/>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="groupLbl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-SN-Nl6">
+                    <rect key="frame" x="8" y="73" width="276" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZkR-TJ-4Bn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJs-Gn-7q3">
+                    <rect key="frame" x="313" y="73" width="279" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3oM-JH-RVZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <state key="normal" title="Team"/>
+                    <connections>
+                        <action selector="setTeam:" destination="-1" eventType="touchUpInside" id="he3-47-P8z"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pDif" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgR-PJ-ZDL">
+                    <rect key="frame" x="422" y="188" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KYi-ph-mrM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qb0-w2-HbG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="111" id="1OK-PV-hpg"/>
+                <constraint firstItem="zpz-lL-lkO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="7KV-qp-kc0"/>
+                <constraint firstItem="5vb-T1-jU3" firstAttribute="leading" secondItem="QaU-fj-Brt" secondAttribute="trailing" constant="16" id="9Of-2C-ucz"/>
+                <constraint firstItem="MPM-PQ-U0n" firstAttribute="top" secondItem="lLW-cC-zRA" secondAttribute="bottom" constant="10" id="9PD-r7-9S5"/>
+                <constraint firstAttribute="trailing" secondItem="MJs-Gn-7q3" secondAttribute="trailing" constant="8" id="9TC-9q-Ogc"/>
+                <constraint firstItem="J8P-co-gs5" firstAttribute="leading" secondItem="Q75-eH-9Ql" secondAttribute="trailing" constant="-28" id="BBd-QY-XsK"/>
+                <constraint firstItem="ZyB-hZ-smR" firstAttribute="top" secondItem="Yk3-km-k4x" secondAttribute="bottom" constant="11" id="ClI-iS-zEj"/>
+                <constraint firstItem="y7Q-27-8UG" firstAttribute="top" secondItem="hfx-TG-pSY" secondAttribute="bottom" constant="16" id="D8H-Ng-Nsi"/>
+                <constraint firstItem="J8P-co-gs5" firstAttribute="top" secondItem="StX-dH-6on" secondAttribute="bottom" constant="10" id="DNS-kx-vEG"/>
+                <constraint firstAttribute="centerX" secondItem="y7Q-27-8UG" secondAttribute="centerX" id="JHi-oD-sT4"/>
+                <constraint firstAttribute="centerX" secondItem="hfx-TG-pSY" secondAttribute="centerX" id="JgX-Cw-bK9"/>
+                <constraint firstItem="Roh-F8-Gqn" firstAttribute="leading" secondItem="ZyB-hZ-smR" secondAttribute="trailing" constant="16" id="JiH-Wy-B2K"/>
+                <constraint firstItem="BgR-PJ-ZDL" firstAttribute="leading" secondItem="Lli-wX-eGG" secondAttribute="trailing" constant="16" id="M41-QP-P1U"/>
+                <constraint firstItem="xkm-SN-Nl6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="ME2-ac-mAl"/>
+                <constraint firstItem="y7Q-27-8UG" firstAttribute="leading" secondItem="u7Y-T6-q46" secondAttribute="trailing" constant="14" id="MfG-zk-c3Y"/>
+                <constraint firstItem="Qb0-w2-HbG" firstAttribute="leading" secondItem="lLW-cC-zRA" secondAttribute="trailing" constant="14" id="NYN-ez-GDR"/>
+                <constraint firstItem="tK4-CJ-coI" firstAttribute="top" secondItem="zpz-lL-lkO" secondAttribute="bottom" constant="10" id="Qvj-I3-KjM"/>
+                <constraint firstItem="K6c-Zw-0vi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="VYA-HE-jKe"/>
+                <constraint firstItem="QaU-fj-Brt" firstAttribute="top" secondItem="Lli-wX-eGG" secondAttribute="bottom" constant="10" id="WeO-4e-7qk"/>
+                <constraint firstItem="u7Y-T6-q46" firstAttribute="top" secondItem="Roh-F8-Gqn" secondAttribute="bottom" constant="10" id="ZoQ-x0-VqQ"/>
+                <constraint firstItem="xkm-SN-Nl6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="arE-L1-iTt"/>
+                <constraint firstItem="Q75-eH-9Ql" firstAttribute="leading" secondItem="MPM-PQ-U0n" secondAttribute="trailing" constant="14" id="bBb-HB-j2d"/>
+                <constraint firstItem="lLW-cC-zRA" firstAttribute="leading" secondItem="K6c-Zw-0vi" secondAttribute="trailing" constant="20" id="cCM-Gw-F4k"/>
+                <constraint firstItem="StX-dH-6on" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="dc2-bO-K2b"/>
+                <constraint firstItem="lLW-cC-zRA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="dvn-hl-44o"/>
+                <constraint firstItem="u7Y-T6-q46" firstAttribute="leading" secondItem="IQm-xZ-Ugb" secondAttribute="trailing" constant="16" id="eDZ-Sg-1d0"/>
+                <constraint firstItem="MJs-Gn-7q3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="eYa-LO-s9V"/>
+                <constraint firstItem="hfx-TG-pSY" firstAttribute="leading" secondItem="Roh-F8-Gqn" secondAttribute="trailing" constant="14" id="f4b-Vb-OOr"/>
+                <constraint firstAttribute="centerX" secondItem="Q75-eH-9Ql" secondAttribute="centerX" id="fKo-u5-fDP"/>
+                <constraint firstItem="5vb-T1-jU3" firstAttribute="top" secondItem="BgR-PJ-ZDL" secondAttribute="bottom" constant="10" id="fUb-jD-dTo"/>
+                <constraint firstItem="Roh-F8-Gqn" firstAttribute="top" secondItem="MPM-PQ-U0n" secondAttribute="bottom" constant="11" id="fen-zD-vyE"/>
+                <constraint firstItem="zpz-lL-lkO" firstAttribute="leading" secondItem="StX-dH-6on" secondAttribute="trailing" constant="18" id="ffI-la-tjA"/>
+                <constraint firstItem="Lli-wX-eGG" firstAttribute="leading" secondItem="hfx-TG-pSY" secondAttribute="trailing" constant="-28" id="jWN-AI-vM0"/>
+                <constraint firstItem="QaU-fj-Brt" firstAttribute="leading" secondItem="y7Q-27-8UG" secondAttribute="trailing" constant="-28" id="jjR-AD-hcT"/>
+                <constraint firstItem="BgR-PJ-ZDL" firstAttribute="top" secondItem="tK4-CJ-coI" secondAttribute="bottom" constant="11" id="k8w-UY-Avo"/>
+                <constraint firstItem="hfx-TG-pSY" firstAttribute="top" secondItem="Q75-eH-9Ql" secondAttribute="bottom" constant="20" id="mDG-RC-LhP"/>
+                <constraint firstItem="Lli-wX-eGG" firstAttribute="top" secondItem="J8P-co-gs5" secondAttribute="bottom" constant="11" id="nvm-pm-Xwi"/>
+                <constraint firstItem="Yk3-km-k4x" firstAttribute="top" secondItem="K6c-Zw-0vi" secondAttribute="bottom" constant="10" id="pwg-CS-Vqz"/>
+                <constraint firstItem="tK4-CJ-coI" firstAttribute="leading" secondItem="J8P-co-gs5" secondAttribute="trailing" constant="16" id="rAX-MI-A3Z"/>
+                <constraint firstItem="Q75-eH-9Ql" firstAttribute="top" secondItem="Qb0-w2-HbG" secondAttribute="bottom" constant="22" id="tCa-1g-3ic"/>
+                <constraint firstItem="IQm-xZ-Ugb" firstAttribute="top" secondItem="ZyB-hZ-smR" secondAttribute="bottom" constant="10" id="wd0-ZP-K4e"/>
+                <constraint firstAttribute="centerX" secondItem="Qb0-w2-HbG" secondAttribute="centerX" id="zG2-Cq-pXy"/>
+                <constraint firstItem="MPM-PQ-U0n" firstAttribute="leading" secondItem="Yk3-km-k4x" secondAttribute="trailing" constant="33" id="zQD-zr-Fhy"/>
+                <constraint firstItem="StX-dH-6on" firstAttribute="leading" secondItem="Qb0-w2-HbG" secondAttribute="trailing" constant="-28" id="zfP-WX-FH7"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+</document>
