@@ -5,17 +5,23 @@
 //  Created by Vicente Oliva de la Serna on 23/2/15.
 //  Copyright (c) 2015 Vicente Oliva de la Serna. All rights reserved.
 //
-#define NUMBER_OF_SECTIONS 2
+#define NUMBER_OF_SECTIONS 3
 #define NAME_SECTION_HEADER @"Group/Phase Name"
 #define YEAR_SECTION_HEADER @"Year"
+#define TEAMS_SECTION_HEADER @"Teams"
 #define NAME_SECTION  0
 #define YEAR_SECTION  1
+#define TEAMS_SECTION 2
 
 #import "VOSEditGroupViewController.h"
 #import "VOSGroup.h"
 #import "VOSGroupTableViewCell.h"
 #import "VOSYearOfGroupTableViewCell.h"
 #import "VOSYearSelectionViewController.h"
+#import "VOSTeamsInAGroupTableViewCell.h"
+#import "VOSTeam.h"
+#import "VOSClub.h"
+#import "VOSTeamsListViewController.h"
 
 @interface VOSEditGroupViewController ()
 
@@ -72,6 +78,10 @@
         case YEAR_SECTION:
             return YEAR_SECTION_HEADER;
             break;
+
+        case TEAMS_SECTION:
+            return TEAMS_SECTION_HEADER;
+            break;
             
         default:
             [NSException raise:@"Section do not exist" format:nil];
@@ -98,6 +108,21 @@
             return cell;
             break;}
             
+        case TEAMS_SECTION:{
+            VOSTeamsInAGroupTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[VOSTeamsInAGroupTableViewCell cellId] forIndexPath:indexPath];
+            [cell setGroup:self.group];
+            
+            // setting interaction on teams label
+            cell.userInteractionEnabled = YES;
+            cell.backgroundColor = [UIColor lightGrayColor];
+
+            UITapGestureRecognizer *teamsTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                                action:@selector(teamsTapped)];
+            [cell addGestureRecognizer:teamsTapRecognizer];
+
+            return cell;
+            break;}
+            
         default:
             [NSException raise:@"UnkownSection"
                         format:@"Unknown section %ld",(long)indexPath.section];
@@ -108,8 +133,7 @@
 
 
 
--(CGFloat) tableView:(UITableView *)tableView
-heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     switch (indexPath.section) {
         case NAME_SECTION:
@@ -118,6 +142,10 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
             
         case YEAR_SECTION:
             return [VOSYearOfGroupTableViewCell height];
+            break;
+            
+        case TEAMS_SECTION:
+            return [VOSTeamsInAGroupTableViewCell height];
             break;
             
         default:
@@ -136,16 +164,38 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     UINib *datesNib = [UINib nibWithNibName:@"VOSYearOfGroupTableViewCell" bundle:main];
     [self.tableView registerNib:datesNib forCellReuseIdentifier:[VOSYearOfGroupTableViewCell  cellId]];
     
-}
-
-/*
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UINib *teamsNib = [UINib nibWithNibName:@"VOSTeamsInAGroupTableViewCell" bundle:main];
+    [self.tableView registerNib:teamsNib forCellReuseIdentifier:[VOSTeamsInAGroupTableViewCell  cellId]];
     
-    if (indexPath.section == YEAR_SECTION) {
-        
-    }
 }
-*/
 
+-(void)teamsTapped{
+    
+    // Creamos la selección de equipos a mostrar en la siguiente ventana para seleccionar los que son de este grupo
+    NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSTeam entityName]];
+    req.fetchBatchSize = 30;
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"club.name"
+                                                           ascending:YES
+                                                            selector:@selector(caseInsensitiveCompare:)],
+                             [NSSortDescriptor sortDescriptorWithKey:VOSTeamAttributes.name
+                                                           ascending:YES
+                                                            selector:@selector(caseInsensitiveCompare:)] ];
+    
+    NSFetchedResultsController * frc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                           managedObjectContext:self.group.managedObjectContext
+                                                                             sectionNameKeyPath:@"club.name"
+                                                                                      cacheName:nil];
+    
+    // Creamos una instancia del controlador que muestra el listado de Equipos
+    VOSTeamsListViewController * listTeamVC = [[VOSTeamsListViewController alloc] initWithFetchedResultsController:frc
+                                                                                                 style:UITableViewStylePlain];
+    
+    // Le asignamos su grupo para que se pueda actualizar con los equipos seleccionados
+    listTeamVC.group = self.group;
+    
+    // Lo pusheo
+    [self.navigationController pushViewController:listTeamVC
+                                         animated:YES];
+}
 
 @end

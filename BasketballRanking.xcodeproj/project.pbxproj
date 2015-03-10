@@ -91,6 +91,10 @@
 		ADD175681A9D45520048D571 /* VOSEditPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD175671A9D45520048D571 /* VOSEditPlayerViewController.m */; };
 		ADD1756C1A9D47C70048D571 /* VOSPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD1756A1A9D47C70048D571 /* VOSPhotoViewController.m */; };
 		ADD1756D1A9D47C70048D571 /* VOSPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD1756B1A9D47C70048D571 /* VOSPhotoViewController.xib */; };
+		ADF8F7401AAEF46D009564D3 /* VOSTeamsInAGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8F73F1AAEF46D009564D3 /* VOSTeamsInAGroupViewController.m */; };
+		ADF8F74B1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8F7491AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.m */; };
+		ADF8F74C1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF8F74A1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.xib */; };
+		ADF8F7551AAF5D26009564D3 /* VOSTeamsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8F7541AAF5D26009564D3 /* VOSTeamsListViewController.m */; };
 		ADF9FE191AA3695B002BE1D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF9FE181AA3695B002BE1D4 /* CoreGraphics.framework */; };
 		ADF9FE1B1AA36965002BE1D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF9FE1A1AA36965002BE1D4 /* Foundation.framework */; };
 		ADF9FE1D1AA36977002BE1D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF9FE1C1AA36977002BE1D4 /* UIKit.framework */; };
@@ -258,6 +262,13 @@
 		ADD175691A9D47C70048D571 /* VOSPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPhotoViewController.h; sourceTree = "<group>"; };
 		ADD1756A1A9D47C70048D571 /* VOSPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPhotoViewController.m; sourceTree = "<group>"; };
 		ADD1756B1A9D47C70048D571 /* VOSPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPhotoViewController.xib; sourceTree = "<group>"; };
+		ADF8F73E1AAEF46D009564D3 /* VOSTeamsInAGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSTeamsInAGroupViewController.h; sourceTree = "<group>"; };
+		ADF8F73F1AAEF46D009564D3 /* VOSTeamsInAGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSTeamsInAGroupViewController.m; sourceTree = "<group>"; };
+		ADF8F7481AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSTeamsInAGroupTableViewCell.h; sourceTree = "<group>"; };
+		ADF8F7491AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSTeamsInAGroupTableViewCell.m; sourceTree = "<group>"; };
+		ADF8F74A1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSTeamsInAGroupTableViewCell.xib; sourceTree = "<group>"; };
+		ADF8F7531AAF5D26009564D3 /* VOSTeamsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSTeamsListViewController.h; sourceTree = "<group>"; };
+		ADF8F7541AAF5D26009564D3 /* VOSTeamsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSTeamsListViewController.m; sourceTree = "<group>"; };
 		ADF9FE181AA3695B002BE1D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ADF9FE1A1AA36965002BE1D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADF9FE1C1AA36977002BE1D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -334,6 +345,9 @@
 				ADD1755C1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.h */,
 				ADD1755D1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m */,
 				ADD1755E1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib */,
+				ADF8F7481AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.h */,
+				ADF8F7491AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.m */,
+				ADF8F74A1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.xib */,
 			);
 			name = GroupManagement;
 			sourceTree = "<group>";
@@ -524,6 +538,10 @@
 				ADB0F83D1AA744DF0025EEF6 /* VOSDetailClasificationViewController.h */,
 				ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */,
 				ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */,
+				ADF8F73E1AAEF46D009564D3 /* VOSTeamsInAGroupViewController.h */,
+				ADF8F73F1AAEF46D009564D3 /* VOSTeamsInAGroupViewController.m */,
+				ADF8F7531AAF5D26009564D3 /* VOSTeamsListViewController.h */,
+				ADF8F7541AAF5D26009564D3 /* VOSTeamsListViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -535,9 +553,7 @@
 				ADA19F471A9C748300687BA2 /* TeamsManagement */,
 				AD7643BE1A98FB3B005C31D3 /* GroupManagement */,
 				AD7643BD1A98FAE7005C31D3 /* ClubManagement */,
-				AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */,
-				AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */,
-				AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */,
+				ADF8F7471AAF2D15009564D3 /* ActionManagement */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -586,6 +602,16 @@
 				ADAA9F5B1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib */,
 			);
 			name = PlayerManagement;
+			sourceTree = "<group>";
+		};
+		ADF8F7471AAF2D15009564D3 /* ActionManagement */ = {
+			isa = PBXGroup;
+			children = (
+				AD78DDEA1A92C61700541CC7 /* VOSActionTableViewCell.h */,
+				AD78DDEB1A92C61700541CC7 /* VOSActionTableViewCell.m */,
+				AD78DDEC1A92C61700541CC7 /* VOSActionTableViewCell.xib */,
+			);
+			name = ActionManagement;
 			sourceTree = "<group>";
 		};
 		ADF9FE1E1AA36A05002BE1D4 /* Frameworks */ = {
@@ -699,6 +725,7 @@
 				AD78DD871A92B77A00541CC7 /* LaunchScreen.xib in Resources */,
 				AD77F69C1A9378FF0029F418 /* VOSGroupTableViewCell.xib in Resources */,
 				AD7134D91A96040A00F272CE /* VOSClubDirectionTableViewCell.xib in Resources */,
+				ADF8F74C1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.xib in Resources */,
 				ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */,
 				ADD1756D1A9D47C70048D571 /* VOSPhotoViewController.xib in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
@@ -761,6 +788,7 @@
 				ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */,
 				ADB0F8401AA744DF0025EEF6 /* VOSDetailClasificationViewController.m in Sources */,
 				AD78DD9E1A92B78E00541CC7 /* Model.xcdatamodeld in Sources */,
+				ADF8F7551AAF5D26009564D3 /* VOSTeamsListViewController.m in Sources */,
 				AD78DDB21A92BE8100541CC7 /* _VOSCategory.m in Sources */,
 				ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */,
 				ADAA9F5A1AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m in Sources */,
@@ -769,6 +797,7 @@
 				AD77F69B1A9378FF0029F418 /* VOSGroupTableViewCell.m in Sources */,
 				AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */,
 				AD78DDE01A92C24F00541CC7 /* VOSCategoriesViewController.m in Sources */,
+				ADF8F7401AAEF46D009564D3 /* VOSTeamsInAGroupViewController.m in Sources */,
 				ADAB4BD11A964FE0000B3054 /* UIImage+RoundedCorner.m in Sources */,
 				AD77F6971A93718E0029F418 /* VOSGroupsViewController.m in Sources */,
 				ADA19F4A1A9C750C00687BA2 /* VOSTeamsViewController.m in Sources */,
@@ -782,6 +811,7 @@
 				ADC6DC891A9500010022BAC9 /* VOSClasification.m in Sources */,
 				AD78DDB71A92BE8100541CC7 /* _VOSStatistic.m in Sources */,
 				ADAB4BD01A964FE0000B3054 /* UIImage+Resize.m in Sources */,
+				ADF8F74B1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

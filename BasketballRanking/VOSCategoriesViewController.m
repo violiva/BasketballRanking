@@ -136,7 +136,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
                                                                              sectionNameKeyPath:nil
                                                                                       cacheName:nil];
     
-    // Creamos una instancia de controlador de Notas
+    // Creamos una instancia de controlador de Grupos
     VOSGroupsViewController * grVC = [[VOSGroupsViewController alloc] initWithFetchedResultsController:frc
                                                                                                  style:UITableViewStylePlain];
     
