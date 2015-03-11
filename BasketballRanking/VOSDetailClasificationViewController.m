@@ -27,16 +27,16 @@
 @implementation VOSDetailClasificationViewController
 
 #pragma mark - Init
--(id) initWithModel: (VOSClasification *) aModel{
+-(id) initWithModel:(id) model{
     
     if ( self = [super initWithNibName:nil
                                 bundle:nil]){
-        _clasif = aModel;
+        _clasif = model;
     }
     return self;
 }
 
--(id) initForNewClasificationforGroup: (VOSGroup *) group{
+-(id) initForNewClasificationInGroup: (VOSGroup *) group{
     VOSClasification *clas = [VOSClasification clasificiationWithGroup:group
                                                                context:group.managedObjectContext] ;
     

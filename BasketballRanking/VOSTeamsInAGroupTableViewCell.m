@@ -36,7 +36,7 @@
 
 #pragma mark - Class methods
 +(CGFloat)height{
-    return 210.0f;
+    return 250.0f;
 }
 
 +(NSString *)cellId{

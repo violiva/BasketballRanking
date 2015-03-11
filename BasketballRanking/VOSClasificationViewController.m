@@ -10,6 +10,7 @@
 #import "VOSGroup.h"
 #import "VOSClasification.h"
 #import "VOSTeam.h"
+#import "VOSDetailClasificationViewController.h"
 
 @interface VOSClasificationViewController ()
 {
@@ -33,7 +34,7 @@
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    self.title = self.group.name;
+    self.title = [NSString stringWithFormat:@"Teams in Group: %@", self.group.name];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,8 +86,11 @@
 
 #pragma mark - Actions
 -(void) addClasif:(id) sender{
-    
-    
+
+    VOSDetailClasificationViewController *newClasifVC = [[VOSDetailClasificationViewController alloc] initForNewClasificationInGroup:self.group];
+
+    [self.navigationController pushViewController:newClasifVC animated:YES];
+
 }
 
 - (void)presentViewController:(UIViewController *)viewControllerToPresent
@@ -101,6 +105,12 @@
     VOSClasification * clasification = [self.fetchedResultsController objectAtIndexPath:indexPath];
   
     NSLog( @"Edición de datos estadísticos del grupo: %@ y equipo: %@", self.group.name, clasification.team.name);
+    
+
+    VOSDetailClasificationViewController *updateClasifVC = [[VOSDetailClasificationViewController alloc] initWithModel:clasification ];
+    
+    [self.navigationController pushViewController:updateClasifVC animated:YES];
+
     
     // crear formulario para editar el grupo
 //    VOSEditGroupViewController * editGroupVC = [[VOSEditGroupViewController alloc] initWithModel:gr];

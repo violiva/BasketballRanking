@@ -9,6 +9,7 @@
 @class UIKit;
 @class VOSClasification;
 @class VOSGroup;
+@class VOSTeam;
 
 @interface VOSDetailClasificationViewController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -30,6 +31,6 @@
 - (IBAction)setTeam:(id)sender;
 
 -(id) initWithModel:(id) model;
--(id) initForNewClasificationforGroup: (VOSGroup *) group;
+-(id) initForNewClasificationInGroup: (VOSGroup *) group;
 
 @end
