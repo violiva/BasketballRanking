@@ -5,11 +5,11 @@
 @interface VOSClasification : _VOSClasification {}
 // Custom logic goes here.
 
-+(instancetype) clasificiationWithGroup:(VOSGroup *) group
-                                   team:(VOSTeam *) team
++(instancetype) clasificationWithGroup:(VOSGroup *) group
+                                  team:(VOSTeam *) team
                          context:(NSManagedObjectContext *) context;
 
-+(instancetype) clasificiationWithGroup:(VOSGroup *) group
-                                context:(NSManagedObjectContext *) context;
++(instancetype) clasificationWithGroup:(VOSGroup *) group
+                               context:(NSManagedObjectContext *) context;
 
 @end

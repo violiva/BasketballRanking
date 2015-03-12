@@ -130,9 +130,12 @@
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSClasification entityName]];
     
     req.fetchBatchSize = 30;
-    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"team.name"
-                                                           ascending:YES
-                                                            selector:@selector(caseInsensitiveCompare:)] ];
+//    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"team.name"
+//                                                           ascending:YES
+//                                                            selector:@selector(caseInsensitiveCompare:)] ];
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSClasificationAttributes.totalPoints
+                                                           ascending:NO
+                                                            selector:nil] ];
     
     req.predicate = [NSPredicate predicateWithFormat:@"group == %@", gr];
     
@@ -140,6 +143,15 @@
                                                                            managedObjectContext:self.fetchedResultsController.managedObjectContext
                                                                              sectionNameKeyPath:nil
                                                                                       cacheName:nil];
+    
+/*---------------------------------------
+    NSArray *fetchedObjects;
+    NSError * error = nil;
+    fetchedObjects = [self.fetchedResultsController.managedObjectContext executeFetchRequest:req error:&error];
+    
+    NSLog(@"Registros : %lu", (unsigned long)[fetchedObjects count] );
+//---------------------------------------*/
+
     
     // Creamos una instancia de controlador de Clasificaciones para este grupo
     VOSClasificationViewController * clasifVC = [[VOSClasificationViewController alloc] initWithFetchedResultsController:frc

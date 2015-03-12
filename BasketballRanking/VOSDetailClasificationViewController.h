@@ -24,7 +24,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *pDif;
 @property (weak, nonatomic) IBOutlet UITextField *pTotal;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerTeam;
-@property (weak, nonatomic) IBOutlet UILabel *teamText;
+@property (weak, nonatomic) IBOutlet UITextView *caption;
 
 @property (nonatomic, strong) VOSClasification * clasif;
 

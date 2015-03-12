@@ -11,9 +11,9 @@
 @implementation VOSClasification
 
 // Custom logic goes here.
-+(instancetype) clasificiationWithGroup:(VOSGroup *) group
-                                   team:(VOSTeam *) team
-                                context:(NSManagedObjectContext *) context{
++(instancetype) clasificationWithGroup:(VOSGroup *) group
+                                  team:(VOSTeam *) team
+                               context:(NSManagedObjectContext *) context{
     
     VOSClasification * clasif = [self insertInManagedObjectContext:context];
     clasif.group = group;
@@ -31,11 +31,11 @@
     return clasif;
 }
 
-+(instancetype) clasificiationWithGroup:(VOSGroup *) group
-                                context:(NSManagedObjectContext *) context{
-    return [self clasificiationWithGroup:group
-                                    team:nil
-                                 context:context];
++(instancetype) clasificationWithGroup:(VOSGroup *) group
+                               context:(NSManagedObjectContext *) context{
+    return [self clasificationWithGroup:group
+                                   team:nil
+                                context:context];
 }
 
 @end

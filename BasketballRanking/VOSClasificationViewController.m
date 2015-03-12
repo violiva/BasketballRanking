@@ -11,6 +11,7 @@
 #import "VOSClasification.h"
 #import "VOSTeam.h"
 #import "VOSDetailClasificationViewController.h"
+#import "VOSClub.h"
 
 @interface VOSClasificationViewController ()
 {
@@ -50,12 +51,14 @@
     static NSString * cellId = @"clasificationCell";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (cell == nil ){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
     
     // la configuramos
-    cell.textLabel.text = clasif.team.name;
     cell.textLabel.font = [UIFont fontWithName:@"Dosis Book" size:20];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", clasif.team.club.name, clasif.team.name];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"PT: %d, PU: %d, PA: %d, Dif: %d", clasif.totalPoints.intValue,
+                                 clasif.pointsForUs.intValue, clasif.pointsAgainst.intValue, clasif.dif.intValue  ];
     
     // la devolvemos
     return cell;
@@ -103,20 +106,12 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // Averiguar el grupo
     VOSClasification * clasification = [self.fetchedResultsController objectAtIndexPath:indexPath];
-  
-    NSLog( @"Edición de datos estadísticos del grupo: %@ y equipo: %@", self.group.name, clasification.team.name);
-    
 
+    // Creamos el controlador
     VOSDetailClasificationViewController *updateClasifVC = [[VOSDetailClasificationViewController alloc] initWithModel:clasification ];
     
+    // lo pusheamos
     [self.navigationController pushViewController:updateClasifVC animated:YES];
-
-    
-    // crear formulario para editar el grupo
-//    VOSEditGroupViewController * editGroupVC = [[VOSEditGroupViewController alloc] initWithModel:gr];
-    
-    // Hacerle push
-//    [self.navigationController pushViewController:editGroupVC animated:YES];
 }
 
 @end

@@ -9,18 +9,22 @@
 #import "VOSDetailClasificationViewController.h"
 #import "VOSClasification.h"
 #import "VOSGroup.h"
+#import "VOSCategory.h"
 #import "VOSTeam.h"
+#import "VOSClub.h"
 
 @interface VOSDetailClasificationViewController ()
+/*
 {
     NSFetchedResultsController *frcTeam;
 }
+*/
 
 @property (strong, nonatomic) NSArray *arrayPicker;
-@property (strong, nonatomic) NSMutableDictionary *aTeams;
 @property (nonatomic) BOOL new;
 @property (nonatomic) BOOL deleteClasification;
 @property (nonatomic, strong) VOSGroup * aGroup;
+@property (nonatomic, strong) VOSTeam * aTeamClasif;
 
 @end
 
@@ -32,13 +36,15 @@
     if ( self = [super initWithNibName:nil
                                 bundle:nil]){
         _clasif = model;
+        self.aGroup = self.clasif.group;
+        self.aTeamClasif = self.clasif.team;
     }
     return self;
 }
 
 -(id) initForNewClasificationInGroup: (VOSGroup *) group{
-    VOSClasification *clas = [VOSClasification clasificiationWithGroup:group
-                                                               context:group.managedObjectContext] ;
+    VOSClasification *clas = [VOSClasification clasificationWithGroup:group
+                                                              context:group.managedObjectContext] ;
     
     _new = YES;
     _aGroup = group;
@@ -48,7 +54,10 @@
 #pragma mark - Actions
 - (IBAction)setTeam:(id)sender {
     self.pickerTeam.hidden = NO;
+    self.caption.hidden = YES;
+    
     [self loadPickerWithTeamsFromGroup];
+
     [self.pickerTeam reloadAllComponents];
 
 }
@@ -68,7 +77,6 @@
     self.pickerTeam.delegate = self;
     self.pickerTeam.dataSource = self;
     self.pickerTeam.hidden = YES;
-    
 }
 
 -(void) viewWillAppear:(BOOL)animated{
@@ -76,18 +84,24 @@
     
     // modelo -> vista
     
-    self.groupLbl.text = self.clasif.group.name;
-    self.gPlayed.text = [NSString stringWithFormat:@"%@", self.clasif.gamesPlayed];
-    self.gWon.text = [NSString stringWithFormat:@"%@", self.clasif.gamesWon];
-    self.gTied.text = [NSString stringWithFormat:@"%@", self.clasif.gamesTied];
-    self.gLost.text = [NSString stringWithFormat:@"%@", self.clasif.gamesLost];
-    self.pForUs.text = [NSString stringWithFormat:@"%@", self.clasif.pointsForUs];
-    self.pAgainst.text = [NSString stringWithFormat:@"%@", self.clasif.pointsAgainst];
-    self.pTotal.text = [NSString stringWithFormat:@"%@", self.clasif.totalPoints];
-    self.pDif.text = [NSString stringWithFormat:@"%@", self.clasif.dif];
+    self.groupLbl.text = [NSString stringWithFormat:@"%@ - %@", self.clasif.group.category.name, self.clasif.group.name];
     
-    [self.btnTeam setTitle:@"Select Team" forState:UIControlStateNormal];
+    self.gPlayed.text  = [NSString stringWithFormat:@"%d", self.clasif.gamesPlayed.intValue];
+    self.gWon.text     = [NSString stringWithFormat:@"%d", self.clasif.gamesWon.intValue ];
+    self.gTied.text    = [NSString stringWithFormat:@"%d", self.clasif.gamesTied.intValue];
+    self.gLost.text    = [NSString stringWithFormat:@"%d", self.clasif.gamesLost.intValue];
+    self.pForUs.text   = [NSString stringWithFormat:@"%d", self.clasif.pointsForUs.intValue];
+    self.pAgainst.text = [NSString stringWithFormat:@"%d", self.clasif.pointsAgainst.intValue];
+    self.pTotal.text   = [NSString stringWithFormat:@"%d", self.clasif.totalPoints.intValue];
+    self.pDif.text     = [NSString stringWithFormat:@"%d", self.clasif.dif.intValue];
     
+    if (!self.clasif.team){
+        [self.btnTeam setTitle:@"Select Team" forState:UIControlStateNormal];
+    }else{
+        [self.btnTeam setTitle:[NSString stringWithFormat:@"%@ - %@", self.clasif.team.club.name, self.clasif.team.name]
+                      forState:UIControlStateNormal];
+    }
+
     [self startObservingKeyboard];
     [self setupInputAccessoryView];
     
@@ -115,6 +129,9 @@
     self.pAgainst.delegate = self;
     self.pTotal.delegate = self;
     self.pDif.delegate = self;
+    
+    [self loadPickerWithTeamsFromGroup];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -138,8 +155,7 @@
         self.clasif.totalPoints = @([self.pTotal.text intValue]);
         self.clasif.dif = @([self.pDif.text intValue]);
 
-        //  REVISAR PARA SACAR EL VALOR DEL TEAM DEL NSDICTIONARY
-        self.clasif.team = [self.aTeams objectForKey:self.teamText.text];
+        self.clasif.team = self.aTeamClasif;
     }
     [self stopObservingKeyboard];
 }
@@ -194,6 +210,7 @@
 }
 
 -(void)notifyThatKeyboardWillAppear:(NSNotification *)notification{
+    self.caption.hidden = YES;
 /*
     // extraer el userInfo con la información auxiliar de la notificación.
     NSDictionary *dict = notification.userInfo;
@@ -223,6 +240,7 @@
 }
 
 -(void)notifyThatKeyboardWillDisappear:(NSNotification *)notification{
+    self.caption.hidden = NO;
 /*
     // extraer el userInfo con la información auxiliar de la notificación.
     NSDictionary *dict = notification.userInfo;
@@ -253,7 +271,7 @@
 -(void)hideKeyboard:(id) sender{
     [self.view endEditing:YES];
 
-    self.pickerTeam.hidden = NO;
+    self.pickerTeam.hidden = YES;
     
     // esta llamada no pasa por el método shouldReturn directamente va al didEndEditing.
     // validateValue:forKey:Error: son métodos de NSManagedObject y sería ahí donde habría que implementar los métodos de validación.
@@ -269,14 +287,17 @@
 -(void)loadPickerWithTeamsFromGroup{
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSTeam entityName]];
     req.fetchBatchSize = 15;
-    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSTeamAttributes.name
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"club.name"
+                                                           ascending:YES
+                                                            selector:@selector(caseInsensitiveCompare:)],
+                             [NSSortDescriptor sortDescriptorWithKey:VOSTeamAttributes.name
                                                            ascending:YES
                                                             selector:@selector(caseInsensitiveCompare:)] ];
     
     
-    req.predicate = [NSPredicate predicateWithFormat:@"group == %@", self.aGroup ];
-
-    frcTeam = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+    req.predicate = [NSPredicate predicateWithFormat:@"group CONTAINS[cd] %@", self.clasif.group ];
+    
+    NSFetchedResultsController *frcTeam = [[NSFetchedResultsController alloc] initWithFetchRequest:req
                                                   managedObjectContext:self.clasif.managedObjectContext
                                                     sectionNameKeyPath:nil
                                                              cacheName:nil ];
@@ -289,18 +310,16 @@
     }
     
     self.arrayPicker = [[NSArray alloc] init];
-    self.aTeams = [[NSMutableDictionary alloc] init];
     self.arrayPicker = [self.aGroup.managedObjectContext executeFetchRequest:req error:&err ];
-    
-    for (VOSTeam *team in self.arrayPicker) {
-        NSLog(@"Equipo: %@", team.name);
-        [self.aTeams setObject:team
-                     forKey:team.name];
 
-    }
+    /*---------------------------------------
+     NSArray *fetchedObjects;
+     NSError * error = nil;
+     fetchedObjects = [self.clasif.managedObjectContext executeFetchRequest:req error:&error];
+     
+     NSLog(@"Registros : %lu", (unsigned long)[fetchedObjects count] );
+    //---------------------------------------*/
 
-    
-    
 }
 
 // returns the # of rows in each component..
@@ -313,50 +332,32 @@
 #pragma mark - PickerViewDelegate
 -(NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     
-    return [[self.arrayPicker objectAtIndex:row] name];
-}
-
-/*
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-//-------------------------
-    NSManagedObject *team = [[[self fetchedResultsController] fetchedObjects] objectAtIndex:row];
-    NSString *name = (NSString *)[gym valueForKey:@"name"];
-    return name;
-//-------------------------
-    NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSTeam entityName]];
-    req.fetchBatchSize = 30;
-    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSTeamAttributes.name
-                                                           ascending:YES
-                                                            selector:@selector(caseInsensitiveCompare:)] ];
+    VOSTeam *teamRow = [self.arrayPicker objectAtIndex:row];
+    NSString *teamText = [NSString stringWithFormat:@"%@ - %@", teamRow.club.name, teamRow.name];
     
-    
-    req.predicate = [NSPredicate predicateWithFormat:@"group == %@", self.aGroup ];
-    frcTeam = [[NSFetchedResultsController alloc] initWithFetchRequest:req
-                                                  managedObjectContext:self.aGroup.managedObjectContext
-                                                    sectionNameKeyPath:nil
-                                                             cacheName:nil ];
-
-    NSManagedObject *team = [[frcTeam fetchedObjects] objectAtIndex:row];
-    NSString *name = (NSString *)[team valueForKey:@"name"];
-    return name;
+    return teamText;
 }
-*/
 
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-        self.teamText.text = [[self.arrayPicker objectAtIndex:row] name];
-        [self.btnTeam setTitle:[[self.arrayPicker objectAtIndex:row] name] forState:UIControlStateNormal];
+    
+    VOSTeam *teamRow = [self.arrayPicker objectAtIndex:row];
+    NSString *teamText = [NSString stringWithFormat:@"%@ - %@", teamRow.club.name, teamRow.name];
+
+    [self.btnTeam setTitle:teamText forState:UIControlStateNormal];
+    self.aTeamClasif = teamRow;
 }
 
-
+#pragma mark - Utils
 // Metodo para que desaparezca el pickerview cuando pulsas fuera de el
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)eve
 {
     if ( !self.pickerTeam.hidden) {
         self.pickerTeam.hidden = YES;
+        self.caption.hidden = NO;
+
     }
     
 }
-
 
 @end
