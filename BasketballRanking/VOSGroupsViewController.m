@@ -122,7 +122,7 @@
 
 -(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     
-    // Averiguar cual fue la categoría seleccionada
+    // Averiguar cual fue el grupo seleccionado
     VOSGroup * gr = [self.fetchedResultsController objectAtIndexPath:indexPath];
     NSLog(@"Grupo Seleccionado: %@ ", gr.name);
     

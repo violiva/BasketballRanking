@@ -14,11 +14,6 @@
 #import "VOSClub.h"
 
 @interface VOSDetailClasificationViewController ()
-/*
-{
-    NSFetchedResultsController *frcTeam;
-}
-*/
 
 @property (strong, nonatomic) NSArray *arrayPicker;
 @property (nonatomic) BOOL new;

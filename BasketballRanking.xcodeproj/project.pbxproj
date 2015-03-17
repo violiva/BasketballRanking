@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AD4D87121A96156000E08F03 /* VOSEditClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */; };
 		AD52E25A1AA531960009353C /* mobilephone15.png in Resources */ = {isa = PBXBuildFile; fileRef = AD52E2591AA531960009353C /* mobilephone15.png */; };
+		AD5689ED1AB6D1BD002F2E09 /* VOSGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5689EC1AB6D1BD002F2E09 /* VOSGamesViewController.m */; };
+		AD5689F11AB6E3AC002F2E09 /* VOSSelectNewGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5689EF1AB6E3AC002F2E09 /* VOSSelectNewGameViewController.m */; };
+		AD5689F21AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5689F01AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib */; };
 		AD5DB7211A9B80A900F9DACE /* VOSEditGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */; };
 		AD7134CC1A95EAD500F272CE /* VOSClubsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CB1A95EAD500F272CE /* VOSClubsViewController.m */; };
 		AD7134D01A95FBFF00F272CE /* VOSClubNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7134CE1A95FBFF00F272CE /* VOSClubNameTableViewCell.m */; };
@@ -116,6 +119,11 @@
 		AD4D87101A96156000E08F03 /* VOSEditClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditClubViewController.h; sourceTree = "<group>"; };
 		AD4D87111A96156000E08F03 /* VOSEditClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditClubViewController.m; sourceTree = "<group>"; };
 		AD52E2591AA531960009353C /* mobilephone15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobilephone15.png; sourceTree = "<group>"; };
+		AD5689EB1AB6D1BD002F2E09 /* VOSGamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSGamesViewController.h; sourceTree = "<group>"; };
+		AD5689EC1AB6D1BD002F2E09 /* VOSGamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSGamesViewController.m; sourceTree = "<group>"; };
+		AD5689EE1AB6E3AC002F2E09 /* VOSSelectNewGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSSelectNewGameViewController.h; sourceTree = "<group>"; };
+		AD5689EF1AB6E3AC002F2E09 /* VOSSelectNewGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSSelectNewGameViewController.m; sourceTree = "<group>"; };
+		AD5689F01AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSSelectNewGameViewController.xib; sourceTree = "<group>"; };
 		AD5DB71F1A9B80A900F9DACE /* VOSEditGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditGroupViewController.h; sourceTree = "<group>"; };
 		AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditGroupViewController.m; sourceTree = "<group>"; };
 		AD7134CA1A95EAD500F272CE /* VOSClubsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSClubsViewController.h; sourceTree = "<group>"; };
@@ -422,22 +430,22 @@
 			isa = PBXGroup;
 			children = (
 				AD78DD9C1A92B78E00541CC7 /* Model.xcdatamodeld */,
-				ADC6DC831A9500010022BAC9 /* VOSClasification.h */,
-				ADC6DC841A9500010022BAC9 /* VOSClasification.m */,
-				ADC6DC851A9500010022BAC9 /* VOSClub.h */,
-				ADC6DC861A9500010022BAC9 /* VOSClub.m */,
-				ADC6DC871A9500010022BAC9 /* VOSLogo.h */,
-				ADC6DC881A9500010022BAC9 /* VOSLogo.m */,
-				AD78DDD71A92C1AA00541CC7 /* VOSCoreDataStack.h */,
-				AD78DDD81A92C1AA00541CC7 /* VOSCoreDataStack.m */,
 				AD78DDB91A92BE9C00541CC7 /* VOSAction.h */,
 				AD78DDBA1A92BE9C00541CC7 /* VOSAction.m */,
 				AD78DDBB1A92BE9C00541CC7 /* VOSCategory.h */,
 				AD78DDBC1A92BE9C00541CC7 /* VOSCategory.m */,
+				ADC6DC831A9500010022BAC9 /* VOSClasification.h */,
+				ADC6DC841A9500010022BAC9 /* VOSClasification.m */,
+				ADC6DC851A9500010022BAC9 /* VOSClub.h */,
+				ADC6DC861A9500010022BAC9 /* VOSClub.m */,
+				AD78DDD71A92C1AA00541CC7 /* VOSCoreDataStack.h */,
+				AD78DDD81A92C1AA00541CC7 /* VOSCoreDataStack.m */,
 				AD78DDBD1A92BE9C00541CC7 /* VOSGame.h */,
 				AD78DDBE1A92BE9C00541CC7 /* VOSGame.m */,
 				AD78DDBF1A92BE9C00541CC7 /* VOSGroup.h */,
 				AD78DDC01A92BE9C00541CC7 /* VOSGroup.m */,
+				ADC6DC871A9500010022BAC9 /* VOSLogo.h */,
+				ADC6DC881A9500010022BAC9 /* VOSLogo.m */,
 				AD78DDC11A92BE9C00541CC7 /* VOSPhotoContainer.h */,
 				AD78DDC21A92BE9C00541CC7 /* VOSPhotoContainer.m */,
 				AD78DDC31A92BE9C00541CC7 /* VOSPlayer.h */,
@@ -525,6 +533,8 @@
 				AD5DB7201A9B80A900F9DACE /* VOSEditGroupViewController.m */,
 				ADD175661A9D45520048D571 /* VOSEditPlayerViewController.h */,
 				ADD175671A9D45520048D571 /* VOSEditPlayerViewController.m */,
+				AD5689EB1AB6D1BD002F2E09 /* VOSGamesViewController.h */,
+				AD5689EC1AB6D1BD002F2E09 /* VOSGamesViewController.m */,
 				AD77F6951A93718E0029F418 /* VOSGroupsViewController.h */,
 				AD77F6961A93718E0029F418 /* VOSGroupsViewController.m */,
 				ADAB4BC41A964D48000B3054 /* VOSLogoViewController.h */,
@@ -537,6 +547,9 @@
 				ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */,
 				ADAA9F5D1AA0C674006A1017 /* VOSPlayerCollectionViewController.h */,
 				ADAA9F5E1AA0C674006A1017 /* VOSPlayerCollectionViewController.m */,
+				AD5689EE1AB6E3AC002F2E09 /* VOSSelectNewGameViewController.h */,
+				AD5689EF1AB6E3AC002F2E09 /* VOSSelectNewGameViewController.m */,
+				AD5689F01AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib */,
 				ADA19F481A9C750C00687BA2 /* VOSTeamsViewController.h */,
 				ADA19F491A9C750C00687BA2 /* VOSTeamsViewController.m */,
 				ADF8F73E1AAEF46D009564D3 /* VOSTeamsInAGroupViewController.h */,
@@ -717,6 +730,7 @@
 				AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */,
 				ADB0F8411AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib in Resources */,
 				AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */,
+				AD5689F21AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib in Resources */,
 				ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */,
 				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
 				ADAB28C31AA5F820003272FB /* VOSEditCategoryViewController.xib in Resources */,
@@ -777,6 +791,7 @@
 				ADAA9F5F1AA0C674006A1017 /* VOSPlayerCollectionViewController.m in Sources */,
 				ADD1756C1A9D47C70048D571 /* VOSPhotoViewController.m in Sources */,
 				ADAB4BC71A964D48000B3054 /* VOSLogoViewController.m in Sources */,
+				AD5689ED1AB6D1BD002F2E09 /* VOSGamesViewController.m in Sources */,
 				AD78DDCB1A92BE9C00541CC7 /* VOSGame.m in Sources */,
 				ADC6DC801A94FFC70022BAC9 /* _VOSClasification.m in Sources */,
 				AD7134E01A9605C600F272CE /* VOSClubLogoTableViewCell.m in Sources */,
@@ -794,6 +809,7 @@
 				ADC6DC821A94FFC70022BAC9 /* _VOSLogo.m in Sources */,
 				ADAA9F5A1AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m in Sources */,
 				ADAF7A731A9F3DE600D4A096 /* VOSCoreDataCollectionViewController.m in Sources */,
+				AD5689F11AB6E3AC002F2E09 /* VOSSelectNewGameViewController.m in Sources */,
 				ADAB28C21AA5F820003272FB /* VOSEditCategoryViewController.m in Sources */,
 				AD77F69B1A9378FF0029F418 /* VOSGroupTableViewCell.m in Sources */,
 				AD78DDDD1A92C1F900541CC7 /* VOSCoreDataTableViewController.m in Sources */,

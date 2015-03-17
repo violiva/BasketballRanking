@@ -183,7 +183,6 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pTotal" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vb-T1-jU3">
                     <rect key="frame" x="330" y="276" width="72" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="H4q-b9-ocg"/>
                         <constraint firstAttribute="height" constant="30" id="bo3-qV-Qyq"/>
                         <constraint firstAttribute="width" constant="72" id="vr2-t8-isg"/>
                     </constraints>

@@ -15,6 +15,8 @@
 #import "VOSActionTableViewController.h"
 #import "VOSClub.h"
 #import "VOSClubsViewController.h"
+#import "VOSGame.h"
+#import "VOSGamesViewController.h"
 
 #define ACTION_TABLE_CREATED @"SAVED"
 
@@ -82,11 +84,33 @@
     UINavigationController * clubNav = [[UINavigationController alloc] initWithRootViewController:clubVC];
 //    ---------------------------------------------------------------*/
 
+    
+    //    /*--------------------------------------------------------------
+    
+    // Creamos el conjunto de datos de Partidos
+    NSFetchRequest *reqMatches = [NSFetchRequest fetchRequestWithEntityName:[VOSGame entityName]];
+    reqMatches.fetchBatchSize = 30;
+    reqMatches.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSGameAttributes.date
+                                                           ascending:NO
+                                                            selector:@selector(caseInsensitiveCompare:)] ];
+    
+    
+    NSFetchedResultsController * frcMatches = [[NSFetchedResultsController alloc] initWithFetchRequest:reqMatches
+                                                                               managedObjectContext:self.stack.context
+                                                                                 sectionNameKeyPath:nil
+                                                                                          cacheName:nil ];
+    
+    VOSGamesViewController * gamesVC = [[VOSGamesViewController alloc] initWithFetchedResultsController:frcMatches
+                                                                                                 style:UITableViewStylePlain];
+    
+    UINavigationController * gamesNav = [[UINavigationController alloc] initWithRootViewController:gamesVC];
+    //    ---------------------------------------------------------------*/
+    
     // despues creamos el combinador
     UITabBarController * tabVC =  [[UITabBarController alloc] init];
     
     // Cargamos el array con los controladores que se tienen que mostrar en el combinador
-    tabVC.viewControllers = @[catNav, clubNav];
+    tabVC.viewControllers = @[catNav, clubNav, gamesNav];
     
     // lo asignamos como controlador raiz
     self.window.rootViewController = tabVC;
