@@ -12,6 +12,7 @@
 #import "VOSTeam.h"
 #import "VOSDetailClasificationViewController.h"
 #import "VOSClub.h"
+#import "VOSLogo.h"
 
 @interface VOSClasificationViewController ()
 {
@@ -55,6 +56,7 @@
     }
     
     // la configuramos
+    cell.imageView.image = clasif.team.club.logo.image;
     cell.textLabel.font = [UIFont fontWithName:@"Dosis Book" size:20];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", clasif.team.club.name, clasif.team.name];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"PT: %d, PU: %d, PA: %d, Dif: %d", clasif.totalPoints.intValue,

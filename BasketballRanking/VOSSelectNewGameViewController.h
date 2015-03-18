@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickerDate;
 
+@property (nonatomic, strong) NSDate * aDate;
 @property (nonatomic, strong) VOSGame * aGame;
 @property (nonatomic, strong) VOSGroup * aGroup;
 @property (nonatomic, strong) VOSTeam * aLocalTeam;

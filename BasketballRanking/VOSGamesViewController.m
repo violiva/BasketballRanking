@@ -30,8 +30,8 @@
                                                                              action:@selector( addGame: )];
     self.navigationItem.rightBarButtonItem = addBtn;
     
-    UIImage* anImage1 = [UIImage imageNamed:@"Settings_Select.png"];
-    UIImage* anImage2 = [UIImage imageNamed:@"Settings_unSelect.png"];
+    UIImage* anImage1 = [UIImage imageNamed:@"Game_Select.png"];
+    UIImage* anImage2 = [UIImage imageNamed:@"Game_unSelect.png"];
     
     [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Games"
                                                       image: anImage1

@@ -72,6 +72,7 @@
     self.picker.delegate = self;
     self.picker.dataSource = self;
     self.picker.hidden = YES;
+    self.pickerDate.hidden = YES;
     self.pickerSel = SELECT_GROUP;
 }
 
@@ -168,6 +169,7 @@
 {
     if ( !self.picker.hidden) {
         self.picker.hidden = YES;
+        self.pickerDate.hidden = YES;
     }
     
 }
@@ -175,7 +177,28 @@
 
 #pragma mark - Actions
 - (IBAction)matchDateBtn:(id)sender {
+    self.pickerDate.hidden = NO;
+    self.picker.hidden = YES;
 }
+
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+- (void)datePickerDateChanged:(UIDatePicker *)paramDatePicker{
+    if ([paramDatePicker isEqual:self.aDate]){
+        NSLog(@"Selected date = %@", paramDatePicker.date);
+    }
+}
+
+- (void)changeDate:(UIDatePicker *)sender {
+    NSLog(@"New Date: %@", sender.date);
+}
+
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
 
 - (IBAction)groupBtn:(id)sender {
    
@@ -221,7 +244,7 @@
     self.aGame.group = self.aGroup;
     self.aGame.homeTeam = self.aLocalTeam;
     self.aGame.awayTeam = self.aVisitorTeam;
-//----    self.aGame.date = self.
+    self.aGame.date = self.aDate;
 
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -365,5 +388,6 @@
         self.aVisitorTeam = objectRow;
     }
 }
+
 
 @end
