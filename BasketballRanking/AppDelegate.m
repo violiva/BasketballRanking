@@ -92,7 +92,7 @@
     reqMatches.fetchBatchSize = 30;
     reqMatches.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSGameAttributes.date
                                                            ascending:NO
-                                                            selector:@selector(caseInsensitiveCompare:)] ];
+                                                            selector:@selector(compare:)] ];
     
     
     NSFetchedResultsController * frcMatches = [[NSFetchedResultsController alloc] initWithFetchRequest:reqMatches

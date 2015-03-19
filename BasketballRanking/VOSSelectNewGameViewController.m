@@ -73,16 +73,28 @@
     self.picker.dataSource = self;
     self.picker.hidden = YES;
     self.pickerDate.hidden = YES;
+    self.toolbar.hidden = YES;
     self.pickerSel = SELECT_GROUP;
+
+    self.aDate = self.aGame.date;
+    self.localization.text = self.aGame.localization;
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init ];
+//    [formatter setDateFormat:@"dd-MM-YYYY" ];
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    self.dateText.text = [formatter stringFromDate:self.aDate];
 }
 
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     // modelo -> vista
+    self.LocalPoints.text = [NSString stringWithFormat:@"%d", self.aGame.pointHomeValue];
+    self.VisitorPoints.text = [NSString stringWithFormat:@"%d", self.aGame.pointVisitValue];
     
     if (!self.aGame.date){
         [self.matchDateLbl setTitle:@"Select Date" forState:UIControlStateNormal];
+        self.aDate = [NSDate date];
     }else{
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateStyle:NSDateFormatterMediumStyle];
@@ -114,8 +126,6 @@
                              forState:UIControlStateNormal];
     }
 
-    //    [self setupInputAccessoryView];
-    
     // Añadimos botones a la barra de navegación
     UIBarButtonItem *edit = nil;
     if (self.new) {
@@ -129,7 +139,30 @@
                                                              target:self
                                                              action:@selector(delete:)];
     }
-    self.navigationItem.rightBarButtonItem = edit;
+    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
+                                                                          target:self
+                                                                          action:@selector(save:)];
+
+    self.navigationItem.rightBarButtonItems = @[ save, edit];
+    [self loadPickerWithGroups];
+}
+
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    if (self.deleteGame) {
+        [self.aGame.managedObjectContext deleteObject:self.aGame];
+    }else{
+        // vista -> modelo
+        self.aGame.localization = self.localization.text;
+        self.aGame.group = self.aGroup;
+        self.aGame.homeTeam = self.aLocalTeam;
+        self.aGame.awayTeam = self.aVisitorTeam;
+        self.aGame.date = self.aDate;
+        self.aGame.pointHome = @([self.LocalPoints.text intValue]);
+        self.aGame.pointVisit = @([self.VisitorPoints.text intValue]);
+
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -137,74 +170,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*------- No deja establecer esta propiedad cuando es un boton que es de sólo lectura
-#pragma mark -  TextView
--(void) setupInputAccessoryView{
-    
-    UIToolbar *bar = [[UIToolbar alloc] initWithFrame:CGRectMake(0,0, self.view.frame.size.width, 44)];
-    
-    // Buttons
-    UIBarButtonItem *sep = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-                                                                         target:nil
-                                                                         action:nil];
-    UIBarButtonItem *done = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                         target:self
-                                                                         action:@selector(hideKeyboard:)];
-    
-    // añadimos los botones a la barra de navegación creada
-    [bar setItems:@[sep, done]];
-    
-    // asignamos la barra de navegación al campo de texto
-    self.groupLbl.inputAccessoryView = bar;
-}
-*/
-
 #pragma mark - Utils
 -(void)hideKeyboard:(id) sender{
     [self.view endEditing:YES];
 }
 
-// Metodo para que desaparezca el pickerview cuando pulsas fuera de el
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)eve
-{
-    if ( !self.picker.hidden) {
-        self.picker.hidden = YES;
-        self.pickerDate.hidden = YES;
-    }
-    
-}
-
-
 #pragma mark - Actions
 - (IBAction)matchDateBtn:(id)sender {
     self.pickerDate.hidden = NO;
     self.picker.hidden = YES;
+    self.toolbar.hidden = NO;
+    
 }
 
-//------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------
-- (void)datePickerDateChanged:(UIDatePicker *)paramDatePicker{
-    if ([paramDatePicker isEqual:self.aDate]){
-        NSLog(@"Selected date = %@", paramDatePicker.date);
-    }
+- (IBAction)valueChanged:(id)sender{
+    self.aDate = [self.pickerDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init ];
+    [formatter setDateStyle:NSDateFormatterMediumStyle ];
+
+    self.dateText.text = [formatter stringFromDate:self.aDate];
+
 }
 
-- (void)changeDate:(UIDatePicker *)sender {
-    NSLog(@"New Date: %@", sender.date);
+- (IBAction)doneDate:(id)sender {
+    self.pickerDate.hidden = YES;
+    self.picker.hidden = YES;
+    self.toolbar.hidden = YES;
+    
 }
 
-//------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------
 
 - (IBAction)groupBtn:(id)sender {
    
     self.picker.hidden = NO;
     self.pickerDate.hidden = YES;
     self.pickerSel = SELECT_GROUP;
+    self.toolbar.hidden = NO;
     
     [self loadPickerWithGroups];
         
@@ -216,6 +217,7 @@
     self.picker.hidden = NO;
     self.pickerDate.hidden = YES;
     self.pickerSel = SELECT_LOCAL;
+    self.toolbar.hidden = NO;
     
     [self loadPickerTeamsInAGroups];
     
@@ -226,26 +228,20 @@
     self.picker.hidden = NO;
     self.pickerDate.hidden = YES;
     self.pickerSel = SELECT_VISITOR;
+    self.toolbar.hidden = NO;
     
     [self loadPickerTeamsInAGroups];
     
     [self.picker reloadAllComponents];
 }
 
-- (IBAction)CancelBtn:(id)sender {
-    if (self.new) {
-        self.deleteGame = YES;
-        [self.navigationController popViewControllerAnimated:YES];
-    }
-
-}
-
-- (IBAction)doneBtn:(id)sender {
+-(void)save:(id)sender {
+    self.aGame.localization = self.localization.text;
+    self.aGame.date = self.aDate;
     self.aGame.group = self.aGroup;
     self.aGame.homeTeam = self.aLocalTeam;
     self.aGame.awayTeam = self.aVisitorTeam;
-    self.aGame.date = self.aDate;
-
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -253,8 +249,6 @@
     self.deleteGame = YES;
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-
 
 
 #pragma mark - PickerView DataSource
@@ -370,6 +364,14 @@
                        forState:UIControlStateNormal];
         
         self.aGroup = objectRow;
+        
+        // Cuando se cambia el Grupo quitamos los equipos por si hemos seleccionado un grupo distinto y no tiene esos equipos
+        [self.localTeamLbl setTitle:@"Select Local Team"
+                           forState:UIControlStateNormal];
+        [self.visitorTeamLbl setTitle:@"Select Visitor Team"
+                             forState:UIControlStateNormal];
+        self.aLocalTeam = nil;
+        self.aVisitorTeam = nil;
 
     }else if (self.pickerSel == SELECT_LOCAL){
         VOSTeam *objectRow = [self.arrayPicker objectAtIndex:row];

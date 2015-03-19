@@ -67,14 +67,16 @@
     
     // la configuramos
     cell.accessoryType = UITableViewCellAccessoryDetailButton;
-    cell.textLabel.font = [UIFont fontWithName:@"Dosis Book" size:20];
+    cell.textLabel.font = [UIFont fontWithName:@"Dosis Book" size:17];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"dd/MM/YYYY HH:mm"];
     NSString *dateString = [dateFormatter stringFromDate:game.date];
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", game.localization, dateString];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%d) - %@ (%d)", game.homeTeam.club.name, game.pointHome.intValue, game.awayTeam.club.name, game.pointVisit.intValue];
+    NSString *catGroup = [NSString stringWithFormat:@"%@-%@", game.group.category.name, game.group.name];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ (%d) - %@ (%d) (%@)", game.homeTeam.club.name, game.pointHome.intValue, game.awayTeam.club.name, game.pointVisit.intValue, catGroup];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", game.localization, dateString];
     
     // la devolvemos
     return cell;
@@ -114,7 +116,7 @@
                                   [NSSortDescriptor sortDescriptorWithKey:VOSGroupAttributes.name
                                                                 ascending:NO
                                                                  selector:@selector(caseInsensitiveCompare:)] ];
-    
+
     NSFetchedResultsController * frcGroups = [[NSFetchedResultsController alloc] initWithFetchRequest:reqGroup
                                                                                  managedObjectContext: [self.fetchedResultsController managedObjectContext]                                                                      sectionNameKeyPath:nil
                                                                                             cacheName:nil ];
