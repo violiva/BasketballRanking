@@ -13,6 +13,8 @@
 #import "VOSCategory.h"
 #import "VOSGroup.h"
 #import "VOSSelectNewGameViewController.h"
+#import "VOSStatistic.h"
+#import "VOSMatchViewController.h"
 
 @interface VOSGamesViewController ()
 
@@ -75,7 +77,7 @@
 
     NSString *catGroup = [NSString stringWithFormat:@"%@-%@", game.group.category.name, game.group.name];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ (%d) - %@ (%d) (%@)", game.homeTeam.club.name, game.pointHome.intValue, game.awayTeam.club.name, game.pointVisit.intValue, catGroup];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ (%d) - (%d) %@ (%@)", game.homeTeam.club.name, game.pointHome.intValue, game.pointVisit.intValue, game.awayTeam.club.name, catGroup];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", game.localization, dateString];
     
     // la devolvemos
@@ -173,5 +175,34 @@
     [self.navigationController pushViewController:updateGameVC animated:YES];
 }
 
+-(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    
+    // Averiguar cual fue el partido seleccionado
+    VOSGame *game = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    // Creo la selección de datos con las estadísticas del partido
+    NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSStatistic entityName]];
+    
+    req.fetchBatchSize = 30;
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSStatisticAttributes.time
+                                                           ascending:YES
+                                                            selector:@selector(compare:)] ];
+    
+    req.predicate = [NSPredicate predicateWithFormat:@"game == %@", game];
+    
+    NSFetchedResultsController * frc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                           managedObjectContext:game.managedObjectContext
+                                                                             sectionNameKeyPath:nil
+                                                                                      cacheName:nil];
+    
+    // Creamos una instancia de controlador de Juego de Partidos
+    VOSMatchViewController * matchVC = [[VOSMatchViewController alloc] initWithGame:game];
+    
+    
+    // Lo pusheo
+    [self.navigationController pushViewController:matchVC
+                                         animated:YES];
+    
+}
 
 @end

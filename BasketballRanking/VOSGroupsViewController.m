@@ -124,7 +124,6 @@
     
     // Averiguar cual fue el grupo seleccionado
     VOSGroup * gr = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    NSLog(@"Grupo Seleccionado: %@ ", gr.name);
     
     // Creo la selección de datos
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSClasification entityName]];

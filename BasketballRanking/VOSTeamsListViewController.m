@@ -24,7 +24,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    NSLog(@"Grupo: %@", self.group.name);
+//    NSLog(@"Grupo: %@", self.group.name);
     
     self.pickedTeams = [[NSMutableSet alloc] init];
     
