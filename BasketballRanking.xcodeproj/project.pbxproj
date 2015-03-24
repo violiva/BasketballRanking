@@ -69,7 +69,6 @@
 		ADAB4BCF1A964FE0000B3054 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCA1A964FE0000B3054 /* UIImage+Alpha.m */; };
 		ADAB4BD01A964FE0000B3054 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */; };
 		ADAB4BD11A964FE0000B3054 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */; };
-		ADAD4C591A9E0B4400835E28 /* crowd.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAD4C581A9E0B4400835E28 /* crowd.png */; };
 		ADAF7A731A9F3DE600D4A096 /* VOSCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAF7A721A9F3DE500D4A096 /* VOSCoreDataCollectionViewController.m */; };
 		ADB0F8401AA744DF0025EEF6 /* VOSDetailClasificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */; };
 		ADB0F8411AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */; };
@@ -99,6 +98,7 @@
 		ADD452381AC01CBB00A90AD8 /* Radioland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADD452371AC01B4900A90AD8 /* Radioland.ttf */; };
 		ADD4523A1AC02BDE00A90AD8 /* Restart_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD452391AC02BDE00A90AD8 /* Restart_btn.png */; };
 		ADD9EF341AC07FF2005B5960 /* VOSSelectCrewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9EF331AC07FF2005B5960 /* VOSSelectCrewViewController.m */; };
+		ADDFC4121AC17A3F0069C34F /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDFC4111AC17A3F0069C34F /* Ball.png */; };
 		ADED9E6B1ABC2A530051806C /* VOSMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADED9E691ABC2A530051806C /* VOSMatchViewController.m */; };
 		ADED9E6C1ABC2A530051806C /* VOSMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADED9E6A1ABC2A530051806C /* VOSMatchViewController.xib */; };
 		ADF8F7401AAEF46D009564D3 /* VOSTeamsInAGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8F73F1AAEF46D009564D3 /* VOSTeamsInAGroupViewController.m */; };
@@ -235,7 +235,6 @@
 		ADAB4BCC1A964FE0000B3054 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		ADAB4BCD1A964FE0000B3054 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		ADAB4BCE1A964FE0000B3054 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
-		ADAD4C581A9E0B4400835E28 /* crowd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crowd.png; sourceTree = "<group>"; };
 		ADAF7A711A9F3DE500D4A096 /* VOSCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSCoreDataCollectionViewController.h; sourceTree = "<group>"; };
 		ADAF7A721A9F3DE500D4A096 /* VOSCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSCoreDataCollectionViewController.m; sourceTree = "<group>"; };
 		ADAF7A871A9F584900D4A096 /* VOSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSDetailViewController.h; sourceTree = "<group>"; };
@@ -284,6 +283,7 @@
 		ADD452391AC02BDE00A90AD8 /* Restart_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Restart_btn.png; path = Images.xcassets/Restart_btn.png; sourceTree = "<group>"; };
 		ADD9EF321AC07FF2005B5960 /* VOSSelectCrewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSSelectCrewViewController.h; sourceTree = "<group>"; };
 		ADD9EF331AC07FF2005B5960 /* VOSSelectCrewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSSelectCrewViewController.m; sourceTree = "<group>"; };
+		ADDFC4111AC17A3F0069C34F /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ball.png; path = Images.xcassets/Ball.png; sourceTree = "<group>"; };
 		ADED9E681ABC2A530051806C /* VOSMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSMatchViewController.h; sourceTree = "<group>"; };
 		ADED9E691ABC2A530051806C /* VOSMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSMatchViewController.m; sourceTree = "<group>"; };
 		ADED9E6A1ABC2A530051806C /* VOSMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSMatchViewController.xib; sourceTree = "<group>"; };
@@ -336,9 +336,9 @@
 		AD7134DC1A96057200F272CE /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				ADAD4C581A9E0B4400835E28 /* crowd.png */,
 				ADD452331AC00ECD00A90AD8 /* Start_btn.png */,
 				ADD452391AC02BDE00A90AD8 /* Restart_btn.png */,
+				ADDFC4111AC17A3F0069C34F /* Ball.png */,
 				ADD452311AC00B3400A90AD8 /* Pause_btn.png */,
 				ADD452351AC0157000A90AD8 /* Stop_btn.png */,
 				AD52E2591AA531960009353C /* mobilephone15.png */,
@@ -752,7 +752,6 @@
 			files = (
 				ADD4523A1AC02BDE00A90AD8 /* Restart_btn.png in Resources */,
 				ADD452381AC01CBB00A90AD8 /* Radioland.ttf in Resources */,
-				ADAD4C591A9E0B4400835E28 /* crowd.png in Resources */,
 				ADAA9F5C1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib in Resources */,
 				ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */,
 				ADF9FE231AA38743002BE1D4 /* VOSDetailPlayerViewController.xib in Resources */,
@@ -766,6 +765,7 @@
 				AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */,
 				AD5689F21AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib in Resources */,
 				ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */,
+				ADDFC4121AC17A3F0069C34F /* Ball.png in Resources */,
 				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
 				ADAB28C31AA5F820003272FB /* VOSEditCategoryViewController.xib in Resources */,
 				ADD175601A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib in Resources */,

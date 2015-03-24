@@ -9,21 +9,97 @@
             <string>Dosis-Book</string>
             <string>Dosis-Book</string>
             <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
         </mutableArray>
         <mutableArray key="Radioland.ttf">
+            <string>Radioland</string>
+            <string>Radioland</string>
+            <string>Radioland</string>
             <string>Radioland</string>
         </mutableArray>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOSMatchViewController">
             <connections>
+                <outlet property="ballPlayer1" destination="2Zt-TN-OgA" id="SV9-VB-Epb"/>
+                <outlet property="ballPlayer2" destination="nFn-ea-33t" id="2Y6-Kq-ysi"/>
+                <outlet property="ballPlayer3" destination="sTj-eq-kE0" id="ZRU-YL-zri"/>
+                <outlet property="ballPlayer4" destination="udO-vq-rDr" id="784-ei-zI4"/>
+                <outlet property="ballPlayer5" destination="BEn-YP-yHl" id="R8h-jw-4L8"/>
+                <outlet property="ballPlayerV1" destination="jcD-Mf-3OJ" id="nf7-dL-t7i"/>
+                <outlet property="ballPlayerV2" destination="g5H-Ci-1sP" id="qMV-Vw-qVa"/>
+                <outlet property="ballPlayerV3" destination="Zde-tK-FgL" id="5Yz-mF-1Bz"/>
+                <outlet property="ballPlayerV4" destination="qBZ-Z9-E1f" id="dpt-Lx-cJB"/>
+                <outlet property="ballPlayerV5" destination="Lk5-78-8sS" id="6Zq-Rz-tYK"/>
+                <outlet property="dorsalPlayer1" destination="znD-us-aPg" id="A4t-ef-QJu"/>
+                <outlet property="dorsalPlayer2" destination="Jft-bS-a5a" id="7c5-DA-6iM"/>
+                <outlet property="dorsalPlayer3" destination="xfY-E2-yIW" id="hvb-wl-0WL"/>
+                <outlet property="dorsalPlayer4" destination="AfH-0Y-cpv" id="ur8-uo-uNb"/>
+                <outlet property="dorsalPlayer5" destination="dfG-3L-uPz" id="VDv-Mg-64y"/>
+                <outlet property="dorsalPlayerV1" destination="JQi-y9-JG4" id="yFI-M0-6Gz"/>
+                <outlet property="dorsalPlayerV2" destination="jwo-gc-Ha4" id="yEl-8V-FfP"/>
+                <outlet property="dorsalPlayerV3" destination="iAJ-eh-va0" id="wDc-MV-DBZ"/>
+                <outlet property="dorsalPlayerV4" destination="vnf-PL-qkh" id="CuM-nk-KSo"/>
+                <outlet property="dorsalPlayerV5" destination="lvH-9c-iGr" id="JjR-Ck-vGx"/>
+                <outlet property="game" destination="fMf-Oo-keJ" id="0Q5-sU-mec"/>
+                <outlet property="localPoints" destination="fk0-y9-sqm" id="1UO-de-kJP"/>
                 <outlet property="localTeam" destination="nyQ-3P-YXp" id="2r2-zK-NCU"/>
+                <outlet property="namePlayer1" destination="elD-p8-Rtb" id="hKM-ue-VJE"/>
+                <outlet property="namePlayer2" destination="m9u-Sd-mbh" id="7Gy-py-jLZ"/>
+                <outlet property="namePlayer3" destination="Spn-AH-ndN" id="e0R-uf-vMr"/>
+                <outlet property="namePlayer4" destination="rcc-CQ-XWq" id="eS5-1h-9Fk"/>
+                <outlet property="namePlayer5" destination="u6w-hN-zQ6" id="zTm-4a-hGI"/>
+                <outlet property="namePlayerV1" destination="oHb-h3-GUJ" id="nAD-cx-Bcw"/>
+                <outlet property="namePlayerV2" destination="Wdf-Un-5WE" id="hSM-RV-JEW"/>
+                <outlet property="namePlayerV3" destination="vHn-pS-IJI" id="1uJ-lG-QW3"/>
+                <outlet property="namePlayerV4" destination="4En-Vy-2aG" id="xNj-bR-MiQ"/>
+                <outlet property="namePlayerV5" destination="IWe-qh-ksp" id="job-k6-ab3"/>
                 <outlet property="pauseBtn" destination="QKi-4Y-nVu" id="8ah-JH-H8r"/>
+                <outlet property="photoPlayer1" destination="zft-74-TPm" id="T1i-U3-l6O"/>
+                <outlet property="photoPlayer2" destination="e9k-MH-a5E" id="4fa-e7-YRk"/>
+                <outlet property="photoPlayer3" destination="6ze-u3-Rl3" id="qf1-Cp-Fu5"/>
+                <outlet property="photoPlayer4" destination="fun-Hd-Nl4" id="204-UW-1GU"/>
+                <outlet property="photoPlayer5" destination="iQw-qQ-DfR" id="lQc-r0-p88"/>
+                <outlet property="photoPlayerV1" destination="MU8-dY-mFb" id="pBi-dd-ee7"/>
+                <outlet property="photoPlayerV2" destination="7hf-iC-Lgs" id="mbf-Mm-zUf"/>
+                <outlet property="photoPlayerV3" destination="ip2-1E-ZlA" id="Gav-p4-2cf"/>
+                <outlet property="photoPlayerV4" destination="V7N-Jf-jqW" id="NXS-tz-V4P"/>
+                <outlet property="photoPlayerV5" destination="xPU-lL-ntg" id="iKL-r4-aWq"/>
+                <outlet property="player1" destination="ZNs-F2-p1W" id="FY2-qW-qm5"/>
+                <outlet property="player2" destination="Dsv-CY-6be" id="uAy-yj-j6e"/>
+                <outlet property="player3" destination="j0j-Od-bhM" id="PNI-jC-Ybs"/>
+                <outlet property="player4" destination="8Ds-MK-luU" id="vCa-BV-Mvo"/>
+                <outlet property="player5" destination="6TV-DZ-j39" id="rrN-dV-zVA"/>
+                <outlet property="playerV1" destination="54d-2S-wEP" id="608-T5-0FX"/>
+                <outlet property="playerV2" destination="3Iv-sg-Og8" id="BL2-J4-3MB"/>
+                <outlet property="playerV3" destination="mjH-Bo-OiP" id="EES-dY-H99"/>
+                <outlet property="playerV4" destination="SbR-fr-hp0" id="t0E-Ck-mfY"/>
+                <outlet property="playerV5" destination="1iw-HV-una" id="kYF-47-rSe"/>
                 <outlet property="restartBtn" destination="gQo-CA-Pwm" id="Avh-pA-8Js"/>
                 <outlet property="secondsLbl" destination="g2U-qs-1Z2" id="sRc-AC-rOY"/>
                 <outlet property="startBtn" destination="Vqf-bf-Dmm" id="3u5-q6-XAo"/>
                 <outlet property="stopBtn" destination="QJa-jf-LJK" id="PTQ-zu-qIL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="visitorPoints" destination="h7R-bW-CRP" id="139-vk-hUc"/>
                 <outlet property="visitorTeam" destination="61i-MA-C4u" id="YAQ-vg-3jD"/>
             </connections>
         </placeholder>
@@ -33,37 +109,39 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Local Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVs-2Z-ueK">
-                    <rect key="frame" x="8" y="88" width="103" height="30"/>
+                    <rect key="frame" x="84" y="88" width="103" height="30"/>
                     <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.088216471318112541" green="0.10551306592419475" blue="0.83136047979797978" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visitor Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-vO-ww9">
-                    <rect key="frame" x="611" y="88" width="103" height="30"/>
+                    <rect key="frame" x="810" y="88" width="103" height="30"/>
                     <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.10333392877528169" green="0.12674446869222536" blue="0.83136047979797978" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Local Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyQ-3P-YXp">
-                    <rect key="frame" x="8" y="118" width="334" height="30"/>
-                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="8" y="118" width="314" height="30"/>
+                    <color key="backgroundColor" white="0.4928299753" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="17"/>
+                    <color key="textColor" red="0.95276988636363635" green="0.94406529652113225" blue="0.081864814916801254" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visitor Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61i-MA-C4u">
-                    <rect key="frame" x="611" y="118" width="405" height="30"/>
-                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="706" y="118" width="310" height="30"/>
+                    <color key="backgroundColor" white="0.4928299753" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="17"/>
+                    <color key="textColor" red="0.9393184348298429" green="0.95276988636363635" blue="0.069076469023639162" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2U-qs-1Z2">
                     <rect key="frame" x="438" y="94" width="148" height="97"/>
                     <fontDescription key="fontDescription" name="Radioland" family="Radioland" pointSize="36"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.13601769723383428" green="0.11042902445430923" blue="0.80561474116161613" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqf-bf-Dmm">
-                    <rect key="frame" x="456" y="193" width="50" height="50"/>
+                    <rect key="frame" x="594" y="108" width="50" height="50"/>
                     <state key="normal" title="Empezar" image="Start_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -72,14 +150,14 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKi-4Y-nVu">
-                    <rect key="frame" x="455" y="193" width="50" height="50"/>
+                    <rect key="frame" x="594" y="108" width="50" height="50"/>
                     <state key="normal" title="Pausar" image="Pause_btn.png"/>
                     <connections>
                         <action selector="pause:" destination="-1" eventType="touchUpInside" id="yyG-KF-Pyc"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQo-CA-Pwm">
-                    <rect key="frame" x="406" y="193" width="50" height="50"/>
+                    <rect key="frame" x="380" y="108" width="50" height="50"/>
                     <state key="normal" title="Reiniciar" image="Restart_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -88,7 +166,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-jf-LJK">
-                    <rect key="frame" x="505" y="193" width="50" height="50"/>
+                    <rect key="frame" x="650" y="108" width="50" height="50"/>
                     <state key="normal" title="Terminar" image="Stop_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -97,31 +175,418 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmE-ft-Kcm">
-                    <rect key="frame" x="8" y="184" width="30" height="30"/>
-                    <state key="normal" title="Edit">
+                    <rect key="frame" x="8" y="161" width="75" height="30"/>
+                    <state key="normal" title="Edit Team">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="editLocalTeam:" destination="-1" eventType="touchUpInside" id="G8x-42-0uJ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw1-2K-2ie">
+                    <rect key="frame" x="983" y="161" width="30" height="30"/>
+                    <state key="normal" title="Edit">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="editVisitorTeam:" destination="-1" eventType="touchUpInside" id="ya9-pE-7hn"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUF-4B-Af0">
-                    <rect key="frame" x="91" y="184" width="88" height="30"/>
-                    <state key="normal" title="Field Players">
+                    <rect key="frame" x="131" y="161" width="98" height="30"/>
+                    <state key="normal" title="Select Players">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="selectCrew:" destination="-1" eventType="touchUpInside" id="wgs-ah-cVf"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNg-Rf-UmN">
+                    <rect key="frame" x="854" y="161" width="88" height="30"/>
+                    <state key="normal" title="Field Players">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectVisitorCrew:" destination="-1" eventType="touchUpInside" id="GBX-ee-Evf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk0-y9-sqm">
+                    <rect key="frame" x="336" y="158" width="96" height="53"/>
+                    <fontDescription key="fontDescription" name="Radioland" family="Radioland" pointSize="36"/>
+                    <color key="textColor" red="0.43600172341577625" green="0.82958491161616166" blue="0.062848990218647857" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7R-bW-CRP">
+                    <rect key="frame" x="602" y="161" width="92" height="48"/>
+                    <fontDescription key="fontDescription" name="Radioland" family="Radioland" pointSize="36"/>
+                    <color key="textColor" red="0.21040477486652873" green="0.81423611111111116" blue="0.074056989756564981" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMf-Oo-keJ">
+                    <rect key="frame" x="439" y="166" width="50" height="32"/>
+                    <fontDescription key="fontDescription" name="Radioland" family="Radioland" pointSize="25"/>
+                    <color key="textColor" red="0.98780776515151514" green="0.65933930838657129" blue="0.059291906520127696" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="heb-d6-6fb">
+                    <rect key="frame" x="487" y="167" width="94" height="29"/>
+                    <connections>
+                        <action selector="gameChanged:" destination="-1" eventType="valueChanged" id="FfI-Vy-4Rp"/>
+                    </connections>
+                </stepper>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-F2-p1W" customClass="UIControl">
+                    <rect key="frame" x="8" y="192" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zft-74-TPm">
+                            <rect key="frame" x="8" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elD-p8-Rtb">
+                            <rect key="frame" x="125" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znD-us-aPg">
+                            <rect key="frame" x="69" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Zt-TN-OgA">
+                            <rect key="frame" x="267" y="8" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275252525249" green="0.90096275252525249" blue="0.90096275252525249" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayer1:" destination="-1" eventType="touchUpInside" id="vu9-h2-wKx"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dsv-CY-6be" customClass="UIControl">
+                    <rect key="frame" x="8" y="259" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9k-MH-a5E">
+                            <rect key="frame" x="8" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9u-Sd-mbh">
+                            <rect key="frame" x="125" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-bS-a5a">
+                            <rect key="frame" x="69" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="nFn-ea-33t">
+                            <rect key="frame" x="267" y="8" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayer2:" destination="-1" eventType="touchUpInside" id="xt0-XO-NsJ"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0j-Od-bhM" customClass="UIControl">
+                    <rect key="frame" x="8" y="326" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ze-u3-Rl3">
+                            <rect key="frame" x="8" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spn-AH-ndN">
+                            <rect key="frame" x="125" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfY-E2-yIW">
+                            <rect key="frame" x="69" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="sTj-eq-kE0">
+                            <rect key="frame" x="267" y="8" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayer3:" destination="-1" eventType="touchUpInside" id="iDQ-nT-Ahl"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-MK-luU" customClass="UIControl">
+                    <rect key="frame" x="8" y="393" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fun-Hd-Nl4">
+                            <rect key="frame" x="8" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcc-CQ-XWq">
+                            <rect key="frame" x="125" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-0Y-cpv">
+                            <rect key="frame" x="69" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="udO-vq-rDr">
+                            <rect key="frame" x="267" y="8" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayer4:" destination="-1" eventType="touchUpInside" id="qV0-aR-TMA"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6TV-DZ-j39" customClass="UIControl">
+                    <rect key="frame" x="8" y="460" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQw-qQ-DfR">
+                            <rect key="frame" x="8" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-hN-zQ6">
+                            <rect key="frame" x="125" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfG-3L-uPz">
+                            <rect key="frame" x="69" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-YP-yHl">
+                            <rect key="frame" x="267" y="8" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayer5:" destination="-1" eventType="touchUpInside" id="Bbi-Ts-p7u"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54d-2S-wEP" customClass="UIControl">
+                    <rect key="frame" x="696" y="192" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MU8-dY-mFb">
+                            <rect key="frame" x="264" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQi-y9-JG4">
+                            <rect key="frame" x="209" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="jcD-Mf-3OJ">
+                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHb-h3-GUJ">
+                            <rect key="frame" x="66" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayerV1:" destination="-1" eventType="touchUpInside" id="MCR-WT-GFV"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-sg-Og8" customClass="UIControl">
+                    <rect key="frame" x="696" y="259" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-iC-Lgs">
+                            <rect key="frame" x="264" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwo-gc-Ha4">
+                            <rect key="frame" x="209" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-Ci-1sP">
+                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-Un-5WE">
+                            <rect key="frame" x="66" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayerV2:" destination="-1" eventType="touchUpInside" id="THe-7B-AhR"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjH-Bo-OiP" customClass="UIControl">
+                    <rect key="frame" x="696" y="326" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-1E-ZlA">
+                            <rect key="frame" x="264" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAJ-eh-va0">
+                            <rect key="frame" x="209" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zde-tK-FgL">
+                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHn-pS-IJI">
+                            <rect key="frame" x="66" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayerV3:" destination="-1" eventType="touchUpInside" id="eY2-3c-WVM"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbR-fr-hp0" customClass="UIControl">
+                    <rect key="frame" x="696" y="393" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7N-Jf-jqW">
+                            <rect key="frame" x="264" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnf-PL-qkh">
+                            <rect key="frame" x="209" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="qBZ-Z9-E1f">
+                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4En-Vy-2aG">
+                            <rect key="frame" x="66" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayerV4:" destination="-1" eventType="touchUpInside" id="F0s-fj-43q"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1iw-HV-una" customClass="UIControl">
+                    <rect key="frame" x="696" y="460" width="320" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xPU-lL-ntg">
+                            <rect key="frame" x="264" y="8" width="53" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dorsal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-9c-iGr">
+                            <rect key="frame" x="209" y="12" width="47" height="41"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lk5-78-8sS">
+                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWe-qh-ksp">
+                            <rect key="frame" x="66" y="18" width="131" height="30"/>
+                            <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90096275250000002" green="0.90096275250000002" blue="0.90096275250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="selectPlayerV5:" destination="-1" eventType="touchUpInside" id="kl2-Dc-ri0"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-vf-1JY">
+                    <rect key="frame" x="415" y="219" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="+1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyG-0T-b4i">
+                    <rect key="frame" x="550" y="219" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="+1x">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpi-sU-RBM">
+                    <rect key="frame" x="415" y="284" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="+2"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-G7-WZz">
+                    <rect key="frame" x="550" y="284" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="+2x"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC1-KN-fhD">
+                    <rect key="frame" x="415" y="349" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="+3"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-cS-AD6">
+                    <rect key="frame" x="550" y="349" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="+3x"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrQ-5d-I2d">
+                    <rect key="frame" x="415" y="414" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="R.O."/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYF-oA-kH1">
+                    <rect key="frame" x="550" y="414" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="R.D."/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7y-Cm-dHD">
+                    <rect key="frame" x="415" y="479" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Robo"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-wD-b9E">
+                    <rect key="frame" x="550" y="479" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Perdida"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d2-JN-2gi">
+                    <rect key="frame" x="415" y="544" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Asist."/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-GT-Iyv">
+                    <rect key="frame" x="550" y="544" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Tapón"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHZ-Sp-FRy">
+                    <rect key="frame" x="415" y="609" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Falta R."/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC4-bO-oi6">
+                    <rect key="frame" x="550" y="609" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Falta C."/>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="0.84422896099951172" blue="0.59209354579316553" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
         </view>
     </objects>
     <resources>
+        <image name="Ball.png" width="50" height="50"/>
         <image name="Pause_btn.png" width="50" height="50"/>
         <image name="Restart_btn.png" width="50" height="50"/>
         <image name="Start_btn.png" width="50" height="50"/>

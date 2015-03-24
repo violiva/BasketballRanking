@@ -15,6 +15,7 @@
 #import "VOSPlayer.h"
 #import "VOSPlayerCollectionViewController.h"
 #import "VOSSelectCrewViewController.h"
+#import "VOSPhotoContainer.h"
 
 #define START_TIME    0
 #define CONTINUE_TIME 1
@@ -51,8 +52,12 @@
     self.seconds = self.aGame.group.category.timePeriod.intValue * 60;
     NSInteger secondsT = self.seconds % 60;
     NSInteger minutesT = (self.seconds / 60) % 60;
-    NSString *time = [NSString stringWithFormat:@"%.2d:%.2d", minutesT, secondsT ];
+    NSString *time = [NSString stringWithFormat:@"%.2ld:%.2ld", (long)minutesT, (long)secondsT ];
     self.secondsLbl.text = time;
+    self.game.text = @"1";
+    self.localPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointHome];
+    self.visitorPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointVisit];
+
     
     // habilitamos botones iniciales
     self.stopBtn.hidden = YES;
@@ -62,6 +67,7 @@
     
     // Inicializamos array de quintetos
     self.aLocalPlayerTeam = [[NSMutableArray alloc] initWithCapacity:5];
+    self.aVisitorPlayerTeam = [[NSMutableArray alloc] initWithCapacity:5];
 
 }
 
@@ -71,13 +77,100 @@
 }
 
 -(void) viewWillAppear:(BOOL)animated{
+    self.player1.hidden = YES;
+    self.player2.hidden = YES;
+    self.player3.hidden = YES;
+    self.player4.hidden = YES;
+    self.player5.hidden = YES;
+
+    self.playerV1.hidden = YES;
+    self.playerV2.hidden = YES;
+    self.playerV3.hidden = YES;
+    self.playerV4.hidden = YES;
+    self.playerV5.hidden = YES;
+
+    
     if (self.aLocalPlayerTeam.count > 0){
-        NSLog(@"Jugador 1: %@ Dorsal: %@", [[self.aLocalPlayerTeam objectAtIndex:0] name], [[self.aLocalPlayerTeam objectAtIndex:0] dorsal]);
-        NSLog(@"Jugador 2: %@ Dorsal: %@", [[self.aLocalPlayerTeam objectAtIndex:1] name], [[self.aLocalPlayerTeam objectAtIndex:1] dorsal]);
-        NSLog(@"Jugador 3: %@ Dorsal: %@", [[self.aLocalPlayerTeam objectAtIndex:2] name], [[self.aLocalPlayerTeam objectAtIndex:2] dorsal]);
-        NSLog(@"Jugador 4: %@ Dorsal: %@", [[self.aLocalPlayerTeam objectAtIndex:3] name], [[self.aLocalPlayerTeam objectAtIndex:3] dorsal]);
-        NSLog(@"Jugador 5: %@ Dorsal: %@", [[self.aLocalPlayerTeam objectAtIndex:4] name], [[self.aLocalPlayerTeam objectAtIndex:4] dorsal]);
+        int numPlayers = self.aLocalPlayerTeam.count;
+        
+        if (numPlayers > 0){
+            self.player1.hidden = NO;
+            self.photoPlayer1.image = [[[self.aLocalPlayerTeam objectAtIndex:0] photo] image];
+            self.dorsalPlayer1.text = [NSString stringWithFormat:@"%@",[[self.aLocalPlayerTeam objectAtIndex:0] dorsal]];
+            self.namePlayer1.text = [[self.aLocalPlayerTeam objectAtIndex:0] name];
+            self.ballPlayer1.hidden = YES;
+        }
+        if (numPlayers > 1){
+            self.player2.hidden = NO;
+            self.photoPlayer2.image = [[[self.aLocalPlayerTeam objectAtIndex:1] photo] image];
+            self.dorsalPlayer2.text = [NSString stringWithFormat:@"%@",[[self.aLocalPlayerTeam objectAtIndex:1] dorsal]];
+            self.namePlayer2.text = [[self.aLocalPlayerTeam objectAtIndex:1] name];
+            self.ballPlayer2.hidden = YES;
+        }
+        if (numPlayers > 2){
+            self.player3.hidden = NO;
+            self.photoPlayer3.image = [[[self.aLocalPlayerTeam objectAtIndex:2] photo] image];
+            self.dorsalPlayer3.text = [NSString stringWithFormat:@"%@",[[self.aLocalPlayerTeam objectAtIndex:2] dorsal]];
+            self.namePlayer3.text = [[self.aLocalPlayerTeam objectAtIndex:2] name];
+            self.ballPlayer3.hidden = YES;
+        }
+        if (numPlayers > 3){
+            self.player4.hidden = NO;
+            self.photoPlayer4.image = [[[self.aLocalPlayerTeam objectAtIndex:3] photo] image];
+            self.dorsalPlayer4.text = [NSString stringWithFormat:@"%@",[[self.aLocalPlayerTeam objectAtIndex:3] dorsal]];
+            self.namePlayer4.text = [[self.aLocalPlayerTeam objectAtIndex:3] name];
+            self.ballPlayer4.hidden = YES;
+        }
+        if (numPlayers > 4){
+            self.player5.hidden = NO;
+            self.photoPlayer5.image = [[[self.aLocalPlayerTeam objectAtIndex:4] photo] image];
+            self.dorsalPlayer5.text = [NSString stringWithFormat:@"%@",[[self.aLocalPlayerTeam objectAtIndex:4] dorsal]];
+            self.namePlayer5.text = [[self.aLocalPlayerTeam objectAtIndex:4] name];
+            self.ballPlayer5.hidden = YES;
+        }
+        
     }
+    
+    if (self.aVisitorPlayerTeam.count > 0){
+        int numPlayers = self.aVisitorPlayerTeam.count;
+        
+        if (numPlayers > 0){
+            self.playerV1.hidden = NO;
+            self.photoPlayerV1.image = [[[self.aVisitorPlayerTeam objectAtIndex:0] photo] image];
+            self.dorsalPlayerV1.text = [NSString stringWithFormat:@"%@",[[self.aVisitorPlayerTeam objectAtIndex:0] dorsal]];
+            self.namePlayerV1.text = [[self.aVisitorPlayerTeam objectAtIndex:0] name];
+            self.ballPlayerV1.hidden = YES;
+        }
+        if (numPlayers > 1){
+            self.playerV2.hidden = NO;
+            self.photoPlayerV2.image = [[[self.aVisitorPlayerTeam objectAtIndex:1] photo] image];
+            self.dorsalPlayerV2.text = [NSString stringWithFormat:@"%@",[[self.aVisitorPlayerTeam objectAtIndex:1] dorsal]];
+            self.namePlayerV2.text = [[self.aVisitorPlayerTeam objectAtIndex:1] name];
+            self.ballPlayerV2.hidden = YES;
+        }
+        if (numPlayers > 2){
+            self.playerV3.hidden = NO;
+            self.photoPlayerV3.image = [[[self.aVisitorPlayerTeam objectAtIndex:2] photo] image];
+            self.dorsalPlayerV3.text = [NSString stringWithFormat:@"%@",[[self.aVisitorPlayerTeam objectAtIndex:2] dorsal]];
+            self.namePlayerV3.text = [[self.aVisitorPlayerTeam objectAtIndex:2] name];
+            self.ballPlayerV3.hidden = YES;
+        }
+        if (numPlayers > 3){
+            self.playerV4.hidden = NO;
+            self.photoPlayerV4.image = [[[self.aVisitorPlayerTeam objectAtIndex:3] photo] image];
+            self.dorsalPlayerV4.text = [NSString stringWithFormat:@"%@",[[self.aVisitorPlayerTeam objectAtIndex:3] dorsal]];
+            self.namePlayerV4.text = [[self.aVisitorPlayerTeam objectAtIndex:3] name];
+            self.ballPlayerV4.hidden = YES;
+        }
+        if (numPlayers > 4){
+            self.playerV5.hidden = NO;
+            self.photoPlayerV5.image = [[[self.aVisitorPlayerTeam objectAtIndex:4] photo] image];
+            self.dorsalPlayerV5.text = [NSString stringWithFormat:@"%@",[[self.aVisitorPlayerTeam objectAtIndex:4] dorsal]];
+            self.namePlayerV5.text = [[self.aVisitorPlayerTeam objectAtIndex:4] name];
+            self.ballPlayerV5.hidden = YES;
+        }
+    }
+    
 }
 
 #pragma mark - Actions
@@ -91,10 +184,10 @@
     NSInteger hoursT = self.seconds / (60 * 60);
     NSString *result = nil;
     if (hoursT > 0) {
-        result = [NSString stringWithFormat:@"%.2d:%.2d:%.2d", hoursT, minutesT, secondsT ];
+        result = [NSString stringWithFormat:@"%.2ld:%.2ld:%.2ld", (long)hoursT, (long)minutesT, (long)secondsT ];
     }
     else {
-        result = [NSString stringWithFormat:@"%.2d:%.2d", minutesT, secondsT ];
+        result = [NSString stringWithFormat:@"%.2ld:%.2ld", (long)minutesT, (long)secondsT ];
     }
     self.secondsLbl.text = result;
 
@@ -148,16 +241,121 @@
     NSInteger secondsT = self.seconds % 60;
     NSInteger minutesT = (self.seconds / 60) % 60;
 
-    NSString *time = [NSString stringWithFormat:@"%.2d:%.2d", minutesT, secondsT ];
+    NSString *time = [NSString stringWithFormat:@"%.2ld:%.2ld", (long)minutesT, (long)secondsT ];
     
     self.secondsLbl.text = time;
     self.timeContinue = START_TIME;
 }
 
+-(IBAction)gameChanged:(id)sender{
+    UIStepper *stepper = (UIStepper *) sender;
+    stepper.maximumValue = self.aGame.group.category.period.intValue;
+    stepper.minimumValue = 1;
+
+    self.game.text = [NSString stringWithFormat:@"%d",
+                      [[NSNumber numberWithDouble:[(UIStepper *)sender value]] intValue ]];
+
+    // Si se cambia el tiempo de juego ( cuarto o sexto o lo que sea ) hay que resetear el reloj también
+    self.seconds = self.aGame.group.category.timePeriod.intValue * 60;
+    NSInteger secondsT = self.seconds % 60;
+    NSInteger minutesT = (self.seconds / 60) % 60;
+    
+    NSString *time = [NSString stringWithFormat:@"%.2ld:%.2ld", (long)minutesT, (long)secondsT ];
+    
+    self.secondsLbl.text = time;
+    self.timeContinue = START_TIME;
+}
+
+-(void)hiddenBalls{
+    self.ballPlayer1.hidden = YES;
+    self.ballPlayer2.hidden = YES;
+    self.ballPlayer3.hidden = YES;
+    self.ballPlayer4.hidden = YES;
+    self.ballPlayer5.hidden = YES;
+
+    self.ballPlayerV1.hidden = YES;
+    self.ballPlayerV2.hidden = YES;
+    self.ballPlayerV3.hidden = YES;
+    self.ballPlayerV4.hidden = YES;
+    self.ballPlayerV5.hidden = YES;
+    
+}
+
+- (IBAction)selectPlayer1:(id)sender {
+    [self hiddenBalls];
+    self.ballPlayer1.hidden = NO;
+    self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:0];
+}
+
+- (IBAction)selectPlayer2:(id)sender {
+    [self hiddenBalls];
+    self.ballPlayer2.hidden = NO;
+    self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:1];
+}
+
+- (IBAction)selectPlayer3:(id)sender {
+    [self hiddenBalls];
+    self.ballPlayer3.hidden = NO;
+    self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:2];
+}
+
+- (IBAction)selectPlayer4:(id)sender {
+    [self hiddenBalls];
+    self.ballPlayer4.hidden = NO;
+    self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:3];
+}
+
+- (IBAction)selectPlayer5:(id)sender {
+    [self hiddenBalls];
+    self.ballPlayer5.hidden = NO;
+    self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:4];
+}
+
+- (IBAction)selectPlayerV1:(id)sender{
+    [self hiddenBalls];
+    self.ballPlayerV1.hidden = NO;
+    self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:0];
+}
+
+- (IBAction)selectPlayerV2:(id)sender{
+    [self hiddenBalls];
+    self.ballPlayerV2.hidden = NO;
+    self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:1];
+}
+
+- (IBAction)selectPlayerV3:(id)sender{
+    [self hiddenBalls];
+    self.ballPlayerV3.hidden = NO;
+    self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:2];
+}
+
+- (IBAction)selectPlayerV4:(id)sender{
+    [self hiddenBalls];
+    self.ballPlayerV4.hidden = NO;
+    self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:3];
+}
+
+- (IBAction)selectPlayerV5:(id)sender{
+    [self hiddenBalls];
+    self.ballPlayerV5.hidden = NO;
+    self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:4];
+}
+
+
+
+#pragma mark - EditTeam
 - (IBAction)editLocalTeam:(id)sender {
     
     VOSTeam * team = self.aGame.homeTeam;
-    
+    [self manageTeam:team];
+}
+
+- (IBAction)editVisitorTeam:(id)sender {
+    VOSTeam * team = self.aGame.awayTeam;
+    [self manageTeam:team];
+}
+
+-(void)manageTeam:(VOSTeam *)team{
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSPlayer entityName]];
     req.fetchBatchSize = 30;
     
@@ -182,13 +380,25 @@
     
     [self.navigationController pushViewController:playerVC
                                          animated:YES];
-
+    
 }
 
+#pragma mark - EditAlignment
 - (IBAction)selectCrew:(id)sender {
 
     // Seleccionamos el equipo del que tenemos que mostrar los jugadores
     VOSTeam *team = self.aGame.homeTeam;
+    [self manageCrew:team aCrew:self.aLocalPlayerTeam];
+
+}
+
+- (IBAction)selectVisitorCrew:(id)sender {
+    // Seleccionamos el equipo del que tenemos que mostrar los jugadores
+    VOSTeam *team = self.aGame.awayTeam;
+    [self manageCrew:team aCrew:self.aVisitorPlayerTeam];
+}
+
+-(void)manageCrew:(VOSTeam *)team aCrew:(NSMutableArray *) crew{
     
     // Creo la selección de datos
     NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSPlayer entityName]];
@@ -207,14 +417,13 @@
     // Creamos una instancia de controlador de Seleccioón de alineación del equipo
     VOSSelectCrewViewController *crewVC = [[VOSSelectCrewViewController alloc] initWithFetchedResultsController:frc
                                                                                                            team:team
-                                                                                                          aCrew:self.aLocalPlayerTeam
+                                                                                                          aCrew:crew
                                                                                                           style:UITableViewStylePlain];
-    
     // Lo pusheo
     [self.navigationController pushViewController:crewVC
                                          animated:YES];
     
+    
 }
-
 
 @end
