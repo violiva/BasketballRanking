@@ -183,15 +183,6 @@
                         <action selector="editLocalTeam:" destination="-1" eventType="touchUpInside" id="G8x-42-0uJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw1-2K-2ie">
-                    <rect key="frame" x="983" y="161" width="30" height="30"/>
-                    <state key="normal" title="Edit">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="editVisitorTeam:" destination="-1" eventType="touchUpInside" id="ya9-pE-7hn"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUF-4B-Af0">
                     <rect key="frame" x="131" y="161" width="98" height="30"/>
                     <state key="normal" title="Select Players">
@@ -202,8 +193,8 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNg-Rf-UmN">
-                    <rect key="frame" x="854" y="161" width="88" height="30"/>
-                    <state key="normal" title="Field Players">
+                    <rect key="frame" x="760" y="161" width="98" height="30"/>
+                    <state key="normal" title="Select Players">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -510,6 +501,9 @@
                     <state key="normal" title="+1">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="basket1:" destination="-1" eventType="touchUpInside" id="oYm-Mr-w5Z"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyG-0T-b4i">
                     <rect key="frame" x="550" y="219" width="60" height="60"/>
@@ -517,66 +511,114 @@
                     <state key="normal" title="+1x">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="basket1F:" destination="-1" eventType="touchUpInside" id="jvs-Gh-C89"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpi-sU-RBM">
                     <rect key="frame" x="415" y="284" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="+2"/>
+                    <connections>
+                        <action selector="basket2:" destination="-1" eventType="touchUpInside" id="KXr-la-6uA"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-G7-WZz">
                     <rect key="frame" x="550" y="284" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="+2x"/>
+                    <connections>
+                        <action selector="basket2F:" destination="-1" eventType="touchUpInside" id="h0i-eh-gYq"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC1-KN-fhD">
                     <rect key="frame" x="415" y="349" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="+3"/>
+                    <connections>
+                        <action selector="basket3:" destination="-1" eventType="touchUpInside" id="vrg-7c-4bl"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-cS-AD6">
                     <rect key="frame" x="550" y="349" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="+3x"/>
+                    <connections>
+                        <action selector="basket3F:" destination="-1" eventType="touchUpInside" id="59z-tj-agF"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrQ-5d-I2d">
                     <rect key="frame" x="415" y="414" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="R.O."/>
+                    <connections>
+                        <action selector="offensiveRebound:" destination="-1" eventType="touchUpInside" id="wtt-ps-X8R"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYF-oA-kH1">
                     <rect key="frame" x="550" y="414" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="R.D."/>
+                    <connections>
+                        <action selector="defensiveRebound:" destination="-1" eventType="touchUpInside" id="rw0-0o-NnX"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7y-Cm-dHD">
                     <rect key="frame" x="415" y="479" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Robo"/>
+                    <connections>
+                        <action selector="stealBall:" destination="-1" eventType="touchUpInside" id="AZN-sm-yMp"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-wD-b9E">
                     <rect key="frame" x="550" y="479" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Perdida"/>
+                    <connections>
+                        <action selector="loseBall:" destination="-1" eventType="touchUpInside" id="w8x-eW-wol"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d2-JN-2gi">
                     <rect key="frame" x="415" y="544" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Asist."/>
+                    <connections>
+                        <action selector="assistance:" destination="-1" eventType="touchUpInside" id="rrx-Y9-PiA"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-GT-Iyv">
                     <rect key="frame" x="550" y="544" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Tapón"/>
+                    <connections>
+                        <action selector="block:" destination="-1" eventType="touchUpInside" id="qjT-Gm-0dv"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHZ-Sp-FRy">
                     <rect key="frame" x="415" y="609" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Falta R."/>
+                    <connections>
+                        <action selector="foulReceived:" destination="-1" eventType="touchUpInside" id="uyn-Va-Nnl"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC4-bO-oi6">
                     <rect key="frame" x="550" y="609" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Falta C."/>
+                    <connections>
+                        <action selector="foul:" destination="-1" eventType="touchUpInside" id="qky-DQ-1Un"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw1-2K-2ie">
+                    <rect key="frame" x="948" y="161" width="68" height="30"/>
+                    <state key="normal" title="Edit Team">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="editVisitorTeam:" destination="-1" eventType="touchUpInside" id="ya9-pE-7hn"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.84422896099951172" blue="0.59209354579316553" alpha="1" colorSpace="calibratedRGB"/>

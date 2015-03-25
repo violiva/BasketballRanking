@@ -16,9 +16,13 @@
 #import "VOSPlayerCollectionViewController.h"
 #import "VOSSelectCrewViewController.h"
 #import "VOSPhotoContainer.h"
+#import "VOSStatistic.h"
+#import "VOSAction.h"
 
 #define START_TIME    0
 #define CONTINUE_TIME 1
+#define LOCAL_TEAM    0
+#define VISITOR_TEAM  1
 
 @interface VOSMatchViewController ()
 
@@ -69,6 +73,7 @@
     self.aLocalPlayerTeam = [[NSMutableArray alloc] initWithCapacity:5];
     self.aVisitorPlayerTeam = [[NSMutableArray alloc] initWithCapacity:5];
 
+    self.teamSelected = 2;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -285,62 +290,250 @@
     [self hiddenBalls];
     self.ballPlayer1.hidden = NO;
     self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:0];
+    self.teamSelected = LOCAL_TEAM;
 }
 
 - (IBAction)selectPlayer2:(id)sender {
     [self hiddenBalls];
     self.ballPlayer2.hidden = NO;
     self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:1];
+    self.teamSelected = LOCAL_TEAM;
 }
 
 - (IBAction)selectPlayer3:(id)sender {
     [self hiddenBalls];
     self.ballPlayer3.hidden = NO;
     self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:2];
+    self.teamSelected = LOCAL_TEAM;
 }
 
 - (IBAction)selectPlayer4:(id)sender {
     [self hiddenBalls];
     self.ballPlayer4.hidden = NO;
     self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:3];
+    self.teamSelected = LOCAL_TEAM;
 }
 
 - (IBAction)selectPlayer5:(id)sender {
     [self hiddenBalls];
     self.ballPlayer5.hidden = NO;
     self.playerSelected = [self.aLocalPlayerTeam objectAtIndex:4];
+    self.teamSelected = LOCAL_TEAM;
 }
 
 - (IBAction)selectPlayerV1:(id)sender{
     [self hiddenBalls];
     self.ballPlayerV1.hidden = NO;
     self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:0];
+    self.teamSelected = VISITOR_TEAM;
 }
 
 - (IBAction)selectPlayerV2:(id)sender{
     [self hiddenBalls];
     self.ballPlayerV2.hidden = NO;
     self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:1];
+    self.teamSelected = VISITOR_TEAM;
 }
 
 - (IBAction)selectPlayerV3:(id)sender{
     [self hiddenBalls];
     self.ballPlayerV3.hidden = NO;
     self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:2];
+    self.teamSelected = VISITOR_TEAM;
 }
 
 - (IBAction)selectPlayerV4:(id)sender{
     [self hiddenBalls];
     self.ballPlayerV4.hidden = NO;
     self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:3];
+    self.teamSelected = VISITOR_TEAM;
 }
 
 - (IBAction)selectPlayerV5:(id)sender{
     [self hiddenBalls];
     self.ballPlayerV5.hidden = NO;
     self.playerSelected = [self.aVisitorPlayerTeam objectAtIndex:4];
+    self.teamSelected = VISITOR_TEAM;
 }
 
+-(IBAction)basket1:(id)sender{
+    NSString *action = @"Tiro personal convertido";
+    int points = 1;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+    
+    // Acumulamos puntos en el marcador
+    [self sumBookmarkWithPoints:points];
+}
+
+-(void)saveStatisticsWithAction:(NSString *)anAction points:(int) points {
+    if ( self.teamSelected == LOCAL_TEAM || self.teamSelected == VISITOR_TEAM){
+        // Localizamos la acción a guardar como estadística
+        NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSAction entityName]];
+        req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSActionAttributes.name
+                                                               ascending:NO
+                                                                selector:@selector(caseInsensitiveCompare:)] ];
+        req.predicate = [NSPredicate predicateWithFormat:@"name == %@", anAction];
+        
+        NSArray *fetchedObjects;
+        NSError * error = nil;
+        fetchedObjects = [self.aGame.managedObjectContext executeFetchRequest:req error:&error];
+        
+        if (fetchedObjects.count == 1) {
+            
+            [VOSStatistic statisticWithGame: self.aGame
+                                     action: [fetchedObjects objectAtIndex:0]
+                                     player: self.playerSelected
+                                     period: @([self.game.text intValue])
+                                     points: @( points )
+                                       time: self.secondsLbl.text
+                                    context: self.aGame.managedObjectContext ];
+            
+        }
+    }
+}
+
+-(void)sumBookmarkWithPoints:(int) points{
+    if ( self.teamSelected == LOCAL_TEAM || self.teamSelected == VISITOR_TEAM){
+        if (self.teamSelected == LOCAL_TEAM) {
+            int pointsBookmark = [self.localPoints.text intValue];
+            pointsBookmark += points;
+            self.localPoints.text = [NSString stringWithFormat:@"%d", pointsBookmark];
+            
+        }else{
+            int pointsBookmark = [self.visitorPoints.text intValue];
+            pointsBookmark += points;
+            self.visitorPoints.text = [NSString stringWithFormat:@"%d", pointsBookmark];
+        }
+    }
+}
+
+-(IBAction)basket1F:(id)sender{
+    NSString *action = @"Tiro personal fallado";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+    
+    // Como es fallo NO Acumulamos puntos en el marcador
+}
+
+-(IBAction)basket2:(id)sender{
+    NSString *action = @"Canasta convertida";
+    int points = 2;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+    
+    // Acumulamos puntos en el marcador
+    [self sumBookmarkWithPoints:points];
+}
+
+-(IBAction)basket2F:(id)sender{
+    NSString *action = @"Canasta fallada";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+-(IBAction)basket3:(id)sender{
+    NSString *action = @"Triple convertido";
+    int points = 3;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+    
+    // Acumulamos puntos en el marcador
+    [self sumBookmarkWithPoints:points];
+}
+
+-(IBAction)basket3F:(id)sender{
+    NSString *action = @"Triple fallado";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)offensiveRebound:(id)sender {
+    NSString *action = @"Rebote ofensivo";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)defensiveRebound:(id)sender {
+    NSString *action = @"Rebote en defensa";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)stealBall:(id)sender {
+    NSString *action = @"Robo de balón";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)loseBall:(id)sender {
+    NSString *action = @"Perdida de balón";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)assistance:(id)sender {
+    NSString *action = @"Asistencia";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)block:(id)sender {
+    NSString *action = @"Tapón";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)foulReceived:(id)sender {
+    NSString *action = @"Falta recibida";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
+
+- (IBAction)foul:(id)sender {
+    NSString *action = @"Falta cometida";
+    int points = 0;
+    
+    // Grabamos la estadística correspondiente
+    [self saveStatisticsWithAction:action
+                            points:points];
+}
 
 
 #pragma mark - EditTeam

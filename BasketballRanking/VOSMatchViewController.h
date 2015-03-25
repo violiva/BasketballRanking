@@ -95,7 +95,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *namePlayerV5;
 @property (weak, nonatomic) IBOutlet UIImageView *ballPlayerV5;
 
-
+@property (nonatomic) int teamSelected;
 @property (nonatomic, strong) VOSPlayer *playerSelected;
 
 - (IBAction)selectPlayer1:(id)sender;
@@ -109,6 +109,22 @@
 - (IBAction)selectPlayerV3:(id)sender;
 - (IBAction)selectPlayerV4:(id)sender;
 - (IBAction)selectPlayerV5:(id)sender;
+
+- (IBAction)basket1:(id)sender;
+- (IBAction)basket1F:(id)sender;
+- (IBAction)basket2:(id)sender;
+- (IBAction)basket2F:(id)sender;
+- (IBAction)basket3:(id)sender;
+- (IBAction)basket3F:(id)sender;
+- (IBAction)offensiveRebound:(id)sender;
+- (IBAction)defensiveRebound:(id)sender;
+- (IBAction)stealBall:(id)sender;
+- (IBAction)loseBall:(id)sender;
+- (IBAction)assistance:(id)sender;
+- (IBAction)block:(id)sender;
+- (IBAction)foulReceived:(id)sender;
+- (IBAction)foul:(id)sender;
+
 
 
 -(id) initWithGame:(VOSGame *) aGame;

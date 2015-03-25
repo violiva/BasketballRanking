@@ -1088,7 +1088,7 @@
 				ADAB28BD1AA5AF8F003272FB /* Model2.xcdatamodel */,
 				AD78DD9D1A92B78E00541CC7 /* Model.xcdatamodel */,
 			);
-			currentVersion = ADAB28BE1AA5C371003272FB /* Model3.xcdatamodel */;
+			currentVersion = ADC0E5B41AB0926000A24DD4 /* Model4.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

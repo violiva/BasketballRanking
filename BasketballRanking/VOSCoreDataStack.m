@@ -51,7 +51,7 @@
         if (![_storeCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                              configuration:nil
                                                        URL:self.dbURL
-                                                   options:options
+                                                   options:options  
                                                      error:&err ]) {
             // Something went really wrong...
             // Send a notification and return nil

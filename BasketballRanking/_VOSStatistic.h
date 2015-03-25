@@ -44,7 +44,7 @@ extern const struct VOSStatisticRelationships {
 
 //- (BOOL)validatePoints:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) NSDate* time;
+@property (nonatomic, strong) NSString* time;
 
 //- (BOOL)validateTime:(id*)value_ error:(NSError**)error_;
 
@@ -76,8 +76,8 @@ extern const struct VOSStatisticRelationships {
 - (int16_t)primitivePointsValue;
 - (void)setPrimitivePointsValue:(int16_t)value_;
 
-- (NSDate*)primitiveTime;
-- (void)setPrimitiveTime:(NSDate*)value;
+- (NSString*)primitiveTime;
+- (void)setPrimitiveTime:(NSString*)value;
 
 - (VOSAction*)primitiveAction;
 - (void)setPrimitiveAction:(VOSAction*)value;
