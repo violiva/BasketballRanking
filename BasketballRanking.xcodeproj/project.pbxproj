@@ -72,6 +72,7 @@
 		ADAF7A731A9F3DE600D4A096 /* VOSCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAF7A721A9F3DE500D4A096 /* VOSCoreDataCollectionViewController.m */; };
 		ADB0F8401AA744DF0025EEF6 /* VOSDetailClasificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */; };
 		ADB0F8411AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */; };
+		ADB218AC1AC2BD2800BBB10C /* VOSStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB218AB1AC2BD2800BBB10C /* VOSStatisticsViewController.m */; };
 		ADB9D07C1A9CE84A002954CF /* VOSPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */; };
 		ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */; };
 		ADB9D0821A9D1F83002954CF /* VOSPlayerNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D0801A9D1F83002954CF /* VOSPlayerNameTableViewCell.m */; };
@@ -241,6 +242,8 @@
 		ADB0F83D1AA744DF0025EEF6 /* VOSDetailClasificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSDetailClasificationViewController.h; sourceTree = "<group>"; };
 		ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSDetailClasificationViewController.m; sourceTree = "<group>"; };
 		ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSDetailClasificationViewController.xib; sourceTree = "<group>"; };
+		ADB218AA1AC2BD2800BBB10C /* VOSStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSStatisticsViewController.h; sourceTree = "<group>"; };
+		ADB218AB1AC2BD2800BBB10C /* VOSStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSStatisticsViewController.m; sourceTree = "<group>"; };
 		ADB9D07A1A9CE84A002954CF /* VOSPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayersViewController.h; sourceTree = "<group>"; };
 		ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayersViewController.m; sourceTree = "<group>"; };
 		ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Silueta_Jugador.jpg; sourceTree = "<group>"; };
@@ -581,6 +584,8 @@
 				ADED9E6A1ABC2A530051806C /* VOSMatchViewController.xib */,
 				ADD9EF321AC07FF2005B5960 /* VOSSelectCrewViewController.h */,
 				ADD9EF331AC07FF2005B5960 /* VOSSelectCrewViewController.m */,
+				ADB218AA1AC2BD2800BBB10C /* VOSStatisticsViewController.h */,
+				ADB218AB1AC2BD2800BBB10C /* VOSStatisticsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -826,6 +831,7 @@
 				ADAA9F5F1AA0C674006A1017 /* VOSPlayerCollectionViewController.m in Sources */,
 				ADD1756C1A9D47C70048D571 /* VOSPhotoViewController.m in Sources */,
 				ADAB4BC71A964D48000B3054 /* VOSLogoViewController.m in Sources */,
+				ADB218AC1AC2BD2800BBB10C /* VOSStatisticsViewController.m in Sources */,
 				AD5689ED1AB6D1BD002F2E09 /* VOSGamesViewController.m in Sources */,
 				AD78DDCB1A92BE9C00541CC7 /* VOSGame.m in Sources */,
 				ADC6DC801A94FFC70022BAC9 /* _VOSClasification.m in Sources */,

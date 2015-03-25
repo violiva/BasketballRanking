@@ -620,6 +620,15 @@
                         <action selector="editVisitorTeam:" destination="-1" eventType="touchUpInside" id="ya9-pE-7hn"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xI-JA-lyY">
+                    <rect key="frame" x="812" y="656" width="46" height="30"/>
+                    <state key="normal" title="items">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showRecords:" destination="-1" eventType="touchUpInside" id="n11-WX-vAv"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.84422896099951172" blue="0.59209354579316553" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

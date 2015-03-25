@@ -125,6 +125,7 @@
 - (IBAction)foulReceived:(id)sender;
 - (IBAction)foul:(id)sender;
 
+- (IBAction)showRecords:(id)sender;
 
 
 -(id) initWithGame:(VOSGame *) aGame;

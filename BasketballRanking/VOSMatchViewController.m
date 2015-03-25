@@ -18,6 +18,7 @@
 #import "VOSPhotoContainer.h"
 #import "VOSStatistic.h"
 #import "VOSAction.h"
+#import "VOSStatisticsViewController.h"
 
 #define START_TIME    0
 #define CONTINUE_TIME 1
@@ -533,6 +534,36 @@
     // Grabamos la estadística correspondiente
     [self saveStatisticsWithAction:action
                             points:points];
+}
+
+- (IBAction)showRecords:(id)sender {
+    NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[VOSStatistic entityName]];
+    req.fetchBatchSize = 30;
+    req.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:VOSStatisticAttributes.period
+                                                           ascending:NO
+                                                            selector:@selector(compare:)],
+                             [NSSortDescriptor sortDescriptorWithKey:VOSStatisticAttributes.time
+                                                           ascending:YES
+                                                            selector:@selector(caseInsensitiveCompare:)] ];
+    
+    
+    req.predicate = [NSPredicate predicateWithFormat:@"game == %@", self.aGame];
+    NSFetchedResultsController * frcStatistics = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                               managedObjectContext:self.aGame.managedObjectContext
+                                                                                 sectionNameKeyPath:@"period"
+                                                                                          cacheName:nil ];
+    
+    
+    
+    // Creamos el nuevo controlador y le pasamos el nombre del Club que lo sepa
+    VOSStatisticsViewController * statisticsVC = [[VOSStatisticsViewController alloc] initWithFetchedResultsController:frcStatistics
+                                                                                                  club:self.aGame
+                                                                                                 style:UITableViewStylePlain];
+    // Lo pusheo
+    [self.navigationController pushViewController:statisticsVC
+                                         animated:YES];
+
+    
 }
 
 
