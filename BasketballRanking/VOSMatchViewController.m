@@ -19,6 +19,7 @@
 #import "VOSStatistic.h"
 #import "VOSAction.h"
 #import "VOSStatisticsViewController.h"
+#import "CafPlayer.h"
 
 #define START_TIME    0
 #define CONTINUE_TIME 1
@@ -29,6 +30,7 @@
 
 @property (nonatomic) int timeContinue;
 @property (nonatomic) int timeLeft;
+@property (nonatomic, strong) NSMutableDictionary *sounds;
 
 @end
 
@@ -74,7 +76,37 @@
     self.aLocalPlayerTeam = [[NSMutableArray alloc] initWithCapacity:5];
     self.aVisitorPlayerTeam = [[NSMutableArray alloc] initWithCapacity:5];
 
+    // Para que no aparezca ningún equipo seleccionado y que al pulsar los botones no puede asignar acción mientras que no
+    //  tengamos equipo seleccionado
     self.teamSelected = 2;
+    
+    // inicializamos diccionario de sonidos
+    self.sounds = [NSMutableDictionary dictionary];
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSURL *sound1URL = [bundle URLForResource:@"Canasta"
+                                withExtension:@"wav"];
+    NSData *data1Sound = [NSData dataWithContentsOfURL:sound1URL];
+
+    NSURL *sound2URL = [bundle URLForResource:@"Canasta2"
+                               withExtension:@"wav"];
+    NSData *data2Sound = [NSData dataWithContentsOfURL:sound2URL];
+
+    NSURL *sound3URL = [bundle URLForResource:@"Canasta3"
+                                withExtension:@"wav"];
+    NSData *data3Sound = [NSData dataWithContentsOfURL:sound3URL];
+
+    [self.sounds setObject:@[data1Sound, data2Sound, data3Sound] forKey:@"canasta"];
+
+    NSURL *sound4URL = [bundle URLForResource:@"Bote"
+                                withExtension:@"wav"];
+    NSData *data4Sound = [NSData dataWithContentsOfURL:sound4URL];
+
+    NSURL *sound5URL = [bundle URLForResource:@"Rebote"
+                                withExtension:@"wav"];
+    NSData *data5Sound = [NSData dataWithContentsOfURL:sound5URL];
+
+    [self.sounds setObject:@[data4Sound, data5Sound] forKey:@"rebote"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,6 +115,10 @@
 }
 
 -(void) viewWillAppear:(BOOL)animated{
+
+    self.localPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointHome];
+    self.visitorPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointVisit];
+
     self.player1.hidden = YES;
     self.player2.hidden = YES;
     self.player3.hidden = YES;
@@ -94,7 +130,6 @@
     self.playerV3.hidden = YES;
     self.playerV4.hidden = YES;
     self.playerV5.hidden = YES;
-
     
     if (self.aLocalPlayerTeam.count > 0){
         int numPlayers = self.aLocalPlayerTeam.count;
@@ -177,6 +212,11 @@
         }
     }
     
+}
+
+-(void) viewWillDisappear:(BOOL)animated{
+    self.aGame.pointHome = @([self.localPoints.text intValue]);
+    self.aGame.pointVisit = @([self.visitorPoints.text intValue]);
 }
 
 #pragma mark - Actions
@@ -369,6 +409,17 @@
     [self sumBookmarkWithPoints:points];
 }
 
+-(void)playSound:(NSString *)type{
+    self.player = [CafPlayer cafPlayer];
+
+    NSArray *sounds = [self.sounds objectForKey:type];
+    int num = (int)arc4random_uniform(sounds.count);
+    NSData *dataSound = [sounds objectAtIndex:num];
+    
+    [self.player playSoundData:dataSound];
+
+}
+
 -(void)saveStatisticsWithAction:(NSString *)anAction points:(int) points {
     if ( self.teamSelected == LOCAL_TEAM || self.teamSelected == VISITOR_TEAM){
         // Localizamos la acción a guardar como estadística
@@ -398,6 +449,9 @@
 
 -(void)sumBookmarkWithPoints:(int) points{
     if ( self.teamSelected == LOCAL_TEAM || self.teamSelected == VISITOR_TEAM){
+        // Reproducimos sonido de canasta
+        [self playSound:@"canasta"];
+
         if (self.teamSelected == LOCAL_TEAM) {
             int pointsBookmark = [self.localPoints.text intValue];
             pointsBookmark += points;
@@ -420,6 +474,9 @@
                             points:points];
     
     // Como es fallo NO Acumulamos puntos en el marcador
+    // Reproducimos sonido de rebote
+    [self playSound:@"rebote"];
+
 }
 
 -(IBAction)basket2:(id)sender{
@@ -432,6 +489,7 @@
     
     // Acumulamos puntos en el marcador
     [self sumBookmarkWithPoints:points];
+    
 }
 
 -(IBAction)basket2F:(id)sender{
@@ -441,6 +499,10 @@
     // Grabamos la estadística correspondiente
     [self saveStatisticsWithAction:action
                             points:points];
+    
+    // Reproducimos sonido de rebote
+    [self playSound:@"rebote"];
+
 }
 
 -(IBAction)basket3:(id)sender{
@@ -462,6 +524,10 @@
     // Grabamos la estadística correspondiente
     [self saveStatisticsWithAction:action
                             points:points];
+    
+    // Reproducimos sonido de rebote
+    [self playSound:@"rebote"];
+
 }
 
 - (IBAction)offensiveRebound:(id)sender {

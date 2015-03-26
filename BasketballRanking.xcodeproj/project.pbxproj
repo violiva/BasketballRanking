@@ -73,6 +73,13 @@
 		ADB0F8401AA744DF0025EEF6 /* VOSDetailClasificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F83E1AA744DF0025EEF6 /* VOSDetailClasificationViewController.m */; };
 		ADB0F8411AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */; };
 		ADB218AC1AC2BD2800BBB10C /* VOSStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB218AB1AC2BD2800BBB10C /* VOSStatisticsViewController.m */; };
+		ADB9A7D81AC44F2E00B6B3A6 /* Bote.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D21AC44F2E00B6B3A6 /* Bote.wav */; };
+		ADB9A7D91AC44F2E00B6B3A6 /* Canasta.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D31AC44F2E00B6B3A6 /* Canasta.wav */; };
+		ADB9A7DA1AC44F2E00B6B3A6 /* Canasta2.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D41AC44F2E00B6B3A6 /* Canasta2.wav */; };
+		ADB9A7DB1AC44F2E00B6B3A6 /* Canasta3.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D51AC44F2E00B6B3A6 /* Canasta3.wav */; };
+		ADB9A7DC1AC44F2E00B6B3A6 /* MiAlarma.mov in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D61AC44F2E00B6B3A6 /* MiAlarma.mov */; };
+		ADB9A7DD1AC44F2E00B6B3A6 /* Rebote.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D71AC44F2E00B6B3A6 /* Rebote.wav */; };
+		ADB9A7E21AC45AB800B6B3A6 /* CafPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9A7E11AC45AB800B6B3A6 /* CafPlayer.m */; };
 		ADB9D07C1A9CE84A002954CF /* VOSPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */; };
 		ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */; };
 		ADB9D0821A9D1F83002954CF /* VOSPlayerNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D0801A9D1F83002954CF /* VOSPlayerNameTableViewCell.m */; };
@@ -244,6 +251,14 @@
 		ADB0F83F1AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSDetailClasificationViewController.xib; sourceTree = "<group>"; };
 		ADB218AA1AC2BD2800BBB10C /* VOSStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSStatisticsViewController.h; sourceTree = "<group>"; };
 		ADB218AB1AC2BD2800BBB10C /* VOSStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSStatisticsViewController.m; sourceTree = "<group>"; };
+		ADB9A7D21AC44F2E00B6B3A6 /* Bote.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bote.wav; sourceTree = "<group>"; };
+		ADB9A7D31AC44F2E00B6B3A6 /* Canasta.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Canasta.wav; sourceTree = "<group>"; };
+		ADB9A7D41AC44F2E00B6B3A6 /* Canasta2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Canasta2.wav; sourceTree = "<group>"; };
+		ADB9A7D51AC44F2E00B6B3A6 /* Canasta3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Canasta3.wav; sourceTree = "<group>"; };
+		ADB9A7D61AC44F2E00B6B3A6 /* MiAlarma.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = MiAlarma.mov; sourceTree = "<group>"; };
+		ADB9A7D71AC44F2E00B6B3A6 /* Rebote.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rebote.wav; sourceTree = "<group>"; };
+		ADB9A7E01AC45AB800B6B3A6 /* CafPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafPlayer.h; sourceTree = "<group>"; };
+		ADB9A7E11AC45AB800B6B3A6 /* CafPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafPlayer.m; sourceTree = "<group>"; };
 		ADB9D07A1A9CE84A002954CF /* VOSPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayersViewController.h; sourceTree = "<group>"; };
 		ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayersViewController.m; sourceTree = "<group>"; };
 		ADB9D07D1A9CF51B002954CF /* Silueta_Jugador.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Silueta_Jugador.jpg; sourceTree = "<group>"; };
@@ -406,6 +421,7 @@
 		AD78DD7B1A92B77A00541CC7 /* BasketballRanking */ = {
 			isa = PBXGroup;
 			children = (
+				ADB9A7E31AC45AC900B6B3A6 /* Sound */,
 				ADAF7A861A9F57B100D4A096 /* Protocols */,
 				AD78DD801A92B77A00541CC7 /* AppDelegate.h */,
 				AD78DD811A92B77A00541CC7 /* AppDelegate.m */,
@@ -615,6 +631,7 @@
 		ADAB43061A9341CB00D0D32D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				ADB9A7D11AC44F1500B6B3A6 /* Sounds */,
 				AD7134DC1A96057200F272CE /* Image */,
 				AD7134D41A95FFBB00F272CE /* Fonts */,
 			);
@@ -627,6 +644,28 @@
 				ADAF7A871A9F584900D4A096 /* VOSDetailViewController.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		ADB9A7D11AC44F1500B6B3A6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9A7D21AC44F2E00B6B3A6 /* Bote.wav */,
+				ADB9A7D31AC44F2E00B6B3A6 /* Canasta.wav */,
+				ADB9A7D41AC44F2E00B6B3A6 /* Canasta2.wav */,
+				ADB9A7D51AC44F2E00B6B3A6 /* Canasta3.wav */,
+				ADB9A7D61AC44F2E00B6B3A6 /* MiAlarma.mov */,
+				ADB9A7D71AC44F2E00B6B3A6 /* Rebote.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		ADB9A7E31AC45AC900B6B3A6 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9A7E01AC45AB800B6B3A6 /* CafPlayer.h */,
+				ADB9A7E11AC45AB800B6B3A6 /* CafPlayer.m */,
+			);
+			name = Sound;
 			sourceTree = "<group>";
 		};
 		ADB9D0741A9CE7C2002954CF /* PlayerManagement */ = {
@@ -755,6 +794,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB9A7D91AC44F2E00B6B3A6 /* Canasta.wav in Resources */,
 				ADD4523A1AC02BDE00A90AD8 /* Restart_btn.png in Resources */,
 				ADD452381AC01CBB00A90AD8 /* Radioland.ttf in Resources */,
 				ADAA9F5C1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib in Resources */,
@@ -762,6 +802,7 @@
 				ADF9FE231AA38743002BE1D4 /* VOSDetailPlayerViewController.xib in Resources */,
 				ADB9D0881A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib in Resources */,
 				ADD452321AC00B3400A90AD8 /* Pause_btn.png in Resources */,
+				ADB9A7DC1AC44F2E00B6B3A6 /* MiAlarma.mov in Resources */,
 				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
 				ADD452341AC00ECD00A90AD8 /* Start_btn.png in Resources */,
 				AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */,
@@ -771,6 +812,7 @@
 				AD5689F21AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib in Resources */,
 				ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */,
 				ADDFC4121AC17A3F0069C34F /* Ball.png in Resources */,
+				ADB9A7DD1AC44F2E00B6B3A6 /* Rebote.wav in Resources */,
 				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
 				ADAB28C31AA5F820003272FB /* VOSEditCategoryViewController.xib in Resources */,
 				ADD175601A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib in Resources */,
@@ -783,9 +825,12 @@
 				ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */,
 				ADD1756D1A9D47C70048D571 /* VOSPhotoViewController.xib in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
+				ADB9A7D81AC44F2E00B6B3A6 /* Bote.wav in Resources */,
 				AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */,
 				ADB9D0831A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib in Resources */,
+				ADB9A7DB1AC44F2E00B6B3A6 /* Canasta3.wav in Resources */,
 				AD52E25A1AA531960009353C /* mobilephone15.png in Resources */,
+				ADB9A7DA1AC44F2E00B6B3A6 /* Canasta2.wav in Resources */,
 				AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */,
 				ADED9E6C1ABC2A530051806C /* VOSMatchViewController.xib in Resources */,
 			);
@@ -838,6 +883,7 @@
 				AD7134E01A9605C600F272CE /* VOSClubLogoTableViewCell.m in Sources */,
 				ADD1755F1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m in Sources */,
 				AD78DD821A92B77A00541CC7 /* AppDelegate.m in Sources */,
+				ADB9A7E21AC45AB800B6B3A6 /* CafPlayer.m in Sources */,
 				AD78DDB61A92BE8100541CC7 /* _VOSPlayer.m in Sources */,
 				AD78DD7F1A92B77A00541CC7 /* main.m in Sources */,
 				ADA19F4E1A9C852B00687BA2 /* VOSEditTeamViewController.m in Sources */,

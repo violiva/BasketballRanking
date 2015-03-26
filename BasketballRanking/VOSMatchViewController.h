@@ -9,6 +9,8 @@
 @class UIKit;
 @class VOSGame;
 @class VOSPlayer;
+@class CafPlayer;
+
 
 @interface VOSMatchViewController : UIViewController
 
@@ -16,6 +18,8 @@
 @property (nonatomic, strong) NSTimer *counter;
 @property (nonatomic) int seconds;
 @property (weak, nonatomic) IBOutlet UILabel *secondsLbl;
+@property (strong, nonatomic) CafPlayer * player;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *startBtn;
 @property (weak, nonatomic) IBOutlet UIButton *pauseBtn;

@@ -44,6 +44,7 @@
     [self.tableView reloadData];
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -82,6 +83,19 @@
         // Averiguo la celda
         NSManagedObjectContext * ctx = self.fetchedResultsController.managedObjectContext;
         VOSStatistic *deceased = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        
+        if (deceased.points > 0) {
+            if (deceased.player.team == self.game.homeTeam) {
+                NSNumber *sum = [NSNumber numberWithFloat:([self.game.pointHome floatValue] - [deceased.points floatValue])];
+                self.game.pointHome = sum;
+            }
+
+            if (deceased.player.team == self.game.awayTeam) {
+                NSNumber *sum = [NSNumber numberWithFloat:([self.game.pointVisit floatValue] - [deceased.points floatValue])];
+                self.game.pointVisit = sum;
+            }
+            
+        }
         
         // la elimino
         [ctx deleteObject:deceased];
