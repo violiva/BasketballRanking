@@ -35,6 +35,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIColor *clearGrey = [UIColor colorWithRed:227.0/255.0
+                                         green:227.0/255.0
+                                          blue:227.0/222.0
+                                         alpha:1];
+    [[UITableViewHeaderFooterView appearance] setTintColor:clearGrey];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -66,6 +72,18 @@
     }
     
     // la configuramos
+    cell.textLabel.textColor = [UIColor blackColor];
+    cell.imageView.image = nil;
+
+    if ( stat.pointsValue > 0 ){
+        cell.imageView.image = [UIImage imageNamed:@"Ok.png"];
+    }else{
+        if ( [stat.action.name isEqualToString:@"Falta cometida"] ){
+            cell.textLabel.textColor = [UIColor redColor];
+            cell.imageView.image = [UIImage imageNamed:@"Red_Cross.png"];
+        }
+    }
+    
     cell.textLabel.font = [UIFont fontWithName:@"Dosis Book" size:20];
     cell.textLabel.text = [NSString stringWithFormat: @"%@ - %@ (%@) %@", stat.action.name, stat.player.name, stat.player.dorsal, stat.player.team.club.name ];
     cell.detailTextLabel.text = [NSString stringWithFormat: @"Period: %@ , Time: %@, points: %@", stat.period, stat.time, stat.points ];
@@ -74,6 +92,27 @@
     return cell;
     
 }
+
+/*
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    [headerView setBackgroundColor:[UIColor redColor]];
+
+    UILabel *tempLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    tempLabel.backgroundColor=[UIColor clearColor];
+    tempLabel.shadowColor = [UIColor blackColor];
+    tempLabel.shadowOffset = CGSizeMake(0,2);
+    tempLabel.textColor = [UIColor whiteColor]; //here you can change the text color of header.
+    tempLabel.font = [UIFont fontWithName:@"Dosis" size:20];
+    tempLabel.text = [NSString stringWithFormat:@"%d", section];
+    
+    [headerView addSubview:tempLabel];
+    
+    return headerView;
+}
+*/
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     

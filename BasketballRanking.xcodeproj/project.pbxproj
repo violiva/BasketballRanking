@@ -58,6 +58,14 @@
 		ADA19F4A1A9C750C00687BA2 /* VOSTeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA19F491A9C750C00687BA2 /* VOSTeamsViewController.m */; };
 		ADA19F4E1A9C852B00687BA2 /* VOSEditTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA19F4C1A9C852B00687BA2 /* VOSEditTeamViewController.m */; };
 		ADA19F4F1A9C852B00687BA2 /* VOSEditTeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA19F4D1A9C852B00687BA2 /* VOSEditTeamViewController.xib */; };
+		ADA5E0971AC992D60069FD1C /* Canasta_1.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E0961AC992D60069FD1C /* Canasta_1.png */; };
+		ADA5E09A1AC995550069FD1C /* Canasta_2.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E0981AC995550069FD1C /* Canasta_2.png */; };
+		ADA5E09B1AC995550069FD1C /* Canasta_3.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E0991AC995550069FD1C /* Canasta_3.png */; };
+		ADA5E09F1AC999F20069FD1C /* Canasta_KO_2.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E09C1AC999F20069FD1C /* Canasta_KO_2.png */; };
+		ADA5E0A01AC999F20069FD1C /* Canasta_KO_3.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E09D1AC999F20069FD1C /* Canasta_KO_3.png */; };
+		ADA5E0A11AC999F20069FD1C /* Canasta_KO.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E09E1AC999F20069FD1C /* Canasta_KO.png */; };
+		ADA7C1EB1AC96BEA00D583AE /* Ok.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA7C1E91AC96BEA00D583AE /* Ok.png */; };
+		ADA7C1EC1AC96BEA00D583AE /* Red_Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA7C1EA1AC96BEA00D583AE /* Red_Cross.png */; };
 		ADAA9F571AA066BD006A1017 /* Player_Jumping.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAA9F561AA066BD006A1017 /* Player_Jumping.png */; };
 		ADAA9F5A1AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA9F591AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m */; };
 		ADAA9F5C1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAA9F5B1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib */; };
@@ -77,7 +85,6 @@
 		ADB9A7D91AC44F2E00B6B3A6 /* Canasta.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D31AC44F2E00B6B3A6 /* Canasta.wav */; };
 		ADB9A7DA1AC44F2E00B6B3A6 /* Canasta2.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D41AC44F2E00B6B3A6 /* Canasta2.wav */; };
 		ADB9A7DB1AC44F2E00B6B3A6 /* Canasta3.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D51AC44F2E00B6B3A6 /* Canasta3.wav */; };
-		ADB9A7DC1AC44F2E00B6B3A6 /* MiAlarma.mov in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D61AC44F2E00B6B3A6 /* MiAlarma.mov */; };
 		ADB9A7DD1AC44F2E00B6B3A6 /* Rebote.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADB9A7D71AC44F2E00B6B3A6 /* Rebote.wav */; };
 		ADB9A7E21AC45AB800B6B3A6 /* CafPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9A7E11AC45AB800B6B3A6 /* CafPlayer.m */; };
 		ADB9D07C1A9CE84A002954CF /* VOSPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9D07B1A9CE84A002954CF /* VOSPlayersViewController.m */; };
@@ -93,6 +100,7 @@
 		ADC6DC891A9500010022BAC9 /* VOSClasification.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC841A9500010022BAC9 /* VOSClasification.m */; };
 		ADC6DC8A1A9500010022BAC9 /* VOSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC861A9500010022BAC9 /* VOSClub.m */; };
 		ADC6DC8B1A9500010022BAC9 /* VOSLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC6DC881A9500010022BAC9 /* VOSLogo.m */; };
+		ADCC2D141AC9572B001F8E52 /* MiAlarma.aiff in Resources */ = {isa = PBXBuildFile; fileRef = ADCC2D131AC9572B001F8E52 /* MiAlarma.aiff */; };
 		ADD1755A1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD175581A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m */; };
 		ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD175591A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib */; };
 		ADD1755F1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD1755D1A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.m */; };
@@ -105,6 +113,15 @@
 		ADD452361AC0157000A90AD8 /* Stop_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD452351AC0157000A90AD8 /* Stop_btn.png */; };
 		ADD452381AC01CBB00A90AD8 /* Radioland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADD452371AC01B4900A90AD8 /* Radioland.ttf */; };
 		ADD4523A1AC02BDE00A90AD8 /* Restart_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD452391AC02BDE00A90AD8 /* Restart_btn.png */; };
+		ADD784731AC9A4EE00E89801 /* Rebote_D.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD784711AC9A4EE00E89801 /* Rebote_D.png */; };
+		ADD784741AC9A4EE00E89801 /* Rebote_O.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD784721AC9A4EE00E89801 /* Rebote_O.png */; };
+		ADD784771AC9A62E00E89801 /* Perdida.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD784751AC9A62E00E89801 /* Perdida.png */; };
+		ADD784781AC9A62E00E89801 /* Robo.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD784761AC9A62E00E89801 /* Robo.png */; };
+		ADD7847A1AC9ACB300E89801 /* Tapon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD784791AC9ACB300E89801 /* Tapon.png */; };
+		ADD7847C1AC9AF2500E89801 /* Asistencia.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7847B1AC9AF2500E89801 /* Asistencia.png */; };
+		ADD7847F1AC9B05C00E89801 /* Falta_C.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7847D1AC9B05C00E89801 /* Falta_C.png */; };
+		ADD784801AC9B05C00E89801 /* Falta_R.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7847E1AC9B05C00E89801 /* Falta_R.png */; };
+		ADD784821AC9B61C00E89801 /* Records.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD784811AC9B61C00E89801 /* Records.png */; };
 		ADD9EF341AC07FF2005B5960 /* VOSSelectCrewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9EF331AC07FF2005B5960 /* VOSSelectCrewViewController.m */; };
 		ADDFC4121AC17A3F0069C34F /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDFC4111AC17A3F0069C34F /* Ball.png */; };
 		ADED9E6B1ABC2A530051806C /* VOSMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADED9E691ABC2A530051806C /* VOSMatchViewController.m */; };
@@ -223,6 +240,14 @@
 		ADA19F4B1A9C852B00687BA2 /* VOSEditTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSEditTeamViewController.h; sourceTree = "<group>"; };
 		ADA19F4C1A9C852B00687BA2 /* VOSEditTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSEditTeamViewController.m; sourceTree = "<group>"; };
 		ADA19F4D1A9C852B00687BA2 /* VOSEditTeamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSEditTeamViewController.xib; sourceTree = "<group>"; };
+		ADA5E0961AC992D60069FD1C /* Canasta_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Canasta_1.png; path = Images.xcassets/Canasta_1.png; sourceTree = "<group>"; };
+		ADA5E0981AC995550069FD1C /* Canasta_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Canasta_2.png; path = Images.xcassets/Canasta_2.png; sourceTree = "<group>"; };
+		ADA5E0991AC995550069FD1C /* Canasta_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Canasta_3.png; path = Images.xcassets/Canasta_3.png; sourceTree = "<group>"; };
+		ADA5E09C1AC999F20069FD1C /* Canasta_KO_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Canasta_KO_2.png; path = Images.xcassets/Canasta_KO_2.png; sourceTree = "<group>"; };
+		ADA5E09D1AC999F20069FD1C /* Canasta_KO_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Canasta_KO_3.png; path = Images.xcassets/Canasta_KO_3.png; sourceTree = "<group>"; };
+		ADA5E09E1AC999F20069FD1C /* Canasta_KO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Canasta_KO.png; path = Images.xcassets/Canasta_KO.png; sourceTree = "<group>"; };
+		ADA7C1E91AC96BEA00D583AE /* Ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ok.png; path = Images.xcassets/Ok.png; sourceTree = "<group>"; };
+		ADA7C1EA1AC96BEA00D583AE /* Red_Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Red_Cross.png; path = Images.xcassets/Red_Cross.png; sourceTree = "<group>"; };
 		ADAA9F561AA066BD006A1017 /* Player_Jumping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_Jumping.png; sourceTree = "<group>"; };
 		ADAA9F581AA0BC68006A1017 /* VOSPlayerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayerCollectionViewCell.h; sourceTree = "<group>"; };
 		ADAA9F591AA0BC68006A1017 /* VOSPlayerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayerCollectionViewCell.m; sourceTree = "<group>"; };
@@ -255,7 +280,6 @@
 		ADB9A7D31AC44F2E00B6B3A6 /* Canasta.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Canasta.wav; sourceTree = "<group>"; };
 		ADB9A7D41AC44F2E00B6B3A6 /* Canasta2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Canasta2.wav; sourceTree = "<group>"; };
 		ADB9A7D51AC44F2E00B6B3A6 /* Canasta3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Canasta3.wav; sourceTree = "<group>"; };
-		ADB9A7D61AC44F2E00B6B3A6 /* MiAlarma.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = MiAlarma.mov; sourceTree = "<group>"; };
 		ADB9A7D71AC44F2E00B6B3A6 /* Rebote.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rebote.wav; sourceTree = "<group>"; };
 		ADB9A7E01AC45AB800B6B3A6 /* CafPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafPlayer.h; sourceTree = "<group>"; };
 		ADB9A7E11AC45AB800B6B3A6 /* CafPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafPlayer.m; sourceTree = "<group>"; };
@@ -283,6 +307,7 @@
 		ADC6DC861A9500010022BAC9 /* VOSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSClub.m; sourceTree = "<group>"; };
 		ADC6DC871A9500010022BAC9 /* VOSLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSLogo.h; sourceTree = "<group>"; };
 		ADC6DC881A9500010022BAC9 /* VOSLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSLogo.m; sourceTree = "<group>"; };
+		ADCC2D131AC9572B001F8E52 /* MiAlarma.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = MiAlarma.aiff; sourceTree = "<group>"; };
 		ADD175571A9D25220048D571 /* VOSPlayerPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSPlayerPhotoTableViewCell.h; sourceTree = "<group>"; };
 		ADD175581A9D25220048D571 /* VOSPlayerPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSPlayerPhotoTableViewCell.m; sourceTree = "<group>"; };
 		ADD175591A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSPlayerPhotoTableViewCell.xib; sourceTree = "<group>"; };
@@ -299,6 +324,15 @@
 		ADD452351AC0157000A90AD8 /* Stop_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stop_btn.png; path = Images.xcassets/Stop_btn.png; sourceTree = "<group>"; };
 		ADD452371AC01B4900A90AD8 /* Radioland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Radioland.ttf; sourceTree = "<group>"; };
 		ADD452391AC02BDE00A90AD8 /* Restart_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Restart_btn.png; path = Images.xcassets/Restart_btn.png; sourceTree = "<group>"; };
+		ADD784711AC9A4EE00E89801 /* Rebote_D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rebote_D.png; path = Images.xcassets/Rebote_D.png; sourceTree = "<group>"; };
+		ADD784721AC9A4EE00E89801 /* Rebote_O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rebote_O.png; path = Images.xcassets/Rebote_O.png; sourceTree = "<group>"; };
+		ADD784751AC9A62E00E89801 /* Perdida.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Perdida.png; path = Images.xcassets/Perdida.png; sourceTree = "<group>"; };
+		ADD784761AC9A62E00E89801 /* Robo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Robo.png; path = Images.xcassets/Robo.png; sourceTree = "<group>"; };
+		ADD784791AC9ACB300E89801 /* Tapon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tapon.png; path = Images.xcassets/Tapon.png; sourceTree = "<group>"; };
+		ADD7847B1AC9AF2500E89801 /* Asistencia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Asistencia.png; path = Images.xcassets/Asistencia.png; sourceTree = "<group>"; };
+		ADD7847D1AC9B05C00E89801 /* Falta_C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Falta_C.png; path = Images.xcassets/Falta_C.png; sourceTree = "<group>"; };
+		ADD7847E1AC9B05C00E89801 /* Falta_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Falta_R.png; path = Images.xcassets/Falta_R.png; sourceTree = "<group>"; };
+		ADD784811AC9B61C00E89801 /* Records.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Records.png; path = Images.xcassets/Records.png; sourceTree = "<group>"; };
 		ADD9EF321AC07FF2005B5960 /* VOSSelectCrewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSSelectCrewViewController.h; sourceTree = "<group>"; };
 		ADD9EF331AC07FF2005B5960 /* VOSSelectCrewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSSelectCrewViewController.m; sourceTree = "<group>"; };
 		ADDFC4111AC17A3F0069C34F /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ball.png; path = Images.xcassets/Ball.png; sourceTree = "<group>"; };
@@ -354,9 +388,24 @@
 		AD7134DC1A96057200F272CE /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				ADA5E0961AC992D60069FD1C /* Canasta_1.png */,
+				ADA5E0981AC995550069FD1C /* Canasta_2.png */,
+				ADA5E0991AC995550069FD1C /* Canasta_3.png */,
+				ADA5E09C1AC999F20069FD1C /* Canasta_KO_2.png */,
+				ADD784811AC9B61C00E89801 /* Records.png */,
+				ADA5E09D1AC999F20069FD1C /* Canasta_KO_3.png */,
+				ADA5E09E1AC999F20069FD1C /* Canasta_KO.png */,
+				ADD7847B1AC9AF2500E89801 /* Asistencia.png */,
+				ADD7847D1AC9B05C00E89801 /* Falta_C.png */,
+				ADD7847E1AC9B05C00E89801 /* Falta_R.png */,
+				ADD784751AC9A62E00E89801 /* Perdida.png */,
+				ADD784761AC9A62E00E89801 /* Robo.png */,
 				ADD452331AC00ECD00A90AD8 /* Start_btn.png */,
+				ADD784791AC9ACB300E89801 /* Tapon.png */,
 				ADD452391AC02BDE00A90AD8 /* Restart_btn.png */,
 				ADDFC4111AC17A3F0069C34F /* Ball.png */,
+				ADD784711AC9A4EE00E89801 /* Rebote_D.png */,
+				ADD784721AC9A4EE00E89801 /* Rebote_O.png */,
 				ADD452311AC00B3400A90AD8 /* Pause_btn.png */,
 				ADD452351AC0157000A90AD8 /* Stop_btn.png */,
 				AD52E2591AA531960009353C /* mobilephone15.png */,
@@ -649,11 +698,13 @@
 		ADB9A7D11AC44F1500B6B3A6 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				ADA7C1E91AC96BEA00D583AE /* Ok.png */,
+				ADA7C1EA1AC96BEA00D583AE /* Red_Cross.png */,
 				ADB9A7D21AC44F2E00B6B3A6 /* Bote.wav */,
 				ADB9A7D31AC44F2E00B6B3A6 /* Canasta.wav */,
 				ADB9A7D41AC44F2E00B6B3A6 /* Canasta2.wav */,
 				ADB9A7D51AC44F2E00B6B3A6 /* Canasta3.wav */,
-				ADB9A7D61AC44F2E00B6B3A6 /* MiAlarma.mov */,
+				ADCC2D131AC9572B001F8E52 /* MiAlarma.aiff */,
 				ADB9A7D71AC44F2E00B6B3A6 /* Rebote.wav */,
 			);
 			name = Sounds;
@@ -798,41 +849,58 @@
 				ADD4523A1AC02BDE00A90AD8 /* Restart_btn.png in Resources */,
 				ADD452381AC01CBB00A90AD8 /* Radioland.ttf in Resources */,
 				ADAA9F5C1AA0BC8A006A1017 /* VOSPlayerCollectionViewCell.xib in Resources */,
+				ADD7847F1AC9B05C00E89801 /* Falta_C.png in Resources */,
 				ADAB4BC81A964D48000B3054 /* VOSLogoViewController.xib in Resources */,
 				ADF9FE231AA38743002BE1D4 /* VOSDetailPlayerViewController.xib in Resources */,
 				ADB9D0881A9D2206002954CF /* VOSPlayerDorsalTableViewCell.xib in Resources */,
 				ADD452321AC00B3400A90AD8 /* Pause_btn.png in Resources */,
-				ADB9A7DC1AC44F2E00B6B3A6 /* MiAlarma.mov in Resources */,
 				AD78DDEE1A92C61700541CC7 /* VOSActionTableViewCell.xib in Resources */,
+				ADA5E0A01AC999F20069FD1C /* Canasta_KO_3.png in Resources */,
 				ADD452341AC00ECD00A90AD8 /* Start_btn.png in Resources */,
+				ADA5E0A11AC999F20069FD1C /* Canasta_KO.png in Resources */,
 				AD7134E11A9605C600F272CE /* VOSClubLogoTableViewCell.xib in Resources */,
 				ADB0F8411AA744DF0025EEF6 /* VOSDetailClasificationViewController.xib in Resources */,
+				ADCC2D141AC9572B001F8E52 /* MiAlarma.aiff in Resources */,
 				ADD452361AC0157000A90AD8 /* Stop_btn.png in Resources */,
+				ADA5E09A1AC995550069FD1C /* Canasta_2.png in Resources */,
 				AD7134D11A95FBFF00F272CE /* VOSClubNameTableViewCell.xib in Resources */,
+				ADD7847A1AC9ACB300E89801 /* Tapon.png in Resources */,
 				AD5689F21AB6E3AC002F2E09 /* VOSSelectNewGameViewController.xib in Resources */,
+				ADD784771AC9A62E00E89801 /* Perdida.png in Resources */,
+				ADA5E09B1AC995550069FD1C /* Canasta_3.png in Resources */,
 				ADD1755B1A9D25220048D571 /* VOSPlayerPhotoTableViewCell.xib in Resources */,
 				ADDFC4121AC17A3F0069C34F /* Ball.png in Resources */,
 				ADB9A7DD1AC44F2E00B6B3A6 /* Rebote.wav in Resources */,
 				AD9B7D741A968EB100060D70 /* AmaticSC-Bold.ttf in Resources */,
 				ADAB28C31AA5F820003272FB /* VOSEditCategoryViewController.xib in Resources */,
 				ADD175601A9D3CE60048D571 /* VOSYearOfGroupTableViewCell.xib in Resources */,
+				ADA7C1EC1AC96BEA00D583AE /* Red_Cross.png in Resources */,
 				ADAA9F571AA066BD006A1017 /* Player_Jumping.png in Resources */,
 				ADA19F4F1A9C852B00687BA2 /* VOSEditTeamViewController.xib in Resources */,
+				ADD784801AC9B05C00E89801 /* Falta_R.png in Resources */,
 				AD78DD871A92B77A00541CC7 /* LaunchScreen.xib in Resources */,
 				AD77F69C1A9378FF0029F418 /* VOSGroupTableViewCell.xib in Resources */,
 				AD7134D91A96040A00F272CE /* VOSClubDirectionTableViewCell.xib in Resources */,
 				ADF8F74C1AAF3871009564D3 /* VOSTeamsInAGroupTableViewCell.xib in Resources */,
 				ADB9D07E1A9CF51B002954CF /* Silueta_Jugador.jpg in Resources */,
 				ADD1756D1A9D47C70048D571 /* VOSPhotoViewController.xib in Resources */,
+				ADD784731AC9A4EE00E89801 /* Rebote_D.png in Resources */,
+				ADD784741AC9A4EE00E89801 /* Rebote_O.png in Resources */,
 				AD78DD841A92B77A00541CC7 /* Images.xcassets in Resources */,
 				ADB9A7D81AC44F2E00B6B3A6 /* Bote.wav in Resources */,
 				AD7134D31A95FF4400F272CE /* Dosis Book.TTF in Resources */,
+				ADA5E09F1AC999F20069FD1C /* Canasta_KO_2.png in Resources */,
 				ADB9D0831A9D1F83002954CF /* VOSPlayerNameTableViewCell.xib in Resources */,
 				ADB9A7DB1AC44F2E00B6B3A6 /* Canasta3.wav in Resources */,
+				ADA7C1EB1AC96BEA00D583AE /* Ok.png in Resources */,
+				ADD784821AC9B61C00E89801 /* Records.png in Resources */,
+				ADD784781AC9A62E00E89801 /* Robo.png in Resources */,
 				AD52E25A1AA531960009353C /* mobilephone15.png in Resources */,
 				ADB9A7DA1AC44F2E00B6B3A6 /* Canasta2.wav in Resources */,
+				ADA5E0971AC992D60069FD1C /* Canasta_1.png in Resources */,
 				AD7134DB1A96056900F272CE /* Photo_not_available.jpg in Resources */,
 				ADED9E6C1ABC2A530051806C /* VOSMatchViewController.xib in Resources */,
+				ADD7847C1AC9AF2500E89801 /* Asistencia.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

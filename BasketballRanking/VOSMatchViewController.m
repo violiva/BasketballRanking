@@ -21,10 +21,12 @@
 #import "VOSStatisticsViewController.h"
 #import "CafPlayer.h"
 
-#define START_TIME    0
-#define CONTINUE_TIME 1
-#define LOCAL_TEAM    0
-#define VISITOR_TEAM  1
+#define START_TIME      0
+#define CONTINUE_TIME   1
+#define LOCAL_TEAM      0
+#define VISITOR_TEAM    1
+#define NO_SELECT_TEAM  2
+
 
 @interface VOSMatchViewController ()
 
@@ -78,7 +80,7 @@
 
     // Para que no aparezca ningún equipo seleccionado y que al pulsar los botones no puede asignar acción mientras que no
     //  tengamos equipo seleccionado
-    self.teamSelected = 2;
+    self.teamSelected = NO_SELECT_TEAM;
     
     // inicializamos diccionario de sonidos
     self.sounds = [NSMutableDictionary dictionary];
@@ -107,6 +109,12 @@
     NSData *data5Sound = [NSData dataWithContentsOfURL:sound5URL];
 
     [self.sounds setObject:@[data4Sound, data5Sound] forKey:@"rebote"];
+
+    NSURL *sound6URL = [bundle URLForResource:@"MiAlarma"
+                                withExtension:@"aiff"];
+    NSData *data6Sound = [NSData dataWithContentsOfURL:sound6URL];
+    
+    [self.sounds setObject:@[data6Sound] forKey:@"alarma"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -118,6 +126,7 @@
 
     self.localPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointHome];
     self.visitorPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointVisit];
+    self.teamSelected = NO_SELECT_TEAM;
 
     self.player1.hidden = YES;
     self.player2.hidden = YES;
@@ -236,6 +245,23 @@
         result = [NSString stringWithFormat:@"%.2ld:%.2ld", (long)minutesT, (long)secondsT ];
     }
     self.secondsLbl.text = result;
+    if (self.seconds == 0){
+        self.startBtn.hidden = NO;
+        self.stopBtn.hidden = YES;
+        self.restartBtn.hidden = NO;
+        self.pauseBtn.hidden = YES;
+        
+        [self.counter invalidate];
+        self.counter = nil;
+        self.timeContinue = 0;
+        
+        self.player = [CafPlayer cafPlayer];
+        NSArray *sounds = [self.sounds objectForKey:@"alarma"];
+        NSData *dataSound = [sounds objectAtIndex:0];
+        
+        [self.player playSoundData:dataSound];
+
+    }
 
 }
 

@@ -495,118 +495,119 @@
                         <action selector="selectPlayerV5:" destination="-1" eventType="touchUpInside" id="kl2-Dc-ri0"/>
                     </connections>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-vf-1JY">
-                    <rect key="frame" x="415" y="219" width="60" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-vf-1JY">
+                    <rect key="frame" x="398" y="219" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="+1">
+                    <state key="normal" image="Canasta_1.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="basket1:" destination="-1" eventType="touchUpInside" id="oYm-Mr-w5Z"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyG-0T-b4i">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyG-0T-b4i">
                     <rect key="frame" x="550" y="219" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="+1x">
+                    <state key="normal" image="Canasta_KO.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="basket1F:" destination="-1" eventType="touchUpInside" id="jvs-Gh-C89"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpi-sU-RBM">
-                    <rect key="frame" x="415" y="284" width="60" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpi-sU-RBM">
+                    <rect key="frame" x="398" y="284" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="+2"/>
+                    <state key="normal" image="Canasta_2.png"/>
                     <connections>
                         <action selector="basket2:" destination="-1" eventType="touchUpInside" id="KXr-la-6uA"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-G7-WZz">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-G7-WZz">
                     <rect key="frame" x="550" y="284" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="+2x"/>
+                    <state key="normal" image="Canasta_KO_2.png"/>
                     <connections>
                         <action selector="basket2F:" destination="-1" eventType="touchUpInside" id="h0i-eh-gYq"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC1-KN-fhD">
-                    <rect key="frame" x="415" y="349" width="60" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC1-KN-fhD">
+                    <rect key="frame" x="398" y="349" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="+3"/>
+                    <state key="normal" image="Canasta_3.png"/>
                     <connections>
                         <action selector="basket3:" destination="-1" eventType="touchUpInside" id="vrg-7c-4bl"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-cS-AD6">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-cS-AD6">
                     <rect key="frame" x="550" y="349" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="+3x"/>
+                    <state key="normal" image="Canasta_KO_3.png"/>
                     <connections>
                         <action selector="basket3F:" destination="-1" eventType="touchUpInside" id="59z-tj-agF"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrQ-5d-I2d">
-                    <rect key="frame" x="415" y="414" width="60" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrQ-5d-I2d">
+                    <rect key="frame" x="398" y="414" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="R.O."/>
+                    <state key="normal" image="Rebote_O.png"/>
                     <connections>
                         <action selector="offensiveRebound:" destination="-1" eventType="touchUpInside" id="wtt-ps-X8R"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYF-oA-kH1">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYF-oA-kH1">
                     <rect key="frame" x="550" y="414" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="R.D."/>
+                    <state key="normal" image="Rebote_D.png"/>
                     <connections>
                         <action selector="defensiveRebound:" destination="-1" eventType="touchUpInside" id="rw0-0o-NnX"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7y-Cm-dHD">
-                    <rect key="frame" x="415" y="479" width="60" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7y-Cm-dHD">
+                    <rect key="frame" x="398" y="479" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Robo"/>
+                    <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Regular" family=".Helvetica Neue DeskInterface" pointSize="11"/>
+                    <state key="normal" title="Robo" image="Robo.png"/>
                     <connections>
                         <action selector="stealBall:" destination="-1" eventType="touchUpInside" id="AZN-sm-yMp"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-wD-b9E">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-wD-b9E">
                     <rect key="frame" x="550" y="479" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Perdida"/>
+                    <state key="normal" image="Perdida.png"/>
                     <connections>
                         <action selector="loseBall:" destination="-1" eventType="touchUpInside" id="w8x-eW-wol"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d2-JN-2gi">
-                    <rect key="frame" x="415" y="544" width="60" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d2-JN-2gi">
+                    <rect key="frame" x="398" y="544" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Asist."/>
+                    <state key="normal" image="Asistencia.png"/>
                     <connections>
                         <action selector="assistance:" destination="-1" eventType="touchUpInside" id="rrx-Y9-PiA"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-GT-Iyv">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-GT-Iyv">
                     <rect key="frame" x="550" y="544" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Tapón"/>
+                    <state key="normal" image="Tapon.png"/>
                     <connections>
                         <action selector="block:" destination="-1" eventType="touchUpInside" id="qjT-Gm-0dv"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHZ-Sp-FRy">
-                    <rect key="frame" x="415" y="609" width="60" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHZ-Sp-FRy">
+                    <rect key="frame" x="398" y="609" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Falta R."/>
+                    <state key="normal" image="Falta_R.png"/>
                     <connections>
                         <action selector="foulReceived:" destination="-1" eventType="touchUpInside" id="uyn-Va-Nnl"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC4-bO-oi6">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC4-bO-oi6">
                     <rect key="frame" x="550" y="609" width="60" height="60"/>
                     <color key="backgroundColor" white="0.84259354440000001" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Falta C."/>
+                    <state key="normal" image="Falta_C.png"/>
                     <connections>
                         <action selector="foul:" destination="-1" eventType="touchUpInside" id="qky-DQ-1Un"/>
                     </connections>
@@ -620,15 +621,69 @@
                         <action selector="editVisitorTeam:" destination="-1" eventType="touchUpInside" id="ya9-pE-7hn"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xI-JA-lyY">
-                    <rect key="frame" x="812" y="656" width="46" height="30"/>
-                    <state key="normal" title="items">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xI-JA-lyY">
+                    <rect key="frame" x="956" y="609" width="60" height="60"/>
+                    <state key="normal" image="Records.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="showRecords:" destination="-1" eventType="touchUpInside" id="n11-WX-vAv"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blocked shot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lck-yg-Hqm">
+                    <rect key="frame" x="615" y="563" width="91" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foul C." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7q-q9-PRB">
+                    <rect key="frame" x="615" y="627" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foul R." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8j-ws-fUJ">
+                    <rect key="frame" x="460" y="627" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assistance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjP-wX-oO5">
+                    <rect key="frame" x="460" y="563" width="75" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turnover" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmM-s8-pKt">
+                    <rect key="frame" x="615" y="498" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-dx-UGI">
+                    <rect key="frame" x="460" y="498" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rebound O." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJk-hO-Ixg">
+                    <rect key="frame" x="460" y="433" width="83" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rebound D." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnY-fV-6gc">
+                    <rect key="frame" x="615" y="433" width="82" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Records" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqe-el-BXW">
+                    <rect key="frame" x="883" y="627" width="65" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.84422896099951172" blue="0.59209354579316553" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -637,10 +692,25 @@
         </view>
     </objects>
     <resources>
+        <image name="Asistencia.png" width="60" height="60"/>
         <image name="Ball.png" width="50" height="50"/>
+        <image name="Canasta_1.png" width="60" height="60"/>
+        <image name="Canasta_2.png" width="60" height="60"/>
+        <image name="Canasta_3.png" width="60" height="60"/>
+        <image name="Canasta_KO.png" width="60" height="60"/>
+        <image name="Canasta_KO_2.png" width="60" height="60"/>
+        <image name="Canasta_KO_3.png" width="60" height="60"/>
+        <image name="Falta_C.png" width="60" height="60"/>
+        <image name="Falta_R.png" width="60" height="60"/>
         <image name="Pause_btn.png" width="50" height="50"/>
+        <image name="Perdida.png" width="60" height="60"/>
+        <image name="Rebote_D.png" width="60" height="60"/>
+        <image name="Rebote_O.png" width="60" height="60"/>
+        <image name="Records.png" width="60" height="60"/>
         <image name="Restart_btn.png" width="50" height="50"/>
+        <image name="Robo.png" width="60" height="60"/>
         <image name="Start_btn.png" width="50" height="50"/>
         <image name="Stop_btn.png" width="50" height="50"/>
+        <image name="Tapon.png" width="60" height="60"/>
     </resources>
 </document>
