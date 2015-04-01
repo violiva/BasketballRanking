@@ -98,6 +98,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *dorsalPlayerV5;
 @property (weak, nonatomic) IBOutlet UILabel *namePlayerV5;
 @property (weak, nonatomic) IBOutlet UIImageView *ballPlayerV5;
+@property (weak, nonatomic) IBOutlet UILabel *localFoul;
+@property (weak, nonatomic) IBOutlet UILabel *visitorFoul;
+
+@property (weak, nonatomic) IBOutlet UIStepper *localFoulStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *visitorFoulStepper;
 
 @property (nonatomic) int teamSelected;
 @property (nonatomic, strong) VOSPlayer *playerSelected;
@@ -146,5 +151,7 @@
 -(IBAction)restart:(id)sender;
 
 -(IBAction)gameChanged:(id)sender;
+-(IBAction)localFoulChanged:(id)sender;
+-(IBAction)visitorFoulChanged:(id)sender;
 
 @end

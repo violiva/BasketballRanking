@@ -29,6 +29,8 @@
             <string>Dosis-Book</string>
             <string>Dosis-Book</string>
             <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
         </mutableArray>
         <mutableArray key="Radioland.ttf">
             <string>Radioland</string>
@@ -61,6 +63,8 @@
                 <outlet property="dorsalPlayerV4" destination="vnf-PL-qkh" id="CuM-nk-KSo"/>
                 <outlet property="dorsalPlayerV5" destination="lvH-9c-iGr" id="JjR-Ck-vGx"/>
                 <outlet property="game" destination="fMf-Oo-keJ" id="0Q5-sU-mec"/>
+                <outlet property="localFoul" destination="zYt-92-43z" id="zdU-p5-xpf"/>
+                <outlet property="localFoulStepper" destination="RX2-5V-7Po" id="tvf-AY-kIv"/>
                 <outlet property="localPoints" destination="fk0-y9-sqm" id="1UO-de-kJP"/>
                 <outlet property="localTeam" destination="nyQ-3P-YXp" id="2r2-zK-NCU"/>
                 <outlet property="namePlayer1" destination="elD-p8-Rtb" id="hKM-ue-VJE"/>
@@ -99,6 +103,8 @@
                 <outlet property="startBtn" destination="Vqf-bf-Dmm" id="3u5-q6-XAo"/>
                 <outlet property="stopBtn" destination="QJa-jf-LJK" id="PTQ-zu-qIL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="visitorFoul" destination="niA-xy-ok3" id="M9X-Mk-uSI"/>
+                <outlet property="visitorFoulStepper" destination="Jkw-kd-0qP" id="7MV-Rk-X7m"/>
                 <outlet property="visitorPoints" destination="h7R-bW-CRP" id="139-vk-hUc"/>
                 <outlet property="visitorTeam" destination="61i-MA-C4u" id="YAQ-vg-3jD"/>
             </connections>
@@ -109,15 +115,9 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Local Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVs-2Z-ueK">
-                    <rect key="frame" x="84" y="88" width="103" height="30"/>
+                    <rect key="frame" x="59" y="84" width="103" height="30"/>
                     <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
                     <color key="textColor" red="0.088216471318112541" green="0.10551306592419475" blue="0.83136047979797978" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visitor Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-vO-ww9">
-                    <rect key="frame" x="810" y="88" width="103" height="30"/>
-                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
-                    <color key="textColor" red="0.10333392877528169" green="0.12674446869222536" blue="0.83136047979797978" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Local Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyQ-3P-YXp">
@@ -682,6 +682,36 @@
                     <rect key="frame" x="883" y="627" width="65" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYt-92-43z">
+                    <rect key="frame" x="171" y="88" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" red="1" green="0.018925842950000001" blue="0.16125631300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niA-xy-ok3">
+                    <rect key="frame" x="814" y="88" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" red="1" green="0.018925842950000001" blue="0.16125631300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-5V-7Po">
+                    <rect key="frame" x="228" y="84" width="94" height="29"/>
+                    <connections>
+                        <action selector="localFoulChanged:" destination="-1" eventType="valueChanged" id="0tX-dp-8eM"/>
+                    </connections>
+                </stepper>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Jkw-kd-0qP">
+                    <rect key="frame" x="708" y="84" width="94" height="29"/>
+                    <connections>
+                        <action selector="visitorFoulChanged:" destination="-1" eventType="valueChanged" id="kQe-u4-l81"/>
+                    </connections>
+                </stepper>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visitor Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-vO-ww9">
+                    <rect key="frame" x="870" y="84" width="103" height="30"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="20"/>
+                    <color key="textColor" red="0.10333392877528169" green="0.12674446869222536" blue="0.83136047979797978" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>

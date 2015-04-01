@@ -66,6 +66,8 @@
     self.game.text = @"1";
     self.localPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointHome];
     self.visitorPoints.text = [NSString stringWithFormat:@"%@", self.aGame.pointVisit];
+    self.localFoul.text = @"0";
+    self.visitorFoul.text = @"0";
 
     
     // habilitamos botones iniciales
@@ -336,7 +338,26 @@
     
     self.secondsLbl.text = time;
     self.timeContinue = START_TIME;
+    
+    // reiniciamos contadores de faltas
+    [self.localFoulStepper setValue:0];
+    [self.visitorFoulStepper setValue:0];
+    self.localFoul.text = @"0";
+    self.visitorFoul.text = @"0";
 }
+
+-(IBAction)localFoulChanged:(id)sender{
+    self.localFoul.text = [NSString stringWithFormat:@"%d",
+                      [[NSNumber numberWithDouble:[(UIStepper *)sender value]] intValue ]];
+    
+}
+
+-(IBAction)visitorFoulChanged:(id)sender{
+    self.visitorFoul.text = [NSString stringWithFormat:@"%d",
+                           [[NSNumber numberWithDouble:[(UIStepper *)sender value]] intValue ]];
+    
+}
+
 
 -(void)hiddenBalls{
     self.ballPlayer1.hidden = YES;
@@ -622,10 +643,30 @@
 - (IBAction)foul:(id)sender {
     NSString *action = @"Falta cometida";
     int points = 0;
-    
+
     // Grabamos la estadística correspondiente
     [self saveStatisticsWithAction:action
                             points:points];
+    
+    if ( self.teamSelected == LOCAL_TEAM || self.teamSelected == VISITOR_TEAM){
+        // Reproducimos sonido de falta cuando lo tengamos...
+//        [self playSound:@"falta"];
+        
+        if (self.teamSelected == LOCAL_TEAM) {
+            int fouls = [self.localFoul.text intValue];
+            fouls += 1;
+            self.localFoul.text = [NSString stringWithFormat:@"%d", fouls];
+
+            [self.localFoulStepper setValue:fouls];
+            
+        }else{
+            int fouls = [self.visitorFoul.text intValue];
+            fouls += 1;
+            self.visitorFoul.text = [NSString stringWithFormat:@"%d", fouls];
+
+            [self.visitorFoulStepper setValue:fouls];
+        }
+    }
 }
 
 - (IBAction)showRecords:(id)sender {
